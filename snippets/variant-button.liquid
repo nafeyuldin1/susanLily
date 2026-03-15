@@ -1,0 +1,218 @@
+{%- capture size_chart_title -%}
+  {{ 'products.general.size_chart' | t }} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-size-chart" viewBox="0 0 64 64"><path d="M22.39 33.53c-7.46 0-13.5-3.9-13.5-8.72s6-8.72 13.5-8.72 13.5 3.9 13.5 8.72a12 12 0 0 1-.22 1.73"/><ellipse cx="22.39" cy="24.81" rx="3.28" ry="2.12"/><path d="M8.89 24.81V38.5c0 7.9 6.4 9.41 14.3 9.41h31.92V33.53H22.39m24.39 0v7.44m-8.13-7.44v7.44m-8.13-7.44v7.44m-8.13-7.44v7.44"/></svg>
+{%- endcapture -%}
+
+{%- liquid
+  assign is_size = false
+  assign size_trigger = 'products.general.size_trigger' | t | downcase
+  assign downcased_option = option.name | downcase
+
+  if downcased_option contains size_trigger
+    assign is_size = true
+  endif
+
+  # Check if this is a color option for image swatches
+  assign is_color = false
+  assign color_triggers = 'color,Color,Kolor' | split: ','
+  assign downcased_option = option.name | downcase
+
+  for trigger in color_triggers
+    assign downcased_trigger = trigger | downcase
+    if downcased_option contains downcased_trigger
+      assign is_color = true
+      break
+    endif
+  endfor
+
+  # Check if this color option has variants with images
+  assign has_variant_images = false
+  if is_color
+    assign option_index = forloop.index0
+    for variant in product.variants
+      if variant.image and variant.options[option_index] != blank
+        assign has_variant_images = true
+        break
+      endif
+    endfor
+  endif
+-%}
+
+<div class="variant-wrapper js" data-type="button">
+  <div style="display: flex; align-items: center; justify-content: flex-start; gap: 10px; width: 100%;margin-top: 10px;"> 
+  <label style="min-width: fit-content;"
+  {% if option.name contains "Size" or option.name contains "size" %}
+    id="size__charts_snipped"
+  {% endif %}
+  class="variant__label size__charts_snipped
+    {% if option.name == 'Default' or option.name == 'Title' %} hidden-label{% endif %}
+    {% unless variant_labels %} hidden-label{% endunless %}"
+  for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ forloop.index0 }}">
+  {{ option.name }} 
+
+  
+    {%- if is_color and has_variant_images -%}
+      <span class="variant__label-info">
+        &mdash;
+        <span
+          data-variant-color-label
+          data-index="{{ forloop.index0 }}"
+          data-option-index="{{ forloop.index0 }}">
+          {{ option.selected_value }}
+        </span>
+      </span>
+    {%- endif -%}
+  </label>
+  {% if  option.name contains  "Size"  or option.name contains  "size"  or option.name contains  "Rozmiar"  or option.name contains  "rozmiar"  or option.name contains  "maat"  or option.name contains  "Maat"    %}
+  {%- if product.metafields.custom.size_chart.value.content != blank -%}
+    <div style="
+    margin-bottom: 10px;
+">
+
+                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-size-chart" viewBox="0 0 64 64">
+<path d="M22.39 33.53c-7.46 0-13.5-3.9-13.5-8.72s6-8.72 13.5-8.72 13.5 3.9 13.5 8.72a12 12 0 0 1-.22 1.73"/><ellipse cx="22.39" cy="24.81" rx="3.28" ry="2.12"/><path d="M8.89 24.81V38.5c0 7.9 6.4 9.41 14.3 9.41h31.92V33.53H22.39m24.39 0v7.44m-8.13-7.44v7.44m-8.13-7.44v7.44m-8.13-7.44v7.44"/></svg>
+
+    {%- render
+      'tool-tip-trigger',
+      title: 'Size chart',
+      content: product.metafields.custom.size_chart.value.content,
+      context: 'size-chart'
+    -%}
+    </div>
+    {% endif %}
+
+  {% endif %}
+  </div>
+  {%- assign option_index_num = forloop.index -%}
+  <fieldset class="variant-input-wrap"
+    name="{{ option.name }}"
+    data-index="option{{ option_index_num }}"
+    data-handle="{{ option.name | handleize }}"
+    id="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ forloop.index0 }}">
+    <legend class="hide">{{ option.name }}</legend>
+    {%- for value in option.values -%}
+      {%- liquid
+        assign product_available = true
+        if product.options.size == 1
+          assign product_available = product.variants[forloop.index0].available
+        endif
+
+        # Find variant with this option value to get its image
+        assign variant_image = null
+        assign variant_id = null
+        for variant in product.variants
+          if variant.options[option_index] == value and variant.image
+            assign variant_image = variant.image
+            assign variant_id = variant.id
+            break
+          endif
+        endfor
+      -%}
+      <div
+        class="variant-input"
+        data-index="option{{ option_index_num }}"
+        data-value="{{ value | escape }}">
+        <input type="radio"
+          form="{{ form_id }}"
+          {% if option.selected_value == value %} checked="checked"{% endif %}
+          value="{{ value | escape }}"
+          data-index="option{{ option_index_num }}"
+          name="{{ option.name }}"
+          data-variant-input
+          class="{% unless product_available %} disabled{% endunless %}{% if is_color and has_variant_images %} variant__input--image-swatch{% endif %}"
+          {% if is_color and has_variant_images and variant_image %} data-variant-image="{{ variant_image | img_url: '800x' }}"{% endif %}
+          {% if is_color and has_variant_images and variant_id %} data-variant-id="{{ variant_id }}"{% endif %}
+          {% if is_color and has_variant_images %} data-color-name="{{ value | escape }}"{% endif %}
+          {% if is_color and has_variant_images %} data-color-index="{{ option_index }}"{% endif %}
+          id="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}">
+        {%- if is_color and has_variant_images and variant_image -%}
+          <label
+            for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"
+            class="variant__button-label image-swatch image-swatch--variant{% unless product_available %} disabled{% endunless %}"
+            style="background-image: url({{ variant_image | img_url: 'master' }}); background-size: cover; background-position: center; width: 58px; height: 58px; border-radius: 4px; border: 2px solid #ddd; display: inline-block; cursor: pointer; margin-right: 8px; margin-bottom: 8px;"
+            data-variant-image-large="{{ variant_image | img_url: 'master' }}"
+            data-variant-id="{{ variant_id }}"
+            title="{{ value | escape }}"
+          >
+            <span class="visually-hidden">{{ value | escape }}</span>
+          </label>
+        {%- else -%}
+          <label
+            for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"
+            class="variant__button-label{% unless product_available %} disabled{% endunless %}">{{ value | escape }}</label>
+        {%- endif -%}
+      </div>
+    {%- endfor -%}
+  </fieldset>
+</div>
+  
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Handle image swatch variant selection
+  const imageSwatches = document.querySelectorAll('.image-swatch--variant');
+  
+  imageSwatches.forEach(function(swatch) {
+    swatch.addEventListener('click', function(e) {
+      const variantImageLarge = this.dataset.variantImageLarge;
+      const variantId = this.dataset.variantId;
+      
+      // Update main product image if it exists
+      const mainProductImage = document.querySelector('.product__image img, .product-main-slide img, .product__media img');
+      if (mainProductImage && variantImageLarge) {
+        mainProductImage.src = variantImageLarge;
+        if (mainProductImage.srcset) {
+          mainProductImage.srcset = variantImageLarge;
+        }
+      }
+      
+      // Update variant label text
+      const variantLabel = document.querySelector('[data-variant-color-label]');
+      if (variantLabel) {
+        const selectedValue = this.title || this.textContent.trim();
+        variantLabel.textContent = selectedValue;
+      }
+      
+      // Update active states for image swatches in the same fieldset
+      const fieldset = this.closest('.variant-input-wrap');
+      if (fieldset) {
+        const allSwatches = fieldset.querySelectorAll('.image-swatch--variant');
+        allSwatches.forEach(function(s) {
+          s.style.border = '1px solid #ddd';
+          s.style.opacity = '1';
+        });
+        
+        // Highlight selected swatch
+        this.style.border = '1px solid #000';
+        this.style.opacity = '1';
+      }
+    });
+    
+    // Add hover effects
+    swatch.addEventListener('mouseenter', function() {
+      if (this.style.border !== '1px solid #000') {
+        this.style.opacity = '1';
+        this.style.transform = 'scale(1.05)';
+        this.style.transition = 'all 0.2s ease';
+      }
+    });
+    
+    swatch.addEventListener('mouseleave', function() {
+      if (this.style.border !== '1px solid #000') {
+        this.style.opacity = '1';
+      }
+      this.style.transform = 'scale(1)';
+    });
+  });
+  
+  // Initialize swatch states
+  imageSwatches.forEach(function(swatch) {
+    const input = document.querySelector(`#${swatch.getAttribute('for')}`);
+    if (input && input.checked) {
+      swatch.style.border = '1px solid #000';
+      swatch.style.opacity = '1';
+    } else {
+      swatch.style.opacity = '1';
+    }
+    swatch.style.transition = 'all 0.2s ease';
+  });
+});
+</script>

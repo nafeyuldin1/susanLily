@@ -1,0 +1,543 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "custom_qdeKrj": {
+          "type": "custom",
+          "settings": {
+            "code": "<div class=\"product-block\">\n                      <div class=\"product-block product-block--sales-point\">\n  <ul class=\"sales-points\">\n    <!-- Bulletpoint 1 nu op plek 1 (Free Shipping) -->\n    <li class=\"sales-point\">\n      <span class=\"icon-and-text\">\n        <svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-truck\" width=\"22\" height=\"24\" viewBox=\"0 0 64 64\">\n          <defs>\n            <style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style>\n          </defs>\n          <path class=\"cls-1\" d=\"M17 47.72H7.38V21h33.14v26.72H24.44M45.92 47.72h-5.4V34.9h17.1v12.82h-4.23M57.62 34.9l-6.41-8.56H40.52\"></path>\n          <circle class=\"cls-1\" cx=\"20.74\" cy=\"48.26\" r=\"3.74\"></circle>\n          <path class=\"cls-1\" d=\"M45.92 47.73a3.82 3.82 0 1 1 0 .37v-.37\"></path>\n        </svg>\n        <span>Free delivery in Australia</span>\n      </span>\n    </li>\n\n    <!-- Bulletpoint 2 nu op plek 2 (Pay securely) -->\n    <li class=\"sales-point\">\n      <span class=\"icon-and-text\">\n        <svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-shield\" viewBox=\"0 0 64 64\">\n          <path d=\"M21.18 31.69 28.54 39l15.91-15.88\" style=\"fill:none;stroke:#000;stroke-width:2px;\"></path>\n          <path d=\"M53 12.54v15.24a31.41 31.41 0 0 1-3.7 14.95A25.46 25.46 0 0 1 32 56a25.46 25.46 0 0 1-17.3-13.27A31.41 31.41 0 0 1 11 27.78V12.54C24.88 13.67 32 8 32 8s7.12 5.67 21 4.54Z\" style=\"fill:none;stroke:#000;stroke-width:2px;\"></path>\n        </svg>\n        <span>Pay safely with Creditcard &amp; Paypal</span>\n      </span>\n    </li>\n\n    <!-- Bulletpoint 3 nu op plek 3 (Money-Back) -->\n    <li class=\"sales-point\">\n      <span class=\"icon-and-text\">\n        <img class=\"icon\" src=\"https://cdn.shopify.com/s/files/1/0885/0240/3397/files/product-return.webp?v=1734439236\" alt=\"Money back logo\" width=\"22\" height=\"22\">\n        <span>30 Day Money-Back Guarantee</span>\n      </span>\n    </li>\n\n    <!-- Bulletpoint 4 vervangen door knipperend bolletje -->\n    <li class=\"sales-point\">\n      <span class=\"icon-and-text\">\n<!-- Bulletpoint 4: Flashing dot with dynamic stock number -->\n</span></li><li class=\"sales-point\">\n  <span class=\"icon-and-text\">\n    <!-- Pulsing dot -->\n    <div class=\"nl_voorraad\">\n      <span class=\"rood_icoon icoon--voorraad\"></span>\n    </div>\n    <span class=\"random-number\">Only <span id=\"stockNumber\">4</span> left in stock</span>\n  </span>\n</li>\n  </ul>\n</div>\n\n<style>\n  /* Basis uitlijning voor desktop en mobiel */\n\n  .sales-points {\n      list-style: none;\n      padding: 0;\n      margin: 0;\nmargin-bottom:-60px;  }\n\n  .sales-point {\n      display: flex;\n      align-items: center;\n      margin-bottom: 10px;\n  }\n\n  .icon-and-text {\n      display: flex;\n      align-items: center;\n      gap: 8px;\n  }\n\n  .icon {\n      width: 22px;\n      height: 22px;\n  }\n\n  /* Stijl voor het knipperende bolletje */\n  @keyframes voorraad-pulse {\n      0% {\n          opacity: 0.5;\n      }\n      100% {\n          transform: scale(3.0);\n          opacity: 0;\n      }\n  }\n\n  span.rood_icoon {\n      display: inline-block;\n      position: relative;\n      height: 25px;\n      width: 25px;\n      margin-left:2px; /* Verplaats alleen de icon naar links */\n  }\n\n  .icoon--voorraad:before {\n      animation: voorraad-pulse 2s linear infinite;\n  }\n\n  .icoon--voorraad:after,\n  .icoon--voorraad:before {\n      width: 9px;\n      height: 9px;\n      background: #FF0000; /* Dot kleur rood */\n      border-radius: 9px;\n      position: absolute;\n      left: 0;\n      top: 0;\n      content: \"\";\n      margin: 8px;\n  }\n.random-number {\nmargin-top: -10px;\nmargin-left: 9px;\n}\n  .nl_voorraad span {\nmargin-top: -10px;\n}\n\n  .nl_voorraad {\n      display: flex;\n      align-items: center;\n      letter-spacing: -.5px;\n  }\n\n  /* Pas de margin alleen voor de vierde bulletpoint aan */\n  .sales-point:nth-child(4) .icon-and-text {\n      gap: 16px; /* Verhoog de ruimte tussen de icon en de tekst */\n  }\n\n  /* Zorg ervoor dat alles links blijft staan, ook op mobiel */\n  @media (max-width: 768px) {\n      .product-block {\n          justify-content: flex-start;\n          text-align: left;\n      }\n\n\n      .sales-point {\n          justify-content: flex-start;\n\n      }\n  }\n</style>\n\n<script>\n  function generateRandomNumber() {\n      var numbers = [4, 5, 6]; // Possible stock numbers\n      var randomIndex = Math.floor(Math.random() * numbers.length);\n      document.getElementById(\"stockNumber\").textContent = numbers[randomIndex];\n  }\n\n  // Run once on page load\n  generateRandomNumber();\n</script>\n                    </div>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "dropdown",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "custom_7b9774": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<div class=\"clearance-banner-container\">\n  <div class=\"clearance-banner\">\n    <!-- SVG Icoon (Prijskaartje / Product Tag) -->\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n      <path d=\"M21.41 11.58l-9-9A2 2 0 0 0 10 2H4a2 2 0 0 0-2 2v6a2 2 0 0 0 .59 1.41l9 9a2 2 0 0 0 2.83 0l6-6a2 2 0 0 0-.01-2.83zM7.5 8A1.5 1.5 0 1 1 9 6.5 1.5 1.5 0 0 1 7.5 8z\"></path>\n    </svg>\n    Today Only – Cost Price!\n  </div>\n</div>\n<style>\n  .clearance-banner-container {\n    display: flex;\n    justify-content: flex-start; /* Links uitlijnen */\n    margin-top: 5px; /* Verhoogde ruimte boven de banner */\n    margin-bottom: 5px; /* Verlaagde ruimte onder de banner */\n  }\n\n  .clearance-banner {\n    display: flex;\n    align-items: center;\n    background-color: #eaf8e4; /* Achtergrondkleur */\n    color: #1a7f38; /* Tekstkleur */\n    font-weight: bold;\n    font-size: 16px; /* Kleinere tekst */\n    padding: 8px 14px; /* Kleiner formaat */\n    border-radius: 6px;\n    text-transform: uppercase;\n    gap: 6px;\n    width: fit-content;\n  }\n\n  .clearance-banner svg {\n    width: 18px; /* Kleinere icon */\n    height: 18px;\n    fill: #1a7f38; /* Kleur van het icoon */\n  }\n</style>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "custom_PKd7PL": {
+          "type": "custom",
+          "settings": {
+            "code": "<div class=\"payment-section\">\n  <div class=\"payment-text\" style=\"text-align: center; margin: 10px 0;\">\n    Pay safely with your preferred payment method\n  </div>\n  {%- unless shop.enabled_payment_types == empty -%}\n  <ul class=\"inline-list payment-icons footer__section\">\n    {%- for type in shop.enabled_payment_types -%}\n    <li class=\"icon--payment\">\n      {{ type | payment_type_svg_tag }}\n    </li>\n    {%- endfor -%}\n  </ul>\n  {%- endunless -%}\n</div>\n\n<style>\n.payment-section {\n  text-align: center;\n}\n\n.payment-text {\n  margin-bottom: 8px; /* Reduced spacing between text and icons on desktop */\n}\n\n.inline-list.payment-icons {\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap; /* Allow icons to wrap if needed */\n  padding: 0;\n  list-style: none;\n}\n\n.icon--payment {\n  margin: 0 3px; /* Reduced spacing between icons */\n  transform: scale(0.9); /* Reduce icon size by 10% */\n}\n\n/* Mobile-specific adjustments */\n@media (max-width: 767px) {\n  .payment-text {\n    font-size: 14px; /* Maintain font size for mobile */\n    margin-bottom: 15px; /* Maintain mobile spacing */\n  }\n\n  .inline-list.payment-icons {\n    flex-wrap: wrap; /* Ensure icons wrap nicely */\n    gap: 0px; /* Reduced consistent spacing for mobile */\n  }\n\n  .icon--payment {\n    margin: 0; /* Remove individual margins for better control */\n    transform: scale(0.8); /* Maintain reduced icon size */\n  }\n}\n</style>"
+          }
+        },
+        "custom_TN9C7q": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<div class=\"product-info-block text-box\" style=\"background: #fbeae5; color: #AE0027; padding:8px;\"><div class=\"rte cf\"><p><strong>Only a few left in stock at this price – add to cart now to secure yours!</strong> \n<br></p></div></div>"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "tab_YFJFMm": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping information",
+            "content": "<p><strong>Free Shipping with Australia Post: </strong>We are happy to ship your order anywhere in Australia with free shipping. </p><p><strong>Shipping with tracking:</strong> You will receive a tracking number via email as soon as we ship the package. </p>",
+            "page": ""
+          }
+        },
+        "tab_8fT6r7": {
+          "type": "tab",
+          "settings": {
+            "title": "returns",
+            "content": "<p>If you are not in LOVE with your purchase, let us know within 30 days of receiving your item and you will get your money back without stress.</p>",
+            "page": ""
+          }
+        },
+        "tab_fhF3Px": {
+          "type": "tab",
+          "settings": {
+            "title": "7280+ SATISFIED CUSTOMERS",
+            "content": "<p>Fiona Boutique has over 7280+ happy customers, and our customers rate us 4.7/5.0.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "custom_qdeKrj",
+        "variant_picker",
+        "custom_7b9774",
+        "buy_buttons",
+        "custom_PKd7PL",
+        "custom_TN9C7q",
+        "description",
+        "tab_YFJFMm",
+        "tab_8fT6r7",
+        "tab_fhF3Px"
+      ],
+      "custom_css": [
+        ".product__price--compare {display: inline-block; padding-right: 5px; -webkit-text-decoration: line-through; text-decoration: line-through; color: black;}",
+        ".on-sale {color: #c00;}",
+        ".product__price-savings {background-color: #eaf8e4; color: #1a7f38; font-weight: bold; font-size: 16px; padding: 4px 8px; border-radius: 4px;}",
+        ".variant-input-wrap label {height: 50px; width: 50px;}",
+        ".btn--full {padding-top: 15px; padding-bottom: 15px; padding-right: 100px; padding-left: 100px; margin-bottom: -21px;}"
+      ],
+      "settings": {
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "below",
+        "thumbnail_height": "fixed",
+        "thumbnail_arrows": false,
+        "mobile_layout": "full",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "text_and_image_b8FFRV": {
+      "type": "text-and-image",
+      "name": "t:sections.text-and-image.presets.image_with_text.name",
+      "settings": {
+        "image": "shopify://shop_images/KFUgPjIxR9eBz9dvkO4dFQ.webp",
+        "image_mask": "none",
+        "image2": "shopify://shop_images/qlWCSkdCT0Gq7-4FdMhtzQ.jpg",
+        "image2_mask": "none",
+        "subtitle": "HASSLE-FREE",
+        "title": "Money back Guarantee",
+        "text": "<p>We stand behind our products. If you don't love your purchase for any reason, let us know within 30 days of receiving your item.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "1742643651b9090556": {
+      "type": "apps",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "testimonials_AQFFHT": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_khi3xh": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>My favorite store in Wellington for over 10 years! Always find something unique at Wellington Trends.</p>",
+            "author": "James S.",
+            "author_info": "Sydney"
+          }
+        },
+        "testimonial_9gk94M": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Amazing service and a gorgeous selection. Congrats on 23 stylish years!</p>",
+            "author": "Ethan L.",
+            "author_info": "Brisbane"
+          }
+        },
+        "testimonial_4nRpic": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>I always get compliments on my outfits – all from here!</p>",
+            "author": "Alexander L.",
+            "author_info": "Perth"
+          }
+        },
+        "testimonial_zBftPq": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Whether it’s basics or something special, I always find it at Wellington Trends. A gem in the heart of the city!</p>",
+            "author": "Levi R.",
+            "author_info": "Melbourne"
+          }
+        },
+        "testimonial_NkHAMW": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>A store with soul. 23 years and still surprising. Love it!</p>",
+            "author": "Max M.",
+            "author_info": "Adelaide"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_khi3xh",
+        "testimonial_9gk94M",
+        "testimonial_4nRpic",
+        "testimonial_zBftPq",
+        "testimonial_NkHAMW"
+      ],
+      "settings": {
+        "title": "What Our Customers Say",
+        "align_text": "center",
+        "round_images": true,
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "Others also bought",
+        "related_count": 6,
+        "products_per_row": 5
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "rich_text_fBPQ6b": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Kjp9FR": {
+          "type": "heading",
+          "settings": {
+            "title": "Productspecificaties"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Kjp9FR"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".bg-product-specificate h2 {text-transform: none;}",
+        "@media (max-width: 769px) {.bg-product-specificate h2 {text-transform: none; font-size: 18px; font-weight: 700; }}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "advanced_content_8xgThm": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_GpiEVH": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "code": "<style>\n\n\n\n.content-block{\n  display:flex;\nalign-items:center;\n\n\n}\n\n\n.icon-wrapper>img{\n  position:relative;\n  top:10px;\n  max-width:68px;\n}\n.column1{\nwidth:100%;\n  max-width:25%;\n\n}\n@media only screen and (max-width: 800px) {\n.custom-container {\n      flex-direction: column; \n\n    }\n.column1 {\nmax-width:100% !important;\n}\n}\n</style>\n\n<div style=\"display:flex; align-items:center; justify-content:center; gap:20px !important;\" class=\"custom-container\">\n  \n  <div  class=\"column1\">\n          <div  class=\"content-block\">\n            <div class=\"icon-wrapper\">\n              <img src=\"https://cdn.shopify.com/s/files/1/2707/0176/files/ICONOmarcassudorMOVIMIENTO.gif?v=1632989458\" alt=\"\">\n            </div>\n            <div class=\"text-wrapper\">\n               <p><strong>Maximum flexibility</strong><br>\n                    Comfortable fit and made from high-quality fabrics, with durability as a priority.\n                  </p>\n            </div>\n          </div>\n        </div>\n    \n  <div class=\"column1\">\n          <div class=\"content-block\">\n            <div class=\"icon-wrapper\">\n              <img src=\"https://cdn.shopify.com/s/files/1/2707/0176/files/ICONOplanchaMOVIMIENTO.gif?v=1632989458\" alt=\"\">\n            </div>\n            <div class=\"text-wrapper\">\n               <p><strong>Wrinkle-free</strong><br>\n                   No more ironing: machine washable, hang it up, and you're done.\n                  </p>\n            </div>\n          </div>\n        </div>\n    \n  <div class=\"column1\">\n          <div class=\"content-block\">\n            <div class=\"icon-wrapper\">\n              <img src=\"https://cdn.shopify.com/s/files/1/2707/0176/files/ICONOtranspirableMOVIMIENTo.gif?v=1632989458\" alt=\"\">\n            </div>\n            <div class=\"text-wrapper\">\n               <p><strong>Breathable & Quick-drying fabric</strong><br>\n                    Fresh & comfortable all day long.\n                  </p>\n            </div>\n          </div>\n        </div>\n    \n  <div class=\"column1\">\n          <div class=\"content-block\">\n            <div class=\"icon-wrapper\">\n              <img src=\"https://cdn.shopify.com/s/files/1/2707/0176/files/ICONOantibacterianoMOVIMIENTO.gif?v=1632989458\" alt=\"\">\n            </div>\n            <div class=\"text-wrapper\">\n               <p><strong>Odor-free</strong><br>\n                    Neutralizes the bacteria that cause body odor when we sweat.\n                  </p>\n            </div>\n          </div>\n        </div>\n    \n</div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_GpiEVH"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "text_columns_zrQrWM": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_JYJbmm": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 70,
+            "title": "Expresslevering wereldwijd",
+            "text": "<p>We leveren wereldwijd met een veilige, getraceerde verzendmethode, voor de snelste en meest betrouwbare service. Gratis verzending voor bestellingen van meer dan €100 in Nederland, België en Duitsland | €150 voor de rest van de wereld.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_ViKUfr": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 70,
+            "title": "Koop nu, betaal later",
+            "text": "<p>Klarna Pay Later geeft je extra flexibiliteit bij het betalen van je bestelling omdat je binnen 30 dagen kunt betalen. Probeer je broek eerst uit en beslis dan of je hem wilt houden. </p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_hpc7VW": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 70,
+            "title": "14 dagen retour",
+            "text": "<p>Past niet? - Geen probleem! Je kunt altijd retourneren of ruilen. We bieden een retour- of omruilbeleid van 14 dagen als je om wat voor reden dan ook niet tevreden bent met je bestelling.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_JYJbmm",
+        "text_block_ViKUfr",
+        "text_block_hpc7VW"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "ss_scrolling_images_JAiPy6": {
+      "type": "ss-scrolling-images",
+      "blocks": {
+        "image_PwTmiT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WyM97io0RVK5OirtKHR1mg.webp",
+            "url": ""
+          }
+        },
+        "image_Cac6hk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/kuhTkZHeQeipON_snLomUQ.jpg",
+            "url": ""
+          }
+        },
+        "image_PYmCxz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/OiOVRvsdSf2I_JfBR4R2sw.webp",
+            "url": ""
+          }
+        },
+        "image_P3Dj7b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/gkwxhzG5TnqWrpU3WhP55g.webp",
+            "url": ""
+          }
+        },
+        "image_dcRYgy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cZkbVNGhT8STEP7jCVvGLw.webp",
+            "url": ""
+          }
+        },
+        "image_rtY9Gz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wDURmmE8S8mh_0SUIj5FTg.webp",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_PwTmiT",
+        "image_Cac6hk",
+        "image_PYmCxz",
+        "image_P3Dj7b",
+        "image_dcRYgy",
+        "image_rtY9Gz"
+      ],
+      "disabled": true,
+      "name": "SS - Scrolling images",
+      "settings": {
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 0,
+        "heading_height": 50,
+        "heading_align": "center",
+        "slider_speed": 29,
+        "slider_gap": 54,
+        "slider_gap_mobile": 10,
+        "slider_mt": 50,
+        "slider_direction": "left",
+        "pause_hover": false,
+        "image_width_desktop": 300,
+        "image_width_mobile": 300,
+        "image_height_desktop": 260,
+        "image_height_mobile": 330,
+        "image_radius": 10,
+        "use_content": true,
+        "content_position": "center",
+        "content_max_width": 340,
+        "content_max_width_mobile": 340,
+        "content_padding_vertical": 30,
+        "content_padding_horizontal": 30,
+        "content_distance": 60,
+        "content_radius": 10,
+        "content_border_thickness": 0,
+        "use_shadow": true,
+        "text": "<p>A Few of Our Happy Customers</p>",
+        "text_custom": false,
+        "text_font": "assistant_n4",
+        "text_size": 24,
+        "text_height": 50,
+        "heading_color": "#000000",
+        "content_bg": "#ffffff",
+        "content_border_color": "#000000",
+        "text_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "text_with_icons_eHc3Ad": {
+      "type": "text-with-icons",
+      "blocks": {
+        "text_block_Db7iqw": {
+          "type": "text_block",
+          "settings": {
+            "icon": "truck",
+            "title": "Free Shipping",
+            "text": "<p>Across Australia</p>"
+          }
+        },
+        "text_block_LQL4NG": {
+          "type": "text_block",
+          "settings": {
+            "icon": "wallet",
+            "title": "Money-Back Guarantee",
+            "text": "<p>30 Days of Hassle-Free Returns</p>"
+          }
+        },
+        "text_block_d4NHeA": {
+          "type": "text_block",
+          "settings": {
+            "icon": "ribbon",
+            "title": "Always Set the Standard",
+            "text": "<p>We Always Set the Standard</p>"
+          }
+        },
+        "text_block_FcNXKg": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "title": "24/7 Support",
+            "text": "<p>We’re Always Here to Help</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_Db7iqw",
+        "text_block_LQL4NG",
+        "text_block_d4NHeA",
+        "text_block_FcNXKg"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "divider": false
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "recent_count": 5
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "17429414560c895074": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "1745574488f2e266ac": {
+      "type": "apps",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "text_and_image_b8FFRV",
+    "1742643651b9090556",
+    "testimonials_AQFFHT",
+    "product-recommendations",
+    "sub",
+    "rich_text_fBPQ6b",
+    "advanced_content_8xgThm",
+    "text_columns_zrQrWM",
+    "ss_scrolling_images_JAiPy6",
+    "text_with_icons_eHc3Ad",
+    "recently-viewed",
+    "collection-return",
+    "17429414560c895074",
+    "1745574488f2e266ac"
+  ]
+}

@@ -1,0 +1,87 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "t:sections.header-group.name",
+  "sections": {
+    "header": {
+      "type": "header",
+      "blocks": {
+        "header-0": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Ontwerp_zonder_titel_22.png",
+            "logo-inverted": "shopify://shop_images/Ontwerp_zonder_titel_22.png",
+            "desktop_logo_width": 300,
+            "mobile_logo_width": 200
+          }
+        }
+      },
+      "block_order": [
+        "header-0"
+      ],
+      "settings": {
+        "main_menu_link_list": "home",
+        "hover_menu": true,
+        "mega_menu_images": false,
+        "main_menu_alignment": "center",
+        "header_style": "sticky",
+        "sticky_index": false,
+        "sticky_collection": false,
+        "toolbar_menu": "",
+        "toolbar_social": false,
+        "show_locale_selector": false,
+        "show_currency_selector": false,
+        "show_currency_flags": false
+      }
+    },
+    "announcement": {
+      "type": "announcement",
+      "blocks": {
+        "announcement_J9h6nj": {
+          "type": "announcement",
+          "settings": {
+            "text": "FREE SHIPPING ACROSS CANADA - TODAY ONLY",
+            "link_text": "",
+            "link": ""
+          }
+        },
+        "announcement_Bw3BCm": {
+          "type": "announcement",
+          "settings": {
+            "text": "REVIVAL SALE ENDS TONIGHT - UP TO 80% OFF",
+            "link_text": "",
+            "link": ""
+          }
+        },
+        "announcement_8mwd8V": {
+          "type": "announcement",
+          "settings": {
+            "text": "30-DAY MONEY BACK GUARANTEE",
+            "link_text": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_J9h6nj",
+        "announcement_Bw3BCm",
+        "announcement_8mwd8V"
+      ],
+      "settings": {
+        "announcement_compact": true
+      }
+    }
+  },
+  "order": [
+    "header",
+    "announcement"
+  ]
+}

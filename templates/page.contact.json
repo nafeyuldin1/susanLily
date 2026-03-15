@@ -1,0 +1,173 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "CONTACT US"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>We’re here to help 💌</p><p>If you have a question about your order, sizing, or one of our collections, our team is always happy to assist. Simply send us an email and we’ll get back to you within <strong>48 hours.</strong></p><p>📘 <strong>Email us at:</strong> info@susanandlily.com</p><p>For quick answers, don’t forget to check our FAQ page, where you’ll find helpful information on shipping, returns and more.</p><p>Your satisfaction means everything to us, and we’ll make sure you feel looked after every step of the way.</p><p>Thank you for choosing Susan & Lily Toronto we’re delighted to have you as part of our community.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "custom_css": [
+        "h2 {text-transform: unset;}",
+        ".theme-block .rte {font-size: 12px; line-height: 18px;}"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "disabled": true,
+      "custom_css": [
+        ".contact-form button {font-size: 12px; line-height: 19px; letter-spacing: 0.6px;}"
+      ],
+      "settings": {
+        "title": "",
+        "text": "",
+        "show_phone": false,
+        "narrow_column": true
+      }
+    },
+    "faq_jxYbF9": {
+      "type": "faq",
+      "blocks": {
+        "question_TY9LpR": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer free shipping?",
+            "text": "<p>Yes, we offer Free Premium Shipping, along with Track & Trace, because we value you as a customer and want to provide you with the best service.</p>"
+          }
+        },
+        "question_eCKrqR": {
+          "type": "question",
+          "settings": {
+            "title": "Can I return the item(s) if I don’t like them?",
+            "text": "<p>Yes, you can return your order within 30 days of receiving it.</p>"
+          }
+        },
+        "question_pDHBVA": {
+          "type": "question",
+          "settings": {
+            "title": "How can I track my order?",
+            "text": "<p>You can track your order by entering the tracking number you received from us on the \"TRACK YOUR ORDER\" page. Once you’ve entered the number and clicked \"TRACK,\" you will see the status of your order.</p>"
+          }
+        },
+        "question_J6ftVD": {
+          "type": "question",
+          "settings": {
+            "title": "What payment methods do you accept?",
+            "text": "<p>You can pay safely and securely with the following payment methods: Credit Card, Visa, Mastercard, American Express, Apple Pay, Google Pay, Maestro, and Shop Pay.</p>"
+          }
+        },
+        "question_QUrB4h": {
+          "type": "question",
+          "settings": {
+            "title": "Will I receive a confirmation email after placing an order?",
+            "text": "<p>Yes, once you've placed your order, a confirmation will be sent to your email inbox. If you don’t see it, feel free to reach out to our customer service team, we’re happy to help you right away.<br/><br/>Email:  info@susanandlily.com</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_TY9LpR",
+        "question_eCKrqR",
+        "question_pDHBVA",
+        "question_J6ftVD",
+        "question_QUrB4h"
+      ],
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "title": "Frequently Asked Questions"
+      }
+    },
+    "text_with_icons_njCm6K": {
+      "type": "text-with-icons",
+      "blocks": {
+        "text_block_FCdTTg": {
+          "type": "text_block",
+          "settings": {
+            "icon": "truck",
+            "title": "Free fast shipping",
+            "text": "<p>At Clara & Mae Dublin, we aim to provide maximum convenience for our customers and offer complimentary shipping across the United States!</p>"
+          }
+        },
+        "text_block_8HXzXM": {
+          "type": "text_block",
+          "settings": {
+            "icon": "wallet",
+            "title": "30-DAY MONEY-BACK GUARANTEE",
+            "text": "<p>At Clara & Mae Dublin, we offer a 30-day return period. This gives you plenty of time to return your item if you're not completely satisfied.</p>"
+          }
+        },
+        "text_block_7qdTXP": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "title": "Quality guarantee",
+            "text": "<p>At Clara & Mae Dublin, we always set the standards, ensuring the highest quality and service for our customers.</p>"
+          }
+        },
+        "text_block_BinrBc": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "title": "24/7 support",
+            "text": "<p>At Clara & Mae Dublin, we're always here to help, providing support whenever you need it.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_FCdTTg",
+        "text_block_8HXzXM",
+        "text_block_7qdTXP",
+        "text_block_BinrBc"
+      ],
+      "name": "t:common.text_with_icons.presets.text_with_icons.name",
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich-text",
+    "form",
+    "faq_jxYbF9",
+    "text_with_icons_njCm6K"
+  ]
+}

@@ -1,0 +1,208 @@
+
+
+{%- capture section_html -%}
+<div class="selluxe-stars-1 sec_{{ section.id }}">
+  <a href="#aus-tp-slider" class="reviews_stars">
+    <div class="stars">
+
+      {% assign rating = section.settings.tp_rating %}
+      <svg class="star-svg section_{{ section.id }}_star-svg" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 96" width="auto" height="{{ section.settings.star_rating_size }}">
+        <style>
+          .section_{{ section.id }}_star-svg .s0 { fill: {{ section.settings.trustpilot_color }} !important; }
+          .section_{{ section.id }}_star-svg .s1 { fill: {{ section.settings.trustpilot_disable_color }} !important; }
+          .section_{{ section.id }}_star-svg .s2 { fill: {{ section.settings.trustpilot_star_active_color }} !important; }
+        </style>
+        <g id="Trustpilot_rating">
+          {% for i in (1..5) %}
+            {% assign pos = i | minus: 1 %}
+            {% assign diff = rating | minus: i %}
+            <g transform="translate({{ pos | times: 104 }}, 0)">
+              {% if rating >= i %}
+                <rect width="96" height="96" class="s0"/>
+              {% elsif diff > -1 and diff < 0 %}
+                <rect x="0" y="0" width="48" height="96" class="s0"/>
+                <rect x="48" y="0" width="48" height="96" class="s1"/>
+              {% else %}
+                <rect width="96" height="96" class="s1"/>
+              {% endif %}
+              <path class="s2" d="m48 64.7l14.6-3.7 6.1 18.8zm33.6-24.3h-25.7l-7.9-24.2-7.9 24.2h-25.7l20.8 15-7.9 24.2 20.8-15 12.8-9.2z"/>
+            </g>
+          {% endfor %}
+        </g>
+      </svg>
+
+    </div>
+    <div class="ratings">
+      <span>{{ section.settings.text | replace: '[rating]', section.settings.tp_rating | replace: '[reviews]', section.settings.tp_reviews }}</span>
+    </div>
+  </a>
+</div>
+{%- endcapture -%}
+
+{%- if section.settings.custom_display -%}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var placeholder = document.getElementById('s-stars-1');
+  if (placeholder && !placeholder.hasAttribute('data-stars-loaded')) {
+    placeholder.insertAdjacentHTML('afterbegin', `{{ section_html | strip_newlines | replace: '"', '\\"' }}`);
+    placeholder.setAttribute('data-stars-loaded', 'true');
+  }
+});
+</script>
+{%- else -%}
+  {{ section_html }}
+{%- endif -%}
+
+<style>
+.sec_{{ section.id }} {
+  padding:{{ section.settings.padding_y }}px {{ section.settings.padding_x }}px;
+  margin-left:{{ section.settings.margin_left }}px;
+  margin-right:{{ section.settings.margin_right }}px;
+  margin-top: {{ section.settings.margin_top }}px;
+  margin-bottom: {{ section.settings.margin_bottom }}px;
+  background:{{ section.settings.block_background_color }};
+  border-radius:{{ section.settings.block_radius }}px;
+  width:100%;
+}
+@media screen and (min-width: {{ section.settings.block_max_width }}px) {
+  .sec_{{ section.id }} {
+    {% if section.settings.blcustom_width == true %}
+      max-width:{{ section.settings.block_max_width }}px;
+      margin-left:auto !important;
+      margin-right:auto !important;
+    {% endif %}
+  }
+}
+.sec_{{ section.id }} .reviews_stars {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+  {% if section.settings.desk_align == 'center' %}
+    justify-content:center;
+    text-align:center;
+  {% elsif section.settings.desk_align == 'right' %}
+    justify-content:right;
+    text-align:right;
+  {% else %}
+    justify-content:left;
+    text-align:left;
+  {% endif %}
+}
+.sec_{{ section.id }} .reviews_stars .stars {
+  display: flex;
+  gap: 1px;
+}
+.sec_{{ section.id }} .reviews_stars .ratings span {
+  white-space: nowrap;
+  font-size: {{ section.settings.font_size_desktop }}px;
+  line-height:{{ section.settings.line_hight_desktop }}px;
+  color:{{ section.settings.text_color }};
+}
+.sec_{{ section.id }} .star-svg {
+  height:{{ section.settings.star_size }}px;
+  width:auto;
+}
+@media(max-width: 767px) {
+  .sec_{{ section.id }} {
+    padding:{{ section.settings.padding_y_m }}px {{ section.settings.padding_x_m }}px;
+    margin-left:{{ section.settings.margin_left_m }}px;
+    max-width:calc(100% - ({{ section.settings.margin_left_m }}px * 2 ));
+    margin-top: {{ section.settings.margin_top_m }}px;
+    margin-bottom: {{ section.settings.margin_bottom_m }}px;
+    border-radius:{{ section.settings.block_radius_m }}px;
+  }
+  .sec_{{ section.id }} .reviews_stars .ratings span {
+    font-size: {{ section.settings.font_size_mobile }}px;
+    line-height:{{ section.settings.line_hight_mobile }}px;
+  }
+  .sec_{{ section.id }} .star-svg {
+    height:{{ section.settings.star_size_mobile }}px;
+    width:auto;
+  }
+  .sec_{{ section.id }} .reviews_stars {
+    {% if section.settings.mob_align == 'center' %}
+      justify-content:center;
+      text-align:center;
+    {% elsif section.settings.mob_align == 'right' %}
+      justify-content:right;
+      text-align:right;
+    {% else %}
+      justify-content:left;
+      text-align:left;
+    {% endif %}
+  }
+}
+</style>
+
+{% schema %}
+{
+  "name": "s-stars-1 (Trustpilot)",
+  "settings": [
+    { "type": "header", "content": "❓ Need help???", "info": "Simply click here to get support: [💬 Click for Support](https://selluxewebsites.com/support)" },
+    { "type": "header", "content": "1️⃣ Render section as block" },
+    { "type": "header", "content": "2️⃣ Turn on 'Render as Block'" },
+    { "type": "checkbox", "id": "custom_display", "label": "Render as Block", "default": false },
+    { "type": "header", "content": "3️⃣ Go to Product Blocks" },
+    { "type": "header", "content": "4️⃣ Add a Custom Liquid block and paste this:", "info": "<div id='s-stars-1'></div>" },
+    { "type": "header", "content": "⚙️ Customize Settings" },
+    { "type": "checkbox", "id": "blcustom_width", "label": "active custom width", "default": false },
+    { "type": "range", "id": "block_max_width", "label": "Overall width (px)", "info":"if custom width enable", "min": 600, "max": 1400, "step": 20, "default": 1400 },
+
+    { "type": "select", "id": "desk_align", "label": "alignment desktop", "default": "left", "options": [
+      { "value": "left", "label": "left" },
+      { "value": "center", "label": "center" },
+      { "value": "right", "label": "right" }
+    ]},
+
+    { "type": "select", "id": "mob_align", "label": "alignment mobile", "default": "left", "options": [
+      { "value": "left", "label": "left" },
+      { "value": "center", "label": "center" },
+      { "value": "right", "label": "right" }
+    ]},
+
+    { "type": "range", "id": "block_radius", "label": "block corner radius (px)", "min": 0, "max": 40, "step": 1, "default": 0 },
+    { "type": "range", "id": "block_radius_m", "label": "block corner radius (px)", "min": 0, "max": 40, "step": 1, "default": 0 },
+
+    { "type": "color", "id": "block_background_color", "label": "block background color", "default": "transparent" },
+    { "type": "color", "id": "trustpilot_color", "label": "Trustpilot star color", "default": "#00B67A" },
+    { "type": "color", "id": "trustpilot_star_active_color", "label": "Trustpilot star active color", "default": "#fff" },
+    { "type": "color", "id": "trustpilot_disable_color", "label": "Trustpilot star disable color", "default": "#ddd" },
+    { "type": "color", "id": "text_color", "label": "text color", "default": "#000" },
+
+    { "type": "range", "id": "star_size", "label": "Star size", "default": 20, "min": 10, "max": 64, "step": 1, "unit": "px" },
+    { "type": "range", "id": "star_size_mobile", "label": "Star size mobile", "default": 20, "min": 10, "max": 64, "step": 1, "unit": "px" },
+
+    { "type": "range", "id": "tp_rating", "label": "Star rating", "default": 4.5, "min": 0, "max": 5, "step": 0.5 },
+    { "type": "number", "id": "tp_reviews", "label": "Reviews", "default": 389 },
+
+    { "type": "inline_richtext", "id": "text", "label": "Text", "default": "[rating] | Based on [reviews]+ reviews" },
+
+    { "type": "range", "id": "font_size_desktop", "label": "Font size (desktop)", "default": 14, "min": 10, "max": 32, "step": 1, "unit": "px" },
+    { "type": "range", "id": "line_hight_desktop", "label": "line height (desktop)", "default": 18, "min": 10, "max": 32, "step": 1, "unit": "px" },
+
+    { "type": "range", "id": "font_size_mobile", "label": "Font size (mobile)", "default": 12, "min": 8, "max": 24, "step": 1, "unit": "px" },
+    { "type": "range", "id": "line_hight_mobile", "label": "line height (mobile)", "default": 16, "min": 10, "max": 32, "step": 1, "unit": "px" },
+
+    { "type": "header", "content": "section specing" },
+
+    {"type": "range","id":"padding_x","label":"Side padding (px)","min":0,"max":200,"step":2,"default":0},
+    {"type": "range","id":"padding_y","label":"top/bottom padding (px)","min":0,"max":200,"step":2,"default":0},
+    {"type": "range","id":"padding_x_m","label":"Side padding mobile(px)","min":0,"max":200,"step":2,"default":0},
+    {"type": "range","id":"padding_y_m","label":"top/bottom padding mobile (px)","min":0,"max":200,"step":2,"default":0},
+
+    {"type":"range","id":"margin_left","label":"Margin left","unit":"px","min":0,"max":100,"step":1,"default":0},
+    {"type":"range","id":"margin_right","label":"Margin right","unit":"px","min":0,"max":100,"step":1,"default":0},
+    {"type":"range","id":"margin_top","label":"Margin top","default":0,"min":-50,"max":50,"step":1,"unit":"px"},
+    {"type":"range","id":"margin_bottom","label":"Margin bottom","default":0,"min":-50,"max":50,"step":1,"unit":"px"},
+
+    {"type":"range","id":"margin_left_m","label":"Margin left right mobile","unit":"px","min":0,"max":100,"step":1,"default":0},
+    {"type":"range","id":"margin_top_m","label":"Margin top mobile","default":0,"min":-50,"max":50,"step":1,"unit":"px"},
+    {"type":"range","id":"margin_bottom_m","label":"Margin bottom mobile","default":0,"min":-50,"max":50,"step":1,"unit":"px"}
+  ],
+  "presets": [
+    { "name": "s-stars-1 (Trustpilot)", "category": "Selluxe" }
+  ]
+}
+{% endschema %}

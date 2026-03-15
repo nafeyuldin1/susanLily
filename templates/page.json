@@ -1,0 +1,72 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "faq_V4MHbH": {
+      "type": "faq",
+      "blocks": {
+        "question_rNYTQP": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer free shipping?",
+            "text": "<p>Yes, we offer Free Premium Shipping, along with Track & Trace, because we value you as a customer and want to provide you with the best service.</p>"
+          }
+        },
+        "question_UnjJ4K": {
+          "type": "question",
+          "settings": {
+            "title": "Can I return the item(s) if I don’t like them?",
+            "text": "<p>Yes, you can return your order within 30 days of receiving it.</p>"
+          }
+        },
+        "question_c8qQhM": {
+          "type": "question",
+          "settings": {
+            "title": "How can I track my order?",
+            "text": "<p>You can track your order by entering the tracking number you received from us on the \"TRACK YOUR ORDER\" page. Once you’ve entered the number and clicked \"TRACK,\" you will see the status of your order.</p>"
+          }
+        },
+        "question_bgqfRf": {
+          "type": "question",
+          "settings": {
+            "title": "What payment methods do you accept?",
+            "text": "<p>You can pay safely and securely with the following payment methods: Credit Card, Visa, Mastercard, American Express, Apple Pay, Google Pay, Maestro, and Shop Pay.</p>"
+          }
+        },
+        "question_FtXdfL": {
+          "type": "question",
+          "settings": {
+            "title": "Will I receive a confirmation email after placing an order?",
+            "text": "<p>Yes, once you've placed your order, a confirmation will be sent to your email inbox. If you don’t see it, feel free to reach out to our customer service team, we’re happy to help you right away.<br/><br/>Email:  info@susanandlily.com</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_rNYTQP",
+        "question_UnjJ4K",
+        "question_c8qQhM",
+        "question_bgqfRf",
+        "question_FtXdfL"
+      ],
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "title": "Frequently Asked Questions"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq_V4MHbH"
+  ]
+}

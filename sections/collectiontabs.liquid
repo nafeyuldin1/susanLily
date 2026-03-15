@@ -1,0 +1,255 @@
+{% comment %}
+  Collection Tabs Grid – Full Page Width Uniform Image Height with Custom Titles + View All Button
+{% endcomment %}
+
+<style>
+.collection-tabs__nav {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 30px;
+  list-style: none;
+  padding: 0;
+  overflow-x: auto;
+  margin-left: 0;
+  justify-content: center;
+}
+
+.collection-tabs__nav li {
+  cursor: pointer;
+  font-weight: 500;
+  padding-bottom: 5px;
+  white-space: nowrap;
+}
+
+.collection-tabs__nav li.active {
+  border-bottom: 2px solid #000;
+}
+
+.collection-tabs__content {
+  display: none;
+  width: 100%;
+}
+
+.collection-tabs__content.active {
+  display: block;
+}
+
+.collection-tabs__grid-title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.grid__item-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.collection-tabs .image-wrap {
+  width: 100%;
+  padding-bottom: 150%;
+  position: relative;
+}
+
+.collection-tabs .image-wrap img{
+  height: 100%;
+}
+
+.grid-product__image, .grid-product__secondary-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.collection-tabs__view-all {
+  text-align: center;
+  margin-top: 20px;
+}
+</style>
+
+<div class="index-section" data-section-id="{{ section.id }}">
+  <div class="collection-tabs page-width" data-section-id="{{ section.id }}">
+    {% if section.settings.heading != blank %}
+      <h2>{{ section.settings.heading }}</h2>
+    {% endif %}
+
+    <ul class="collection-tabs__nav">
+      {% for block in section.blocks %}
+        {% assign col = collections[block.settings.collection] %}
+        {% if col %}
+          <li class="tab-link {% if forloop.first %}active{% endif %}" data-tab="tab-{{ col.handle }}-{{ section.id }}">
+            <h2>{{ block.settings.custom_title | default: col.title }}</h2>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    {% for block in section.blocks %}
+      {% assign col = collections[block.settings.collection] %}
+      {% if col %}
+      <div id="tab-{{ col.handle }}-{{ section.id }}" class="collection-tabs__content {% if forloop.first %}active{% endif %}">
+
+        {% if block.settings.custom_title %}
+          <div class="collection-tabs__grid-title">{{ block.settings.custom_title }}</div>
+        {% else %}
+          <div class="collection-tabs__grid-title">{{ col.title }}</div>
+        {% endif %}
+
+        <div class="grid grid--uniform">
+          {% for product in col.products limit: section.settings.products_limit %}
+          <div class="grid__item grid-product small--one-half medium-up--one-quarter" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}" swatch-generated="{{ product.handle }}">
+            <div class="grid-product__content">
+
+              {% if product.compare_at_price > product.price %}
+                <div class="grid-product__tag grid-product__tag--sale">
+                  Save - {{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price }}%
+                </div>
+              {% endif %}
+
+              <!-- Product Images -->
+              <div class="grid__item-image-wrapper">
+                <div class="grid-product__image-mask">
+                  <div class="image-wrap">
+                    <image-element>
+                      <img src="{{ product.featured_image | image_url: width: 1080 }}" loading="lazy" class="grid-product__image" alt="{{ product.title }}" width="auto" height="auto">
+                    </image-element>
+                  </div>
+
+                  {% if product.images.size > 1 %}
+                    <div class="grid-product__secondary-image small--hide">
+                      <image-element>
+                        <img src="{{ product.images[1] | image_url: width: 1000 }}" loading="lazy" class="grid-product__image" alt="{{ product.title }}" width="auto" height="auto">
+                      </image-element>
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+
+              <!-- Variant Swatches -->
+              <variant-swatch-king style="max-width:100%;">
+                <div class="swatches swatches-type-collections hover-enabled">
+                  <div sa-group-position="top"></div>
+                  <div sa-options-position="default">
+                    {% for option in product.options_with_values %}
+                      <div option-name="{{ option.name }}" option-target="option{{ forloop.index }}">
+                        <div class="swatch-single swatch-view-stack">
+                          <input type="hidden" class="swatch-selector swatch-allow-animation" value="{{ option.values.first }}" swatch-option="option{{ forloop.index }}">
+                        </div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                  <div sa-group-position="bottom"></div>
+                </div>
+              </variant-swatch-king>
+
+              <a href="{{ product.url }}" class="grid-product__link">
+                <div class="grid-product__meta">
+                  <div class="grid-product__title grid-product__title--heading">{{ product.title }}</div>
+                  <div class="grid-product__price">
+                    {% if product.compare_at_price > product.price %}
+                      <span class="grid-product__price--original">{{ product.compare_at_price | money }}</span>
+                    {% endif %}
+                    {{ product.price | money }}
+                  </div>
+                </div>
+              </a>
+
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+        <!-- View All Button -->
+        <div class="collection-tabs__view-all">
+          <a href="{{ block.settings.view_all_url }}" class="pp-button-enter button-enter btn button styled-submit pp_enter_submit1">
+            {{ block.settings.view_all_text | default: 'View All' }}
+          </a>
+        </div>
+
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const section = document.querySelector('[data-section-id="{{ section.id }}"]');
+  if (!section) return;
+
+  const tabs = section.querySelectorAll('.tab-link');
+  const contents = section.querySelectorAll('.collection-tabs__content');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', function () {
+      tabs.forEach(t => t.classList.remove('active'));
+      contents.forEach(c => c.classList.remove('active'));
+      this.classList.add('active');
+      section.querySelector('#' + this.dataset.tab).classList.add('active');
+    });
+  });
+});
+</script>
+
+{% schema %}
+{
+  "name": "Collection Tabs Grid",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "Shop Collection"
+    },
+    {
+      "type": "range",
+      "id": "products_limit",
+      "label": "Products per tab",
+      "min": 4,
+      "max": 16,
+      "step": 1,
+      "default": 8
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection Tab",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Select Collection"
+        },
+        {
+          "type": "text",
+          "id": "custom_title",
+          "label": "Custom Collection Title"
+        },
+        {
+          "type": "text",
+          "id": "view_all_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "view_all_url",
+          "label": "Button URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection Tabs ",
+      "category": "Collections",
+      "blocks": [
+        { "type": "collection" }
+      ]
+    }
+  ]
+}
+{% endschema %}

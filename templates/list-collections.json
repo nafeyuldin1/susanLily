@@ -1,0 +1,70 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_pinyME": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CTM4cc": {
+          "type": "heading",
+          "settings": {
+            "title": "Collections"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CTM4cc"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "main": {
+      "type": "list-collections-template",
+      "blocks": {
+        "collection_RbJeRg": {
+          "type": "collection",
+          "settings": {
+            "collection": "dresses"
+          }
+        },
+        "collection_aJawmT": {
+          "type": "collection",
+          "settings": {
+            "collection": "jackets"
+          }
+        },
+        "collection_mBb4nF": {
+          "type": "collection",
+          "settings": {
+            "collection": "sweaters"
+          }
+        }
+      },
+      "block_order": [
+        "collection_RbJeRg",
+        "collection_aJawmT",
+        "collection_mBb4nF"
+      ],
+      "settings": {
+        "title_enable": false,
+        "display_type": "all",
+        "sort": "alphabetical",
+        "grid": "3"
+      }
+    }
+  },
+  "order": [
+    "rich_text_pinyME",
+    "main"
+  ]
+}

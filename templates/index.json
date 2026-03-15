@@ -1,0 +1,506 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "REVIVAL SALE",
+            "title_size": 60,
+            "subheading": "UP TO 80% OFF",
+            "link": "shopify://collections/all",
+            "link_text": "Shop now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/Een_ultra_realistische_8K_lifestyle-foto_van_twee_vrouwen_met_een_Canadees_uiterlijk_die_samen_staan_in_een_stijlvolle_gezellige_kledingboetiek_genaamd_Susan_Lily._De_moeder_ongeveer_b4158af4-7214-4352-8c43-9d26ceb10ea4.png",
+            "image_mobile": "shopify://shop_images/Zonder_titel_1324_x_1204_px.png",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0"
+      ],
+      "settings": {
+        "section_height": "100vh",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "rich_text_JaCdr7": {
+      "type": "rich-text",
+      "blocks": {
+        "text_W4T7V6": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<h2>About SUSAN & Lily</h2><p>From a small dream in Toronto, Susan & Lily has grown into a place where women feel at home.<br/><br/>For 10 years, we’ve curated timeless pieces inspired by comfort, quality, and everyday elegance.</p><p>The past year has been one of our hardest, which is why we’re opening our <strong>Revival Sale, </strong>a moment to reset, clear our collections, and move forward with renewed strength.</p><p>Thank you for standing by us through every chapter of our journey.</p><p><strong>Susan & Lily</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_W4T7V6"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "collectiontabs_RMDjmN": {
+      "type": "collectiontabs",
+      "blocks": {
+        "collection_aGCXHk": {
+          "type": "collection",
+          "settings": {
+            "collection": "dresses",
+            "custom_title": "",
+            "view_all_text": "View All",
+            "view_all_url": "shopify://collections/dresses"
+          }
+        },
+        "collection_kMEXBA": {
+          "type": "collection",
+          "settings": {
+            "collection": "jumpsuites",
+            "custom_title": "",
+            "view_all_text": "View All",
+            "view_all_url": "shopify://collections/jumpsuites"
+          }
+        }
+      },
+      "block_order": [
+        "collection_aGCXHk",
+        "collection_kMEXBA"
+      ],
+      "name": "Collection Tabs – Full Width Uniform Images with Custom Titles",
+      "settings": {
+        "heading": "",
+        "products_limit": 4
+      }
+    },
+    "collectiontabs_zNYLk4": {
+      "type": "collectiontabs",
+      "blocks": {
+        "collection_jybW7G": {
+          "type": "collection",
+          "settings": {
+            "collection": "pants",
+            "custom_title": "",
+            "view_all_text": "View All",
+            "view_all_url": "shopify://collections/pants"
+          }
+        },
+        "collection_Fe9c3F": {
+          "type": "collection",
+          "settings": {
+            "collection": "skirt",
+            "custom_title": "",
+            "view_all_text": "View All",
+            "view_all_url": "shopify://collections/skirt"
+          }
+        }
+      },
+      "block_order": [
+        "collection_jybW7G",
+        "collection_Fe9c3F"
+      ],
+      "name": "Collection Tabs – Full Width Uniform Images with Custom Titles",
+      "settings": {
+        "heading": "",
+        "products_limit": 4
+      }
+    },
+    "text_and_image_6iyYKh": {
+      "type": "text-and-image",
+      "name": "t:sections.text-and-image.presets.image_with_text.name",
+      "settings": {
+        "image": "shopify://shop_images/Zonder_titel_1324_x_1204_px.png",
+        "image_mask": "square",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "NICE TO MEET YOU, WE ARE SUSAN & LILY",
+        "text": "<p>✦ We are a small Canadese family brand founded by Susan, inspired by her daughter Lily.</p><p>✦ Since 2016 we’ve been creating timeless pieces with care and personal attention.</p><p>✦ Every order is handled thoughtfully and every customer means the world to us.<br/><br/>✦ This past year has been challenging, which is why we’re opening our Revival Sale a moment to reset, refresh our collections, and move forward with renewed strength. </p><p><em>Thank you for supporting us through every chapter of our journey.</em></p>",
+        "button_label": "About Us",
+        "button_link": "shopify://pages/about-us",
+        "button_style": "secondary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "right",
+        "divider": true,
+        "top_padding": false,
+        "bottom_padding": false,
+        "lazyload_images": true
+      }
+    },
+    "collectiontabs_RMz7py": {
+      "type": "collectiontabs",
+      "blocks": {
+        "collection_Wn4gx4": {
+          "type": "collection",
+          "settings": {
+            "collection": "skirts",
+            "custom_title": "",
+            "view_all_text": "View All",
+            "view_all_url": "shopify://collections/skirts"
+          }
+        },
+        "collection_pFWbwe": {
+          "type": "collection",
+          "settings": {
+            "collection": "pants-1",
+            "custom_title": "",
+            "view_all_text": "View All",
+            "view_all_url": "shopify://collections/pants-1"
+          }
+        }
+      },
+      "block_order": [
+        "collection_Wn4gx4",
+        "collection_pFWbwe"
+      ],
+      "name": "Collection Tabs – Full Width Uniform Images with Custom Titles",
+      "settings": {
+        "heading": "",
+        "products_limit": 4
+      }
+    },
+    "collectiontabs_gpnatK": {
+      "type": "collectiontabs",
+      "blocks": {
+        "collection_dJXatw": {
+          "type": "collection",
+          "settings": {
+            "collection": "sweaters",
+            "custom_title": "",
+            "view_all_text": "View All",
+            "view_all_url": "shopify://collections/sweaters"
+          }
+        },
+        "collection_wxiGp3": {
+          "type": "collection",
+          "settings": {
+            "collection": "swimwear",
+            "custom_title": "",
+            "view_all_text": "View All",
+            "view_all_url": "shopify://collections/swimwear"
+          }
+        }
+      },
+      "block_order": [
+        "collection_dJXatw",
+        "collection_wxiGp3"
+      ],
+      "name": "Collection Tabs – Full Width Uniform Images with Custom Titles",
+      "settings": {
+        "heading": "",
+        "products_limit": 4
+      }
+    },
+    "featured_collections_hDetmh": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_8DE9zi": {
+          "type": "collection",
+          "settings": {
+            "collection": "vests",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection_tDp6Ch": {
+          "type": "collection",
+          "settings": {
+            "collection": "coats",
+            "title": "",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "collection_8DE9zi",
+        "collection_tDp6Ch"
+      ],
+      "name": "t:sections.featured-collections.presets.collection_list.name",
+      "settings": {
+        "title": "Collection list",
+        "divider": false,
+        "per_row": 4,
+        "enable_gutter": true
+      }
+    },
+    "collectiontabs_XrL67k": {
+      "type": "collectiontabs",
+      "blocks": {
+        "collection_www6zq": {
+          "type": "collection",
+          "settings": {
+            "collection": "sandals",
+            "custom_title": "",
+            "view_all_text": "View All",
+            "view_all_url": "shopify://collections/sandals"
+          }
+        },
+        "collection_ABAp4Y": {
+          "type": "collection",
+          "settings": {
+            "collection": "bags",
+            "custom_title": "",
+            "view_all_text": "View All",
+            "view_all_url": "shopify://collections/bags"
+          }
+        }
+      },
+      "block_order": [
+        "collection_www6zq",
+        "collection_ABAp4Y"
+      ],
+      "name": "Collection Tabs – Full Width Uniform Images with Custom Titles",
+      "settings": {
+        "heading": "",
+        "products_limit": 4
+      }
+    },
+    "collectiontabs_cj68Rx": {
+      "type": "collectiontabs",
+      "blocks": {
+        "collection_Uh4DtH": {
+          "type": "collection",
+          "settings": {
+            "collection": "watches",
+            "custom_title": "",
+            "view_all_text": "View All",
+            "view_all_url": "shopify://collections/watches"
+          }
+        },
+        "collection_V6VCry": {
+          "type": "collection",
+          "settings": {
+            "collection": "bracelets",
+            "custom_title": "",
+            "view_all_text": "View All",
+            "view_all_url": "shopify://collections/bracelets"
+          }
+        }
+      },
+      "block_order": [
+        "collection_Uh4DtH",
+        "collection_V6VCry"
+      ],
+      "name": "Collection Tabs – Full Width Uniform Images with Custom Titles",
+      "settings": {
+        "heading": "",
+        "products_limit": 4
+      }
+    },
+    "testimonials_pwJjb6": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_gtTMKH": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>I don’t usually leave reviews, but this was worth it. The trousers I ordered fit beautifully and are incredibly comfortable around the waist, which is important to me. They look polished without feeling stiff. I’ve already worn them several times and they still look brand new.</p>",
+            "image": "shopify://shop_images/zakrywajacy_brzuch_12.jpg",
+            "author": "Linda A.",
+            "author_info": "Calgary, AB"
+          }
+        },
+        "testimonial_xV3a7d": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "4-stars",
+            "testimonial": "<p>I had a small question about sizing before placing my order and received a helpful reply within a day. That gave me confidence to go ahead. The sweater I chose fits exactly as described and feels substantial, not thin or flimsy. Very happy with the overall experience.</p>",
+            "image": "shopify://shop_images/zakrywajacy_brzuch_14.jpg",
+            "author": "Carol M.",
+            "author_info": "Vancouver, BC"
+          }
+        },
+        "testimonial_h9QNci": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "4-stars",
+            "testimonial": "<p>The photos online are very true to life. The color I received matched perfectly and the fabric has a lovely weight to it. You can tell care goes into selecting the pieces. It feels like a boutique that values quality over trends.</p>",
+            "image": "shopify://shop_images/zakrywajacy_brzuch_16.jpg",
+            "author": "Deborah T.",
+            "author_info": "Toronto, ON"
+          }
+        },
+        "testimonial_LXbrX8": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>I absolutely love my new coat from Susan & Lily. The fit is spot on and the quality is even better than I expected. It feels elegant yet so easy to wear. Already had compliments!</p>",
+            "image": "shopify://shop_images/zakrywajacy_brzuch_13.jpg",
+            "author": "Margaret C.",
+            "author_info": "Halifax, NS"
+          }
+        },
+        "testimonial_VrGpB8": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "4-stars",
+            "testimonial": "<p>I’m quite particular about stitching and finishing, and I was impressed. No loose threads, seams are neat, and the garment hangs beautifully. It arrived well packaged and in excellent condition. I’ll definitely browse again.</p>",
+            "image": "shopify://shop_images/zakrywajacy_brzuch_15.jpg",
+            "author": "Barbara W.",
+            "author_info": "Ottawa, ON"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_gtTMKH",
+        "testimonial_xV3a7d",
+        "testimonial_h9QNci",
+        "testimonial_LXbrX8",
+        "testimonial_VrGpB8"
+      ],
+      "name": "t:sections.testimonials.presets.testimonials.name",
+      "settings": {
+        "title": "Here's what our customers say",
+        "align_text": "center",
+        "round_images": true,
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
+    },
+    "faq_HnwG39": {
+      "type": "faq",
+      "blocks": {
+        "question_gLy7jr": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer free shipping?",
+            "text": "<p>Yes, we offer Free Premium Shipping, along with Track & Trace, because we value you as a customer and want to provide you with the best service.</p>"
+          }
+        },
+        "question_XXXxpU": {
+          "type": "question",
+          "settings": {
+            "title": "Can I return the item(s) if I don’t like them?",
+            "text": "<p>Yes, you can return your order within 30 days of receiving it.</p>"
+          }
+        },
+        "question_6GUxmr": {
+          "type": "question",
+          "settings": {
+            "title": "How can I track my order?",
+            "text": "<p>You can track your order by entering the tracking number you received from us on the \"TRACK YOUR ORDER\" page. Once you’ve entered the number and clicked \"TRACK,\" you will see the status of your order.</p>"
+          }
+        },
+        "question_RbWgJA": {
+          "type": "question",
+          "settings": {
+            "title": "What payment methods do you accept?",
+            "text": "<p>You can pay safely and securely with the following payment methods: Credit Card, Visa, Mastercard, American Express, Apple Pay, Google Pay, Maestro, and Shop Pay.</p>"
+          }
+        },
+        "question_C7kyMa": {
+          "type": "question",
+          "settings": {
+            "title": "Will I receive a confirmation email after placing an order?",
+            "text": "<p>Yes, once you've placed your order, a confirmation will be sent to your email inbox. If you don’t see it, feel free to reach out to our customer service team, we’re happy to help you right away.<br/><br/>Email:  info@ellarosedallas.com</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_gLy7jr",
+        "question_XXXxpU",
+        "question_6GUxmr",
+        "question_RbWgJA",
+        "question_C7kyMa"
+      ],
+      "disabled": true,
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "title": "Frequently Asked Questions"
+      }
+    },
+    "text_with_icons_qNphgd": {
+      "type": "text-with-icons",
+      "blocks": {
+        "text_block_fEVLhp": {
+          "type": "text_block",
+          "settings": {
+            "icon": "truck",
+            "title": "Free fast shipping",
+            "text": "<p>At Susan & Lily, we aim to provide maximum convenience for our customers and offer complimentary shipping across Canada!</p>"
+          }
+        },
+        "text_block_8GwQqE": {
+          "type": "text_block",
+          "settings": {
+            "icon": "wallet",
+            "title": "30-DAY MONEY-BACK GUARANTEE",
+            "text": "<p>At Susan & Lily, we offer a 30-day return period. This gives you plenty of time to return your item if you're not completely satisfied.</p>"
+          }
+        },
+        "text_block_Pzgw6g": {
+          "type": "text_block",
+          "settings": {
+            "icon": "ribbon",
+            "title": "Quality guarantee",
+            "text": "<p>At Susan & Lily, we always set the standards, ensuring the highest quality and service for our customers.</p>"
+          }
+        },
+        "text_block_zcqHPz": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "title": "24/7 support",
+            "text": "<p>At Susan & Lily, we're always here to help, providing support whenever you need it.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_fEVLhp",
+        "text_block_8GwQqE",
+        "text_block_Pzgw6g",
+        "text_block_zcqHPz"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 4,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "rich_text_JaCdr7",
+    "collectiontabs_RMDjmN",
+    "collectiontabs_zNYLk4",
+    "text_and_image_6iyYKh",
+    "collectiontabs_RMz7py",
+    "collectiontabs_gpnatK",
+    "featured_collections_hDetmh",
+    "collectiontabs_XrL67k",
+    "collectiontabs_cj68Rx",
+    "testimonials_pwJjb6",
+    "faq_HnwG39",
+    "text_with_icons_qNphgd"
+  ]
+}

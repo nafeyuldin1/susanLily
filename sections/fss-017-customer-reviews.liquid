@@ -1,0 +1,551 @@
+{% comment %}
+  Section built by Factory: Theme Section Store
+  Filename: fss-017.liquid
+  Description: Customer reviews display with two reviews side by side, star ratings, verification badges, and overall rating summary.
+{% endcomment %}
+
+<!-- Injectable Section Container -->
+<div id="fss017-injectable-container-{{ section.id }}"
+  style="display: none;"
+  data-auto-attach="{{ section.settings.auto_attach_to_product_info }}"
+  data-auto-position="{{ section.settings.auto_attach_position }}">
+<section class="fss017" data-section="{{ section.id }}">
+  <div class="fss017__reviews" data-carousel-label="{{ 'sections.fss017.carousel_label' | t | default: 'Customer reviews carousel' }}">
+    {% for block in section.blocks %}
+      {% if block.type == 'review' %}
+        <article class="fss017__review" {{ block.shopify_attributes }}>
+          <header class="fss017__review-header">
+            <div class="fss017__stars" aria-label="{{ block.settings.rating | default: 5 }} out of 5 stars">
+              {% assign rating = block.settings.rating | default: 5 %}
+              {% for i in (1..5) %}
+                <div class="fss017__star" aria-hidden="true">
+                  {% if i <= rating %}
+                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <rect width="20" height="20" fill="#009E25" />
+                      <path d="M10 2.5L11.4593 7.49139H16.6819L12.8613 10.2672L14.3206 14.7586L10 11.9828L5.6794 14.7586L7.13874 10.2672L3.31813 7.49139H8.54066L10 2.5Z" fill="#ffffff" />
+                    </svg>
+                  {% else %}
+                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <rect width="20" height="20" fill="#E5E7EB" />
+                      <path d="M10 2.5L11.4593 7.49139H16.6819L12.8613 10.2672L14.3206 14.7586L10 11.9828L5.6794 14.7586L7.13874 10.2672L3.31813 7.49139H8.54066L10 2.5Z" fill="#ffffff" />
+                    </svg>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+            <div class="fss017__verified">
+              <span class="fss017__verified-icon" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14ZM10.5028 5.21852C10.7615 4.89507 10.7091 4.42311 10.3856 4.16435C10.0622 3.90559 9.59022 3.95803 9.33146 4.28148L5.78557 8.71384L4.36711 7.65C4.03574 7.40147 3.56564 7.46863 3.31711 7.8C3.06859 8.13137 3.13574 8.60147 3.46711 8.85L5.46711 10.35C5.79119 10.5931 6.24971 10.5348 6.50277 10.2185L10.5028 5.21852Z" fill="#6C6C85" />
+                </svg>
+              </span>
+              <span class="fss017__verified-text">{{ section.settings.verified_label | default: 'Verified' }}</span>
+            </div>
+          </header>
+
+          <div class="fss017__review-content">
+            <h3 class="fss017__review-title">{{ block.settings.review_title }}</h3>
+            <p class="fss017__review-text">{{ block.settings.review_text }}</p>
+          </div>
+
+          <div class="fss017__reviewer">
+            <span class="fss017__reviewer-name">{{ block.settings.reviewer_name }},</span>
+            <span class="fss017__reviewer-time">{{ block.settings.review_time }}</span>
+          </div>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="fss017__pagination swiper-pagination" id="fss017-pagination-{{ section.id }}" aria-hidden="true"></div>
+
+  {% if section.settings.show_summary %}
+    <div class="fss017__summary">
+      <div class="fss017__summary-content">
+        <div class="fss017__overall-rating">
+          <span class="fss017__overall-text">Rated</span>
+          <span class="fss017__overall-score">{{ section.settings.overall_rating }}</span>
+          <span class="fss017__overall-max">/ 5 •</span>
+          <span class="fss017__review-count">{{ section.settings.review_count }} reviews</span>
+        </div>
+        {% if section.settings.filter_description != blank %}
+          <p class="fss017__filter-description">{{ section.settings.filter_description }}</p>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+</section>
+</div>
+
+<style>
+/* Scoped base styles */
+.fss017,
+.fss017 *,
+.fss017--force-mobile,
+.fss017--force-mobile * {
+  box-sizing: border-box;
+}
+
+.fss017 {
+  --gap: {{ section.settings.review_gap | default: 24 }}px;
+  --gap-mobile: {{ section.settings.review_gap_mobile | default: 16 }}px;
+  padding: {{ section.settings.padding_vertical }}px {{ section.settings.padding_horizontal }}px;
+  background: {{ section.settings.section_bg }};
+  font-family: Helvetica Neue, sans-serif;
+}
+
+/* Fallback Swiper core styles (in case global Swiper CSS isn't loaded) */
+.fss017__reviews.swiper { width: 100%; overflow: hidden; margin-bottom: {{ section.settings.summary_margin }}px; }
+.fss017__reviews.swiper .swiper-wrapper { display: flex; }
+.fss017__reviews.swiper .swiper-slide { flex-shrink: 0; width: 100%; }
+@media (min-width: 750px) {
+  .fss017:not(.fss017--force-mobile) .fss017__reviews.swiper .swiper-slide { width: calc((100% - var(--gap)) / 2); }
+}
+
+.fss017__reviews:not(.swiper) {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap-mobile);
+  margin-bottom: {{ section.settings.summary_margin }}px;
+}
+
+@media (min-width: 750px) {
+  .fss017:not(.fss017--force-mobile) .fss017__reviews:not(.swiper) {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+  }
+}
+
+.fss017__review {
+  background: #F8F9FA;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.fss017__review-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+}
+
+.fss017__stars {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.fss017__star { display: flex; align-items: center; justify-content: center; }
+.fss017__star svg { width: 20px; height: 20px; }
+
+.fss017__verified { display: flex; align-items: center; gap: 3px; }
+.fss017__verified-icon { display: flex; align-items: center; justify-content: center; }
+.fss017__verified-icon svg { width: 14px; height: 14px; }
+
+.fss017__verified-text {
+  color: #6C6C85;
+  font-size: 13px;
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hide pagination for now */
+.fss017__pagination { display: none; }
+
+.fss017__review-content { display: flex; flex-direction: column; gap: 6px; width: 100%; }
+
+.fss017__review-title,
+.fss017 h3.fss017__review-title,
+.fss017--force-mobile .fss017__review-title,
+.fss017--force-mobile h3.fss017__review-title {
+  margin: 0;
+  padding: 0;
+  color: var(--Color-Scheme-1-Text, #000000);
+  font-size: 14px;
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 700;
+  line-height: 16px;
+  text-decoration: none;
+  border: 0;
+  background: none;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.fss017__review-text,
+.fss017 p.fss017__review-text,
+.fss017--force-mobile .fss017__review-text,
+.fss017--force-mobile p.fss017__review-text {
+  margin: 0;
+  padding: 0;
+  color: var(--Color-Scheme-1-Text, #000000);
+  font-size: 13px;
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+  border: 0;
+  background: none;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.fss017__reviewer { display: flex; align-items: flex-start; gap: 3px; width: 100%; }
+
+.fss017__reviewer-name {
+  color: #666666;
+  font-size: 14px;
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 700;
+  line-height: 16.8px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: 0;
+  background: none;
+}
+
+.fss017__reviewer-time {
+  flex: 1 1 0;
+  color: #666666;
+  font-size: 12px;
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 400;
+  line-height: 12px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: 0;
+  background: none;
+}
+
+.fss017__summary { display: flex; justify-content: flex-start; align-items: center; gap: 4px; width: 100%; }
+
+.fss017__summary-content {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+.fss017__overall-rating { display: flex; justify-content: center; align-items: center; gap: 4px; }
+
+.fss017__overall-text { color: #191919; font-size: 12px; font-family: Helvetica Neue, sans-serif; font-weight: 400; margin: 0; padding: 0; }
+.fss017__overall-score { color: #191919; font-size: 12px; font-family: Helvetica Neue, sans-serif; font-weight: 700; margin: 0; padding: 0; }
+.fss017__overall-max { color: #191919; font-size: 12px; font-family: Helvetica Neue, sans-serif; font-weight: 400; margin: 0; padding: 0; }
+
+.fss017__review-count {
+  color: #191919;
+  font-size: 12px;
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 500;
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+}
+
+.fss017__filter-description { margin: 0; padding: 0; width: 100%; text-align: center; color: #191919; font-size: 12px; font-family: Helvetica Neue, sans-serif; font-weight: 400; }
+
+/* Mobile overrides */
+@media (max-width: 749px) {
+  .fss017 {
+    padding: {{ section.settings.padding_vertical_mobile }}px {{ section.settings.padding_horizontal_mobile }}px;
+  }
+}
+
+/* Force mobile layout when injected via placeholder */
+.fss017--force-mobile .fss017__reviews:not(.swiper) { grid-template-columns: 1fr; gap: var(--gap-mobile); }
+.fss017--force-mobile { padding: {{ section.settings.padding_vertical_mobile }}px {{ section.settings.padding_horizontal_mobile }}px; }
+.fss017--force-mobile .fss017__review { padding: {{ section.settings.review_padding_mobile }}px; }
+</style>
+
+<script>
+(function() {
+  var N = 'fss017';
+  var sectionId = '{{ section.id }}';
+  var sourceId = N + '-injectable-container-' + sectionId;
+
+  function enhanceWithSwiper() {
+    if (typeof Swiper === 'undefined') return;
+    var root = document.querySelector('.' + N + '[data-section="' + sectionId + '"]');
+    if (!root) return;
+    var reviews = root.querySelector('.' + N + '__reviews');
+    if (!reviews || reviews.classList.contains('swiper') || reviews.dataset.swiperEnhanced === 'true') return;
+
+    function isStableWidth() {
+      var w = reviews && reviews.clientWidth ? reviews.clientWidth : 0;
+      return isFinite(w) && w > 0 && w < 100000; // avoid zero and absurdly large widths
+    }
+
+    function doInit() {
+      // Build Swiper structure: add wrapper and slide classes
+      var slides = Array.from(reviews.children).filter(function (el) { return el.classList && el.classList.contains(N + '__review'); });
+      if (!slides.length) return;
+
+      var wrapper = document.createElement('div');
+      wrapper.className = 'swiper-wrapper';
+
+      slides.forEach(function (slide) {
+        slide.classList.add('swiper-slide');
+        wrapper.appendChild(slide);
+      });
+
+      reviews.innerHTML = '';
+      reviews.appendChild(wrapper);
+      reviews.classList.add('swiper');
+
+      // ARIA for carousel
+      var label = reviews.getAttribute('data-carousel-label') || 'Customer reviews carousel';
+      reviews.setAttribute('role', 'region');
+      reviews.setAttribute('aria-roledescription', 'carousel');
+      reviews.setAttribute('aria-label', label);
+
+      var gap = {{ section.settings.review_gap | default: 24 }};
+      var paginationEl = '#fss017-pagination-' + sectionId;
+
+      var swiper = new Swiper(reviews, {
+        slidesPerView: 'auto',
+        spaceBetween: gap,
+        pagination: {
+          el: paginationEl,
+          clickable: true
+        },
+        breakpoints: {
+          750: {
+            slidesPerView: 'auto',
+            spaceBetween: gap
+          }
+        },
+        a11y: { enabled: true },
+        watchOverflow: true,
+        observer: true,
+        observeParents: true
+      });
+
+      function clampSlideWidths() {
+        var containerW = reviews.clientWidth || 0;
+        if (!containerW || !isFinite(containerW)) return;
+        var isDesktop = window.matchMedia('(min-width: 750px)').matches && !root.classList.contains(N + '--force-mobile');
+        var targetW = isDesktop ? (containerW - gap) / 2 : containerW;
+        if (!isFinite(targetW) || targetW <= 0) return;
+        var slidesEls = reviews.querySelectorAll('.swiper-slide');
+        slidesEls.forEach(function(slide){
+          var w = slide.getBoundingClientRect().width;
+          if (!isFinite(w) || w <= 0 || w > containerW * 3) {
+            slide.style.width = Math.max(1, Math.floor(targetW)) + 'px';
+          }
+        });
+        if (swiper && swiper.update) swiper.update();
+      }
+
+      var pagNode = root.querySelector(paginationEl) || document.querySelector(paginationEl);
+      if (pagNode) pagNode.setAttribute('aria-hidden', 'true');
+      requestAnimationFrame(function(){
+        if (swiper && swiper.updateSize) {
+          swiper.updateSize();
+          swiper.updateSlides();
+          swiper.update();
+        }
+        clampSlideWidths();
+      });
+
+      if (swiper && swiper.on) {
+        swiper.on('afterInit', clampSlideWidths);
+        swiper.on('resize', clampSlideWidths);
+        swiper.on('breakpoint', clampSlideWidths);
+      }
+
+      reviews.dataset.swiperEnhanced = 'true';
+    }
+
+    var attempts = 0;
+    (function tryInit(){
+      if (!isStableWidth() && attempts < 20) { attempts++; return setTimeout(tryInit, 60); }
+      if (!isStableWidth()) return; // give up silently
+      doInit();
+    })();
+  }
+
+  function inject() {
+    var source = document.getElementById(sourceId);
+    if (!source) return;
+
+    // Clean previous mounts/placeholders for this section
+    var prevAuto = document.getElementById(N + '-auto-' + sectionId);
+    if (prevAuto) prevAuto.remove();
+    document.querySelectorAll('.' + N + '-placeholder').forEach(function(ph){
+      var existing = ph.querySelector('.' + N + '[data-section="' + sectionId + '"]');
+      if (existing) ph.innerHTML = '';
+    });
+
+    var injected = false;
+    var usedPlaceholder = null;
+
+    // 1) Placeholder injection
+    document.querySelectorAll('.' + N + '-placeholder').forEach(function(ph){
+      if (injected) return;
+      if (ph.innerHTML.trim() === '') {
+        ph.innerHTML = source.innerHTML;
+        var el = ph.querySelector('.' + N);
+        if (el) {
+          el.setAttribute('data-section', sectionId);
+          el.classList.add(N + '--force-mobile');
+        }
+        injected = true; usedPlaceholder = ph;
+      }
+    });
+
+    // 2) Auto attach into Product information
+    if (!injected && source.getAttribute('data-auto-attach') === 'true') {
+      var autoPos = source.getAttribute('data-auto-position') || 'start';
+      var productDetails = document.querySelector('.product-details .group-block .group-block-content') ||
+                           document.querySelector('.product-details .group-block') ||
+                           document.querySelector('.product-details .details') ||
+                           document.querySelector('.product__info-wrapper') ||
+                           document.querySelector('.product__info-container') ||
+                           document.querySelector('.product-info') ||
+                           document.querySelector('.product-form') ||
+                           document.querySelector('.product-details');
+      if (productDetails) {
+        var containerId = N + '-auto-container-' + autoPos;
+        var autoContainer = document.getElementById(containerId);
+        if (!autoContainer) {
+          autoContainer = document.createElement('div');
+          autoContainer.id = containerId;
+          if (autoPos === 'start' && productDetails.firstChild) productDetails.insertBefore(autoContainer, productDetails.firstChild);
+          else productDetails.appendChild(autoContainer);
+        }
+
+        var mount = document.createElement('div');
+        mount.id = N + '-auto-' + sectionId;
+        mount.className = N + '-auto-mount';
+        mount.setAttribute('data-section', sectionId);
+
+        var allSources = Array.from(document.querySelectorAll('[id^="' + N + '-injectable-container-"]'));
+        var orderIndex = allSources.indexOf(source);
+        mount.setAttribute('data-order', String(orderIndex));
+
+        var inserted = false;
+        var kids = Array.from(autoContainer.children);
+        for (var i = 0; i < kids.length; i++) {
+          var kidOrder = parseInt(kids[i].getAttribute('data-order') || '9999', 10);
+          if (orderIndex >= 0 && orderIndex < kidOrder) { autoContainer.insertBefore(mount, kids[i]); inserted = true; break; }
+        }
+        if (!inserted) autoContainer.appendChild(mount);
+
+        mount.innerHTML = source.innerHTML;
+        injected = true; usedPlaceholder = mount;
+      }
+    }
+
+    if (injected) source.remove(); else source.style.display = 'block';
+
+    // Editor mapping + scroll
+    function scrollToInjected(){
+      var target = document.querySelector('.' + N + '[data-section="' + sectionId + '"]') || document.getElementById(N + '-auto-' + sectionId);
+      if (!target) return;
+      try { target.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch(e) { target.scrollIntoView(true); }
+    }
+    if (window.Shopify && Shopify.designMode && usedPlaceholder) {
+      var shopSection = document.querySelector('[data-shopify-editor-section="' + sectionId + '"]');
+      if (shopSection) {
+        var targetId = usedPlaceholder.id || (N + '-target-' + sectionId);
+        if (!usedPlaceholder.id) usedPlaceholder.id = targetId;
+        shopSection.setAttribute('data-editor-target', targetId);
+        requestAnimationFrame(function(){ requestAnimationFrame(scrollToInjected); });
+      }
+    }
+
+    // Try to enhance with Swiper (if available)
+    requestAnimationFrame(enhanceWithSwiper);
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', inject); else inject();
+  if (window.Shopify && Shopify.designMode) {
+    document.addEventListener('shopify:section:load', function(){ setTimeout(inject, 100); });
+    document.addEventListener('shopify:section:reorder', function(){ setTimeout(inject, 100); });
+  }
+})();
+</script>
+
+{% schema %}
+{
+  "name": "FSS-017: Customer Reviews",
+  "settings": [
+    { "type": "header", "content": "Easy placement (recommended)" },
+    { "type": "checkbox", "id": "auto_attach_to_product_info", "label": "Show in Product information", "default": false, "info": "Toggle ON for automatic placement. Leave OFF when you use the placeholder code." },
+    { "type": "select", "id": "auto_attach_position", "label": "Position in Product information", "options": [ { "value": "start", "label": "Above details" }, { "value": "end", "label": "Below details" } ], "default": "start", "info": "Only applies when the toggle above is ON." },
+    { "type": "header", "content": "Advanced placement (custom liquid block)" },
+    { "type": "paragraph", "content": "1. Add a 'Custom liquid' block" },
+    { "type": "paragraph", "content": "2. Paste the placeholder code below" },
+    { "type": "html", "id": "placeholder_code", "label": "Placeholder Code", "default": "<div class=\"fss017-placeholder\"></div>" },
+
+    { "type": "header", "content": "Overall Summary" },
+    { "type": "checkbox", "id": "show_summary", "label": "Show overall rating summary", "default": true },
+    { "type": "text", "id": "overall_rating", "label": "Overall rating", "default": "4.5" },
+    { "type": "text", "id": "review_count", "label": "Number of reviews", "default": "177" },
+    { "type": "text", "id": "filter_description", "label": "Filter description", "default": "Showing our 3, 4 & 5 star reviews" },
+    { "type": "text", "id": "verified_label", "label": "Verified label", "default": "Verified" },
+
+    { "type": "header", "content": "Layout" },
+    { "type": "color", "id": "section_bg", "label": "Section background", "default": "#ffffff" },
+    { "type": "range", "id": "padding_vertical", "label": "Padding vertical (px)", "min": 0, "max": 120, "step": 4, "default": 32 },
+    { "type": "range", "id": "padding_horizontal", "label": "Padding horizontal (px)", "min": 0, "max": 120, "step": 4, "default": 0 },
+    { "type": "range", "id": "padding_vertical_mobile", "label": "Padding vertical mobile (px)", "min": 0, "max": 80, "step": 4, "default": 24 },
+    { "type": "range", "id": "padding_horizontal_mobile", "label": "Padding horizontal mobile (px)", "min": 0, "max": 80, "step": 4, "default": 16 },
+    { "type": "range", "id": "review_gap", "label": "Review gap (px)", "min": 8, "max": 64, "step": 2, "default": 24 },
+    { "type": "range", "id": "review_gap_mobile", "label": "Review gap mobile (px)", "min": 8, "max": 64, "step": 2, "default": 16 },
+    { "type": "range", "id": "summary_margin", "label": "Summary top margin (px)", "min": 0, "max": 60, "step": 4, "default": 8 },
+    { "type": "range", "id": "review_padding_mobile", "label": "Review card padding mobile (px)", "min": 0, "max": 60, "step": 1, "default": 15 }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        { "type": "range", "id": "rating", "label": "Star rating", "min": 1, "max": 5, "step": 1, "default": 5 },
+        { "type": "text", "id": "review_title", "label": "Review title", "default": "Easy to use" },
+        { "type": "textarea", "id": "review_text", "label": "Review text", "default": "Issues addressed very efficiently and in a timely manner. We were looked after very well; sometimes they would, in good faith go out to the way in advising us what's best for their client." },
+        { "type": "text", "id": "reviewer_name", "label": "Reviewer name", "default": "Bob de Bouwer" },
+        { "type": "text", "id": "review_time", "label": "Review time", "default": "1 day ago" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FSS-017: Customer Reviews",
+      "category": "Factory: Theme Section Store",
+      "blocks": [
+        {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_title": "Easy to use",
+            "review_text": "Issues addressed very efficiently and in a timely manner. We were looked after very well; sometimes they would, in good faith go out to the way in advising us what's best for their client.",
+            "reviewer_name": "Bob de Bouwer",
+            "review_time": "1 day ago"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_title": "Great service",
+            "review_text": "Excellent customer service and fast delivery. Highly recommend this product and company.",
+            "reviewer_name": "Sarah Johnson",
+            "review_time": "3 days ago"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

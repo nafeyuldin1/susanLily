@@ -1,0 +1,120 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "t:sections.footer-group.name",
+  "sections": {
+    "footer-promotions": {
+      "type": "footer-promotions",
+      "blocks": {
+        "footer-promotions-0": {
+          "type": "promotion",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "title": "Site-wide promotion",
+            "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.</p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "footer-promotions-1": {
+          "type": "promotion",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "title": "Site-wide promotion",
+            "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.</p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "footer-promotions-2": {
+          "type": "promotion",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "title": "Site-wide promotion",
+            "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.</p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "footer-promotions-0",
+        "footer-promotions-1",
+        "footer-promotions-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "hide_homepage": false
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer2": {
+          "type": "newsletter",
+          "settings": {
+            "show_footer_title": true,
+            "title": "JOIN THE FAMILY",
+            "text": "<p>Be part of our story! Sign up for exclusive deals, giveaways, and special offers from Susan & Lily</p>",
+            "container_width": 25
+          }
+        },
+        "custom_9cmbxD": {
+          "type": "custom",
+          "settings": {
+            "show_footer_title": true,
+            "title": "ABOUT SUSAN & LILY",
+            "text": "<p>At Susan & Lily, we understand what women in Canada value elegance, quality, and timeless style. Our thoughtfully designed pieces are made to help you feel confident, comfortable, and truly yourself. We believe in kindness, connection, and creating clothing that lasts, because fashion should feel good inside and out.</p><p>📍 Toronto, Canada</p>",
+            "container_width": 25
+          }
+        },
+        "menu_tQYAzF": {
+          "type": "menu",
+          "settings": {
+            "show_footer_title": true,
+            "menu": "policies",
+            "container_width": 25
+          }
+        },
+        "custom_UJzFRP": {
+          "type": "custom",
+          "settings": {
+            "show_footer_title": false,
+            "title": "",
+            "text": "<p><strong>Monday – Friday:</strong> 09:00 – 18:00<br/><br/><strong>Saturday:</strong> 13:00 – 17:00<br/><br/><strong>Sunday:</strong> Closed</p><p>Do you have any questions? If so, please contact one of our customer service representatives.</p><p>📧 <strong>Email: </strong>info@susanandlily.com</p>",
+            "container_width": 25
+          }
+        }
+      },
+      "block_order": [
+        "footer2",
+        "custom_9cmbxD",
+        "menu_tQYAzF",
+        "custom_UJzFRP"
+      ],
+      "settings": {
+        "show_locale_selector": false,
+        "show_currency_selector": false,
+        "show_currency_flags": false,
+        "show_payment_icons": true,
+        "show_copyright": true,
+        "copyright_text": ""
+      }
+    }
+  },
+  "order": [
+    "footer-promotions",
+    "footer"
+  ]
+}

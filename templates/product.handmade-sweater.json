@@ -1,0 +1,1128 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "custom_qdeKrj": {
+          "type": "custom",
+          "settings": {
+            "code": "<div class=\"product-block\">\n  <div class=\"product-block product-block--sales-point\">\n    <ul class=\"sales-points\">\n\n      <!-- Bulletpoint 1: Free Shipping met UPS logo -->\n      <li class=\"sales-point\">\n        <span class=\"icon-and-text\">\n          <img \n            class=\"icon\" \n            src=\"https://cdn.shopify.com/s/files/1/0975/8946/1340/files/1486177_1.webp?v=1764796280\" \n            alt=\"UPS logo\" \n            width=\"22\" \n            height=\"22\"\n          >\n          <span>Handmade with care</span>\n        </span>\n      </li>\n\n      <!-- Bulletpoint 2: Pay securely with credit card -->\n      <li class=\"sales-point\">\n        <span class=\"icon-and-text\">\n          <img \n            class=\"icon\"\n            src=\"https://cdn.shopify.com/s/files/1/0975/8946/1340/files/1379088_2.webp?v=1764796280\"\n            alt=\"Credit card icon\"\n            width=\"22\"\n            height=\"22\"\n          >\n          <span>Itch-Free Comfort</span>\n        </span>\n      </li>\n\n      <!-- Bulletpoint 3: Money-back guarantee -->\n      <li class=\"sales-point\">\n        <span class=\"icon-and-text\">\n          <img class=\"icon\"\n            src=\"https://cdn.shopify.com/s/files/1/0975/8946/1340/files/3868450_fcfaafa1-58bb-4640-b114-178f350296e7_1.webp?v=1764796280\"\n            alt=\"Money back logo\"\n            width=\"22\"\n            height=\"22\">\n          <span>Soft & breathable yarns</span>\n        </span>\n      </li>\n\n    </ul>\n  </div>\n\n<style>\n.sales-points {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n  margin-bottom: -60px;\n}\n\n.sales-point {\n  display: flex;\n  align-items: center;\n  margin-bottom: 10px;\n}\n\n.icon-and-text {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n}\n\n.icon {\n  width: 22px;\n  height: 22px;\n}\n\n/* Mobile fixes */\n@media (max-width: 768px) {\n  .product-block {\n    justify-content: flex-start;\n    text-align: left;\n  }\n  .sales-point {\n    justify-content: flex-start;\n  }\n}\n</style>\n\n</div>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "dropdown",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "custom_7b9774": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<div class=\"clearance-banner-container\">\n  <div class=\"clearance-banner\">\n    <!-- SVG Icoon (Prijskaartje / Product Tag) -->\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n      <path d=\"M21.41 11.58l-9-9A2 2 0 0 0 10 2H4a2 2 0 0 0-2 2v6a2 2 0 0 0 .59 1.41l9 9a2 2 0 0 0 2.83 0l6-6a2 2 0 0 0-.01-2.83zM7.5 8A1.5 1.5 0 1 1 9 6.5 1.5 1.5 0 0 1 7.5 8z\"></path>\n    </svg>\n    Today Only – Cost Price!\n  </div>\n</div>\n<style>\n  .clearance-banner-container {\n    display: flex;\n    justify-content: flex-start; /* Links uitlijnen */\n    margin-top: 5px; /* Verhoogde ruimte boven de banner */\n    margin-bottom: 5px; /* Verlaagde ruimte onder de banner */\n  }\n\n  .clearance-banner {\n    display: flex;\n    align-items: center;\n    background-color: #eaf8e4; /* Achtergrondkleur */\n    color: #1a7f38; /* Tekstkleur */\n    font-weight: bold;\n    font-size: 16px; /* Kleinere tekst */\n    padding: 8px 14px; /* Kleiner formaat */\n    border-radius: 6px;\n    text-transform: uppercase;\n    gap: 6px;\n    width: fit-content;\n  }\n\n  .clearance-banner svg {\n    width: 18px; /* Kleinere icon */\n    height: 18px;\n    fill: #1a7f38; /* Kleur van het icoon */\n  }\n</style>"
+          }
+        },
+        "custom_C3aLjp": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<div class=\"product-block product-block--sales-point product-block--stock\">\n  <ul class=\"sales-points\">\n\n    <!-- Knipperend bolletje + voorraad -->\n    <li class=\"sales-point\">\n      <span class=\"icon-and-text\">\n        <div class=\"nl_voorraad\">\n          <span class=\"rood_icoon icoon--voorraad\"></span>\n        </div>\n        <span class=\"random-number\">\n          Only <span id=\"stockNumber\">4</span> left in stock!\n        </span>\n      </span>\n    </li>\n\n  </ul>\n</div>\n\n<style>\n/* Alleen voor deze block */\n.product-block--stock {\n  margin: 0 !important;\n  padding: 0 !important;\n}\n.product-block--stock .sales-points {\n  list-style: none;\n  padding: 0 !important;\n  margin: 0 !important;\n}\n.product-block--stock .sales-point {\n  display: flex;\n  align-items: center;\n  margin: 0 !important;\n  padding: 0 !important;\n}\n.product-block--stock .icon-and-text {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n}\n\n/* Knipperende rode dot (zelfde als eerst) */\n@keyframes voorraad-pulse {\n  0%   { opacity: 0.5; }\n  100% { transform: scale(3.0); opacity: 0; }\n}\n\n.product-block--stock span.rood_icoon {\n  display: inline-block;\n  position: relative;\n  height: 25px;\n  width: 25px;\n  margin-left: 2px;\n}\n\n.product-block--stock .icoon--voorraad:before {\n  animation: voorraad-pulse 2s linear infinite;\n}\n\n.product-block--stock .icoon--voorraad:after,\n.product-block--stock .icoon--voorraad:before {\n  width: 9px;\n  height: 9px;\n  background: #FF0000;\n  border-radius: 9px;\n  position: absolute;\n  left: 0;\n  top: 0;\n  content: \"\";\n  margin: 8px;\n}\n\n.product-block--stock .random-number {\n  margin: 0;            /* geen extra witruimte */\n  line-height: 1.2;\n}\n\n.product-block--stock .nl_voorraad {\n  display: flex;\n  align-items: center;\n  letter-spacing: -.5px;\n}\n\n/* Mobile */\n@media (max-width: 768px) {\n  .product-block--stock {\n    justify-content: flex-start;\n    text-align: left;\n  }\n  .product-block--stock .sales-point {\n    justify-content: flex-start;\n  }\n}\n</style>\n\n<script>\nfunction generateRandomNumber() {\n  var numbers = [4, 5, 6];\n  var randomIndex = Math.floor(Math.random() * numbers.length);\n  document.getElementById(\"stockNumber\").textContent = numbers[randomIndex];\n}\ngenerateRandomNumber();\n</script>"
+          }
+        },
+        "custom_JDbkQW": {
+          "type": "custom",
+          "settings": {
+            "code": "<div class=\"product-block product-block--sales-point product-block--stock\">\n  <ul class=\"sales-points\">\n\n    <!-- Knipperend bolletje + voorraad -->\n    <li class=\"sales-point\">\n      <span class=\"icon-and-text\">\n        <div class=\"nl_voorraad\">\n          <span class=\"rood_icoon icoon--voorraad\"></span>\n        </div>\n        <span class=\"random-number\">\n          Only <span id=\"stockNumber\">4</span> left in stock!\n        </span>\n      </span>\n    </li>\n\n  </ul>\n</div>\n\n<style>\n/* Alleen voor deze block */\n.product-block--stock {\n  margin: 0 !important;\n  padding: 0 !important;\n}\n.product-block--stock .sales-points {\n  list-style: none;\n  padding: 0 !important;\n  margin: 0 !important;\n}\n.product-block--stock .sales-point {\n  display: flex;\n  align-items: center;\n  margin: 0 !important;\n  padding: 0 !important;\n}\n.product-block--stock .icon-and-text {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n}\n\n/* Knipperende rode dot (zelfde als eerst) */\n@keyframes voorraad-pulse {\n  0%   { opacity: 0.5; }\n  100% { transform: scale(3.0); opacity: 0; }\n}\n\n.product-block--stock span.rood_icoon {\n  display: inline-block;\n  position: relative;\n  height: 25px;\n  width: 25px;\n  margin-left: 2px;\n}\n\n.product-block--stock .icoon--voorraad:before {\n  animation: voorraad-pulse 2s linear infinite;\n}\n\n.product-block--stock .icoon--voorraad:after,\n.product-block--stock .icoon--voorraad:before {\n  width: 9px;\n  height: 9px;\n  background: #FF0000;\n  border-radius: 9px;\n  position: absolute;\n  left: 0;\n  top: 0;\n  content: \"\";\n  margin: 8px;\n}\n\n.product-block--stock .random-number {\n  margin: 0;            /* geen extra witruimte */\n  line-height: 1.2;\n}\n\n.product-block--stock .nl_voorraad {\n  display: flex;\n  align-items: center;\n  letter-spacing: -.5px;\n}\n\n/* Mobile */\n@media (max-width: 768px) {\n  .product-block--stock {\n    justify-content: flex-start;\n    text-align: left;\n  }\n  .product-block--stock .sales-point {\n    justify-content: flex-start;\n  }\n}\n</style>\n\n<script>\nfunction generateRandomNumber() {\n  var numbers = [4, 5, 6];\n  var randomIndex = Math.floor(Math.random() * numbers.length);\n  document.getElementById(\"stockNumber\").textContent = numbers[randomIndex];\n}\ngenerateRandomNumber();\n</script>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "custom_zNAEFE": {
+          "type": "custom",
+          "settings": {
+            "code": "<style>\n.custom-shipping-container {\n  display: flex;\n  padding: 6px 16px;\n  justify-content: space-between;\n  align-items: center;\n  align-self: stretch;\n  background-color: #f6f6f6;\n  border-radius: 999px;\n}\n\n.custom-shipping-item {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n}\n\n.text-block-shipping {\n  font-size: 10px;\n  color: #000;\n}\n\n.shipping-date {\n  font-weight: bold;\n}\n\n.free-shipping {\n  font-weight: bold;\n}\n\n.green-circle {\n  animation: fade 1s ease-in-out infinite;\n}\n\n/* Ronde vlag-icoon */\n.usa-flag-icon {\n  display: inline-block;\n  vertical-align: middle;\n}\n\n/* Fade animatie voor groene dot */\n@keyframes fade {\n  0%, 100% { opacity: 1; }\n  50% { opacity: 0.5; }\n}\n</style>\n\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n  var daysAfterToday = 0.5; \n  var today = new Date();\n  var shipDate = new Date(today.setDate(today.getDate() + daysAfterToday));\n  var options = { weekday: 'short', month: 'short', day: 'numeric' }; // Mon, Nov 17\n\n  var formattedDate = shipDate.toLocaleDateString('en-US', options);\n  document.getElementById('shipping-date').textContent = formattedDate;\n});\n</script>\n\n<div class=\"custom-shipping-container\">\n  <!-- LINKERKANT: verzenddatum -->\n  <div class=\"custom-shipping-item\">\n    <svg class=\"green-circle\" xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"13\" viewBox=\"0 0 12 13\" fill=\"none\">\n      <circle cx=\"6\" cy=\"6.5\" r=\"6\" fill=\"#137333\"/>\n    </svg>\n    <div class=\"text-block-shipping\">\n      Ships on <span id=\"shipping-date\" class=\"shipping-date\"></span>\n    </div>\n  </div>\n\n  <!-- RECHTERKANT: ronde USA vlag + tekst -->\n  <div class=\"custom-shipping-item\">\n    <!-- Ronde USA vlag -->\n    <svg class=\"usa-flag-icon\" xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 14 14\">\n      <defs>\n        <clipPath id=\"usa-circle\">\n          <circle cx=\"7\" cy=\"7\" r=\"7\" />\n        </clipPath>\n      </defs>\n      <g clip-path=\"url(#usa-circle)\">\n        <!-- rode achtergrond -->\n        <rect width=\"14\" height=\"14\" fill=\"#b22234\" />\n        <!-- witte strepen (simpel, klein icoon) -->\n        <rect y=\"1\" width=\"14\" height=\"1\" fill=\"#ffffff\" />\n        <rect y=\"3\" width=\"14\" height=\"1\" fill=\"#ffffff\" />\n        <rect y=\"5\" width=\"14\" height=\"1\" fill=\"#ffffff\" />\n        <rect y=\"7\" width=\"14\" height=\"1\" fill=\"#ffffff\" />\n        <rect y=\"9\" width=\"14\" height=\"1\" fill=\"#ffffff\" />\n        <rect y=\"11\" width=\"14\" height=\"1\" fill=\"#ffffff\" />\n        <!-- blauw vlak -->\n        <rect width=\"7\" height=\"7\" fill=\"#3c3b6e\" />\n      </g>\n    </svg>\n\n    <div class=\"text-block-shipping\">\n      <span class=\"free-shipping\">FREE</span> fast delivery\n    </div>\n  </div>\n</div>"
+          }
+        },
+        "custom_PKd7PL": {
+          "type": "custom",
+          "settings": {
+            "code": "<div class=\"payment-section\">\n  <div class=\"payment-text\" style=\"text-align: center; margin: 10px 0;\">\n    \n  </div>\n  {%- unless shop.enabled_payment_types == empty -%}\n  <ul class=\"inline-list payment-icons footer__section\">\n    {%- for type in shop.enabled_payment_types -%}\n    <li class=\"icon--payment\">\n      {{ type | payment_type_svg_tag }}\n    </li>\n    {%- endfor -%}\n    \n        <defs>\n          <clipPath clipPathUnits=\"userSpaceOnUse\" id=\"b\">\n            <path d=\"M2805.83 0H254.164C113.793 0 0 113.801 0 254.172V1355.83C0 1496.21 113.793 1610 254.164 1610H2805.83c140.37 0 254.17-113.79 254.17-254.17V254.172C3060 113.801 2946.2 0 2805.83 0\"/>\n          </clipPath>\n          <clipPath clipPathUnits=\"userSpaceOnUse\" id=\"d\">\n            <path d=\"M1118.75 1241.67c0-102.18-82.83-185-185-185-102.172 0-185 82.82-185 185 0 102.17 82.828 185 185 185 102.17 0 185-82.83 185-185\"/>\n          </clipPath>\n          <radialGradient fx=\"-.012\" fy=\"-.003\" cx=\"0\" cy=\"0\" r=\"1\" gradientUnits=\"userSpaceOnUse\" gradientTransform=\"scale(606.529 -606.529)rotate(40 3.9 .59)\" spreadMethod=\"pad\" id=\"c\">\n            <stop style=\"stop-opacity:1;stop-color:#ee252c\" offset=\"0\"/>\n            <stop style=\"stop-opacity:1;stop-color:#ef304c\" offset=\".495\"/>\n            <stop style=\"stop-opacity:1;stop-color:#9c41a6\" offset=\"1\"/>\n          </radialGradient>\n          <linearGradient x1=\"0\" y1=\"0\" x2=\"1\" y2=\"0\" gradientUnits=\"userSpaceOnUse\" gradientTransform=\"matrix(0 1610 1610 0 1530 0)\" spreadMethod=\"pad\" id=\"a\">\n            <stop style=\"stop-opacity:1;stop-color:#3d3e3f\" offset=\"0\"/>\n            <stop style=\"stop-opacity:1;stop-color:#050606\" offset=\"1\"/>\n          </linearGradient>\n        </defs>\n        <path d=\"M2805.83 0H254.164C113.793 0 0 113.801 0 254.172V1355.83C0 1496.21 113.793 1610 254.164 1610H2805.83c140.37 0 254.17-113.79 254.17-254.17V254.172C3060 113.801 2946.2 0 2805.83 0\" style=\"fill:url(#a);fill-opacity:1;fill-rule:nonzero;stroke:none\" transform=\"matrix(.13333 0 0 -.13333 0 214.667)\" clip-path=\"url(#b)\"/>\n        <path d=\"M1467.5 206.672H1260V1369.17h207.5zm385 0H1645v769.996h207.5zm930 0-311.81 407.496 286.81 362.5h-245l-275-351.68v744.182H2030V206.672h207.5V602l275-395.328zM731.25 405.422c-102.859 0-186.25 83.387-186.25 186.25 0 102.855 83.391 186.246 186.25 186.246S917.5 694.527 917.5 591.672c0-102.863-83.391-186.25-186.25-186.25m0 579.996c-67.383 0-130.789-16.957-186.25-46.789v430.541H337.5V591.672c0-217.461 176.289-393.75 393.75-393.75S1125 374.211 1125 591.672c0 217.457-176.289 393.746-393.75 393.746\" style=\"fill:#fff;fill-opacity:1;fill-rule:nonzero;stroke:none\" transform=\"matrix(.13333 0 0 -.13333 0 214.667)\"/>\n        <path d=\"M1118.75 1241.67c0-102.18-82.83-185-185-185-102.172 0-185 82.82-185 185 0 102.17 82.828 185 185 185 102.17 0 185-82.83 185-185\" style=\"fill:url(#c);fill-opacity:1;fill-rule:nonzero;stroke:none\" transform=\"matrix(.13333 0 0 -.13333 0 214.667)\" clip-path=\"url(#d)\"/>\n      </svg>\n    </li>\n  </ul>\n  {%- endunless -%}\n</div>\n\n<style>\n.payment-section {\n  text-align: center;\n}\n\n.payment-text {\n  margin-bottom: 8px; /* Reduced spacing between text and icons on desktop */\n}\n\n.inline-list.payment-icons {\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap; /* Allow icons to wrap if needed */\n  padding: 0;\n  list-style: none;\n}\n\n.icon--payment {\n  margin: 0 3px; /* Reduced spacing between icons */\n  transform: scale(0.9); /* Reduce icon size by 10% */\n}\n\n/* Ensure Blik icon size consistency */\n.icon--payment svg {\n  width: 38px; /* Standardize width for all payment icons */\n  height: 20px; /* Standardize height for all payment icons */\n}\n\n/* Mobile-specific adjustments */\n@media (max-width: 767px) {\n  .payment-text {\n    font-size: 14px; /* Maintain font size for mobile */\n    margin-bottom: 15px; /* Maintain mobile spacing */\n  }\n\n  .inline-list.payment-icons {\n    flex-wrap: wrap; /* Ensure icons wrap nicely */\n    gap: 0px; /* Reduced consistent spacing for mobile */\n  }\n\n  .icon--payment {\n    margin: 0; /* Remove individual margins for better control */\n    transform: scale(1.2); /* Maintain reduced icon size */\n  }\n\n  .icon--payment svg {\n    width: 30px; /* Slightly smaller on mobile for better fit */\n    height: 15px; /* Slightly smaller on mobile for better fit */\n  }\n}\n</style>"
+          }
+        },
+        "custom_Kf3KDV": {
+          "type": "custom",
+          "settings": {
+            "code": "<div class=\"bf-box\">\n  <div class=\"bf-inner\">\n    <h2 class=\"bf-title\">HOLIDAY SALE ENDS TONIGHT</h2>\n    <div class=\"bf-sub\">UP TO 80% OFF</div>\n    <p class=\"bf-text\">\n      Now is the time to shop your favourite items at irresistible prices. As long\n      as stocks last!\n    </p>\n  </div>\n</div>\n\n<style>\n  /* ——— Pre-Black Friday Banner ——— */\n  .bf-box{\n    border:1px solid #111;\n    background:#f2f2f2;\n    padding:22px;\n    max-width:980px;\n    margin:0 auto 24px auto;\n  }\n  .bf-inner{\n    text-align:center;\n    font-family:inherit;\n  }\n  .bf-title{\n    margin:0 0 14px 0;\n    font-size:32px;\n    line-height:1.15;\n    letter-spacing:0.5px;\n    font-weight:800;\n    text-transform:uppercase;\n    color:#c43d2f; /* rood zoals voorbeeld */\n  }\n  .bf-sub{\n    margin:0 0 18px 0;\n    font-size:22px;\n    line-height:1.2;\n    font-weight:800;\n    text-transform:uppercase;\n    color:#2b2b2b;\n  }\n  .bf-text{\n    margin:0;\n    font-size:18px;\n    line-height:1.6;\n    color:#60666b; /* zacht grijs */\n  }\n\n  /* Responsive tweaks */\n  @media (max-width: 640px){\n    .bf-box{ padding:18px; }\n    .bf-title{ font-size:24px; }\n    .bf-sub{ font-size:18px; }\n    .bf-text{ font-size:16px; }\n  }\n</style>"
+          }
+        },
+        "custom_96mLeP": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<div class=\"fit-container\">\n\n  <div class=\"fit-title\">Fit</div>\n\n  <div class=\"fit-bar\">\n    <div class=\"fit-segment active\"></div>\n    <div class=\"fit-segment active\"></div>\n    <div class=\"fit-segment active\"></div>\n    <div class=\"fit-segment\"></div>\n    <div class=\"fit-segment\"></div>\n  </div>\n\n  <div class=\"fit-labels\">\n    <span>Runs small</span>\n    <span>True to size</span>\n    <span>Runs big</span>\n  </div>\n\n</div>\n\n<style>\n.fit-container {\n  width: 100%;\n  max-width: 500px;\n  margin: 20px 0;\n  font-family: inherit;\n}\n\n.fit-title {\n  font-size: 16px;\n  font-weight: 600;\n  margin-bottom: 8px;\n}\n\n.fit-bar {\n  display: grid;\n  grid-template-columns: repeat(5, 1fr);\n  gap: 6px;\n  margin-bottom: 8px;\n}\n\n.fit-segment {\n  height: 3px;\n  background-color: #e5e5e5;\n  border-radius: 2px;\n}\n\n.fit-segment.active {\n  background-color: #000000;\n}\n\n.fit-labels {\n  display: flex;\n  justify-content: space-between;\n  font-size: 14px;\n  margin-top: 4px;\n}\n\n.fit-labels span:nth-child(2) {\n  flex: 1;\n  text-align: center;\n}\n</style>"
+          }
+        },
+        "custom_7JYEt6": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<div class=\"product-info-block text-box\" style=\"background: #fbeae5; color: #AE0027; padding:8px;\"><div class=\"rte cf\"><p><strong> SALE UPDATE:</strong>\nDue to high demand during our Holiday Sale, only a limited number of items are left. If you can still click <strong>'Add to Cart,</strong>' it’s still available.\n<br></p></div></div>"
+          }
+        },
+        "custom_Vypz9V": {
+          "type": "custom",
+          "settings": {
+            "code": "<div class=\"clearance-box\">\n    <h2>HOLIDAY DISCOUNT</h2>\n\n    <p><strong>Add 2 items</strong> to your cart<br>\n    Get <strong>10% OFF</strong></p>\n\n    <p><strong>Add 3 items</strong> to your cart<br>\n    Get <strong>15% OFF</strong></p>\n\n    <p><strong>Add 4 items</strong> to your cart<br>\n    Get <strong>20% OFF</strong></p>\n\n    <p><strong>Add 5 items</strong> to your cart<br>\n    Get <strong>25% OFF</strong></p>\n</div>\n\n<style>\n.clearance-box {\n    background-color: #e7e6e2; /* zelfde beige achtergrond */\n    padding: 28px;\n    text-align: center;\n    border-radius: 0; /* geen ronde hoeken */\n    max-width: 900px;\n    margin: 0 auto;\n}\n\n.clearance-box h2 {\n    font-size: 20px;\n    font-weight: 700;\n    margin-bottom: 18px;\n}\n\n.clearance-box p {\n    font-size: 16px;\n    margin: 14px 0;\n    line-height: 1.4;\n}\n</style>"
+          }
+        },
+        "custom_TN9C7q": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<div class=\"product-info-block text-box\" style=\"background: #fbeae5; color: #AE0027; padding:8px;\"><div class=\"rte cf\"><p><strong>Only a few left in stock at this price – add to cart now to secure yours!</strong> \n<br></p></div></div>"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "tab_YFJFMm": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping and delivery",
+            "content": "<p>We ship all orders with a tracking code, allowing you to track your parcel at any time. You will receive the tracking code via email within 24 hours of placing your order. Shipping within the USA is free of charge.</p>",
+            "page": ""
+          }
+        },
+        "tab_8fT6r7": {
+          "type": "tab",
+          "settings": {
+            "title": "Satisfaction guarantee",
+            "content": "<p>Not sure if it’s right for you? We get it. While we can tell you all about it, the best way to know is by trying it for yourself. That’s why we offer a risk-free, 30-day money-back guarantee on every order. If you’re not completely satisfied, just return the product, and we’ll issue a full refund!</p>",
+            "page": ""
+          }
+        },
+        "tab_fhF3Px": {
+          "type": "tab",
+          "settings": {
+            "title": "24/7 Customer Service",
+            "content": "<p>At Ella & Rose, we are here for you 24/7. Our dedicated customer service team is always ready to assist you with any questions or concerns. Feel free to use the contact form on our website or send an email to <strong>info@ellarosedallas.com</strong>. We strive to respond within 48 hours.</p>",
+            "page": ""
+          }
+        },
+        "custom_AHDKYB": {
+          "type": "custom",
+          "settings": {
+            "code": "<div class=\"er-trust-bar\">\n  <div class=\"er-avatars\">\n    <!-- Vervang de src door jouw eigen avatar-foto's -->\n    <img src=\"https://cdn.shopify.com/s/files/1/0988/9280/8517/files/4_03d02788-7d17-4942-b02f-128cce5efa68.png?v=1763470713\" alt=\"Customer 1\" class=\"er-avatar\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0988/9280/8517/files/1_58861f66-f611-495e-a8b0-4914ecb151cb.png?v=1763470715\" alt=\"Customer 2\" class=\"er-avatar er-avatar--overlap\">\n  </div>\n\n  <div class=\"er-text\">\n    <strong>Jessica, Amanda</strong>\n    <span class=\"er-verified\" aria-hidden=\"true\">\n      <!-- Blauwe verified \"check\" -->\n      <svg viewBox=\"0 0 24 24\" class=\"er-verified-icon\">\n        <circle cx=\"12\" cy=\"12\" r=\"11\"></circle>\n        <path d=\"M8 12.5l2.5 2.5L16 9\" fill=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n      </svg>\n    </span>\n    <span class=\"er-text-rest\">\n      and over 7,820+ other people wear Ella &amp; Rose\n    </span>\n  </div>\n</div>\n\n<style>\n.er-trust-bar {\n  display: inline-flex;\n  align-items: center;\n  gap: 6px;\n  font-size: 12px;\n  line-height: 1.4;\n}\n\n.er-avatars {\n  display: flex;\n  align-items: center;\n}\n\n.er-avatar {\n  width: 22px;\n  height: 22px;\n  border-radius: 50%;\n  object-fit: cover;\n  border: 1px solid #fff;\n}\n\n.er-avatar--overlap {\n  margin-left: -8px;\n}\n\n.er-text {\n  display: inline-flex;\n  align-items: center;\n  flex-wrap: wrap;\n}\n\n.er-verified {\n  display: inline-flex;\n  margin-left: 4px;\n  margin-right: 4px;\n}\n\n.er-verified-icon {\n  width: 14px;\n  height: 14px;\n}\n\n.er-verified-icon circle {\n  fill: #1da1f2; /* blauw */\n}\n\n.er-verified-icon path {\n  stroke: #ffffff;\n}\n\n.er-text-rest {\n  margin-left: 2px;\n}\n</style>"
+          }
+        },
+        "custom_kNBiF9": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<div class=\"fss017-placeholder\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "custom_qdeKrj",
+        "variant_picker",
+        "custom_7b9774",
+        "custom_C3aLjp",
+        "custom_JDbkQW",
+        "buy_buttons",
+        "custom_zNAEFE",
+        "custom_PKd7PL",
+        "custom_Kf3KDV",
+        "custom_96mLeP",
+        "custom_7JYEt6",
+        "custom_Vypz9V",
+        "custom_TN9C7q",
+        "description",
+        "tab_YFJFMm",
+        "tab_8fT6r7",
+        "tab_fhF3Px",
+        "custom_AHDKYB",
+        "custom_kNBiF9"
+      ],
+      "custom_css": [],
+      "settings": {
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "below",
+        "thumbnail_height": "fixed",
+        "thumbnail_arrows": false,
+        "mobile_layout": "full",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "text_and_image_b8FFRV": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "No issues",
+        "title": "Money-back guarantee",
+        "text": "<p>We stand behind our products. If for any reason you're not satisfied with your purchase, let us know within 30 days of receiving the item.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "1742643651b9090556": {
+      "type": "apps",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "testimonials_AQFFHT": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_khi3xh": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Mój ulubiony sklep w Warszawie od ponad 10 lat! Zawsze znajdę coś wyjątkowego w Maria Warszawa.</p>",
+            "author": "Agnieszka K.",
+            "author_info": "Wrocław"
+          }
+        },
+        "testimonial_9gk94M": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Uwielbiam zakupy w Maria Warszawa! Zawsze znajdę coś, co pasuje do mojego stylu. Niezawodna jakość i elegancja.</p>",
+            "author": "Katarzyna W.",
+            "author_info": "Gdańsk"
+          }
+        },
+        "testimonial_4nRpic": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>To mój numer jeden w Warszawie! Kolekcje są zawsze świeże i stylowe, a obsługa klienta na najwyższym poziomie.</p>",
+            "author": "Monika P.",
+            "author_info": "Poznań"
+          }
+        },
+        "testimonial_zBftPq": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Zakupy w Maria Warszawa to czysta przyjemność. Niezwykłe ubrania i świetna atmosfera, z pewnością wrócę po więcej!</p>",
+            "author": "Natalia Z.",
+            "author_info": "Zakopane"
+          }
+        },
+        "testimonial_NkHAMW": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Zawsze wracam do Maria Warszawa, bo wiem, że znajdę coś eleganckiego, co wyróżnia się z tłumu. Kocham ten sklep!</p>",
+            "author": "Paulina M.",
+            "author_info": "Warszawa"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_khi3xh",
+        "testimonial_9gk94M",
+        "testimonial_4nRpic",
+        "testimonial_zBftPq",
+        "testimonial_NkHAMW"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Co mówią nasi klienci",
+        "align_text": "center",
+        "round_images": true,
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
+    },
+    "featured_collection_gAGYpT": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.featured_collection.name",
+      "settings": {
+        "title": "COMBINE AND GET UP TO 25% EXTRA DISCOUNT",
+        "home_featured_products": "handmade-sweaters",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "COMBINE AND GET UP TO 25% EXTRA DISCOUNT",
+        "related_count": 5,
+        "products_per_row": 5
+      }
+    },
+    "ss_slider_2_tJPYMa": {
+      "type": "ss-slider-2",
+      "blocks": {
+        "slide_DqrAnh": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-10-15_at_17.25.26_1.jpg",
+            "title": "",
+            "button": "",
+            "url": ""
+          }
+        },
+        "slide_fTNdWY": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Cardigan_3.webp",
+            "title": "",
+            "button": "",
+            "url": ""
+          }
+        },
+        "slide_4EgY7x": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/cardigan_6.webp",
+            "title": "",
+            "button": "",
+            "url": ""
+          }
+        },
+        "slide_RdXxQp": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/a57baf43dfa53e1af7803800f01d89da_1.jpg",
+            "title": "",
+            "button": "",
+            "url": ""
+          }
+        },
+        "slide_zk3crw": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-10-15_at_17.25.23_1.webp",
+            "title": "",
+            "button": "",
+            "url": ""
+          }
+        },
+        "slide_HqVya7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1ebadf18-67cf-4544-ba55-4826d1fa0eca_750x1000_427dc761-745f-4233-8501-fb99e23b21e1.webp",
+            "title": "",
+            "button": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_DqrAnh",
+        "slide_fTNdWY",
+        "slide_4EgY7x",
+        "slide_RdXxQp",
+        "slide_zk3crw",
+        "slide_HqVya7"
+      ],
+      "name": "SS - Slider #2",
+      "settings": {
+        "slider_view": 4,
+        "slider_view_mobile": 1.5,
+        "slider_rotate": 0,
+        "card_padding_vertical": 24,
+        "card_padding_vertical_mobile": 24,
+        "card_padding_horizontal": 40,
+        "card_padding_horizontal_mobile": 30,
+        "card_radius": 0,
+        "card_border_thickness": 0,
+        "card_shadow": true,
+        "card_ratio": "portrait",
+        "card_ratio_mobile": "portrait",
+        "card_overlay": 0.3,
+        "content_horizontal_position": "center",
+        "content_horizontal_position_mobile": "center",
+        "content_vertical_position": "end",
+        "content_vertical_position_mobile": "end",
+        "title_custom": false,
+        "title_font": "inter_n4",
+        "title_size": 28,
+        "title_size_mobile": 28,
+        "title_height": 100,
+        "button_custom": false,
+        "button_font": "inter_n4",
+        "button_size": 14,
+        "button_size_mobile": 14,
+        "button_height": 100,
+        "button_mt": 16,
+        "button_padding_vertical": 12,
+        "button_padding_horizontal": 20,
+        "button_radius": 0,
+        "button_border_thickness": 1,
+        "arrow_size": 50,
+        "arrow_size_mobile": 32,
+        "arrow_icon_size": 20,
+        "arrow_icon_size_mobile": 12,
+        "arrow_border_thickness": 0,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": true,
+        "card_border_color": "#000000",
+        "card_shadow_color": "#000000",
+        "card_overlay_color": "#000000",
+        "title_color": "#FFFFFF",
+        "button_color": "#FFFFFF",
+        "button_hover_color": "#000000",
+        "button_bg_color": "",
+        "button_bg_hover_color": "#ffffff",
+        "button_border_color": "#FFFFFF",
+        "button_border_hover_color": "#FFFFFF",
+        "arrow_color": "#000000",
+        "arrow_hover_color": "#FFFFFF",
+        "arrow_bg_color": "#FFFFFF",
+        "arrow_bg_hover_color": "#000000",
+        "arrow_border_color": "#000000",
+        "arrow_border_hover_color": "#454545",
+        "background_color": "#FFFFFF",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "testimonials_WdbeLr": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_8hf3pM": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "4-stars",
+            "testimonial": "<p>Fast delivery and beautifully packaged. The cardigan I ordered looks chic and is perfect for layering. I’ll definitely be ordering again for the autumn season.</p>",
+            "image": "shopify://shop_images/1_58861f66-f611-495e-a8b0-4914ecb151cb.png",
+            "author": "Jessica M.",
+            "author_info": "Los Angeles"
+          }
+        },
+        "testimonial_MHrxQM": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "4-stars",
+            "testimonial": "<p>Very impressed! The material feels luxurious but lightweight. It’s stylish without being too much, and I’ve been wearing it to work and at weekends. Brilliant find.</p>",
+            "image": "shopify://shop_images/4_03d02788-7d17-4942-b02f-128cce5efa68.png",
+            "author": "Amanda K.",
+            "author_info": "New York"
+          }
+        },
+        "testimonial_JThjxE": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>I was a little unsure about sizing, but the guide was accurate. The jacket fits perfectly and is so flattering. Great customer service as well when I had a quick question.</p>",
+            "image": "shopify://shop_images/2_82ddfc93-923c-49ce-bbbf-228cc6892ed9.png",
+            "author": "Rebecca L.",
+            "author_info": "Dallas"
+          }
+        },
+        "testimonial_LMjjFW": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "4-stars",
+            "testimonial": "<p>The leopard print jacket is a real statement piece! Comfortable, trendy and gets noticed everywhere I go. Love that it’s easy to dress up or down.</p>",
+            "image": "shopify://shop_images/5.png",
+            "author": "Courtney A.",
+            "author_info": "Houston"
+          }
+        },
+        "testimonial_THfL8P": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "4-stars",
+            "testimonial": "<p>I absolutely love my new coat from Ella & Rose. The fit is spot on and the quality is even better than I expected. It feels elegant yet so easy to wear. Already had compliments!</p>",
+            "image": "shopify://shop_images/3.png",
+            "author": "Melissa T.",
+            "author_info": "Dallas"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_8hf3pM",
+        "testimonial_MHrxQM",
+        "testimonial_JThjxE",
+        "testimonial_LMjjFW",
+        "testimonial_THfL8P"
+      ],
+      "disabled": true,
+      "name": "t:sections.testimonials.presets.testimonials.name",
+      "settings": {
+        "title": "Kind words from our customers",
+        "align_text": "center",
+        "round_images": true,
+        "color_background": "#f1f5f0",
+        "color_text": "#1c1d1d"
+      }
+    },
+    "text_and_image_8FC9CY": {
+      "type": "text-and-image",
+      "name": "t:sections.text-and-image.presets.image_with_text.name",
+      "settings": {
+        "image": "shopify://shop_images/Ontwerp_zonder_titel_81.webp",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "",
+        "text": "<p><strong>HOLIDAY SALE </strong></p><p><strong>Thank you</strong> for being part of our journey – we’re incredibly grateful for your support! </p><p>To celebrate the holiday season, we’re offering <strong>exclusive  discounts</strong> as our way of saying thank you. </p><p><strong>Ella & Rose Dallas </strong></p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "rich_text_fBPQ6b": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Kjp9FR": {
+          "type": "heading",
+          "settings": {
+            "title": "Productspecificaties"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Kjp9FR"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".bg-product-specificate h2 {text-transform: none;}",
+        "@media (max-width: 769px) {.bg-product-specificate h2 {text-transform: none; font-size: 18px; font-weight: 700; }}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "advanced_content_8xgThm": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_GpiEVH": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "code": "<style>\n\n\n\n.content-block{\n  display:flex;\nalign-items:center;\n\n\n}\n\n\n.icon-wrapper>img{\n  position:relative;\n  top:10px;\n  max-width:68px;\n}\n.column1{\nwidth:100%;\n  max-width:25%;\n\n}\n@media only screen and (max-width: 800px) {\n.custom-container {\n      flex-direction: column; \n\n    }\n.column1 {\nmax-width:100% !important;\n}\n}\n</style>\n\n<div style=\"display:flex; align-items:center; justify-content:center; gap:20px !important;\" class=\"custom-container\">\n  \n  <div  class=\"column1\">\n          <div  class=\"content-block\">\n            <div class=\"icon-wrapper\">\n              <img src=\"https://cdn.shopify.com/s/files/1/2707/0176/files/ICONOmarcassudorMOVIMIENTO.gif?v=1632989458\" alt=\"\">\n            </div>\n            <div class=\"text-wrapper\">\n               <p><strong>Maximum flexibility</strong><br>\n                    Comfortable fit and made from high-quality fabrics, with durability as a priority.\n                  </p>\n            </div>\n          </div>\n        </div>\n    \n  <div class=\"column1\">\n          <div class=\"content-block\">\n            <div class=\"icon-wrapper\">\n              <img src=\"https://cdn.shopify.com/s/files/1/2707/0176/files/ICONOplanchaMOVIMIENTO.gif?v=1632989458\" alt=\"\">\n            </div>\n            <div class=\"text-wrapper\">\n               <p><strong>Wrinkle-free</strong><br>\n                   No more ironing: machine washable, hang it up, and you're done.\n                  </p>\n            </div>\n          </div>\n        </div>\n    \n  <div class=\"column1\">\n          <div class=\"content-block\">\n            <div class=\"icon-wrapper\">\n              <img src=\"https://cdn.shopify.com/s/files/1/2707/0176/files/ICONOtranspirableMOVIMIENTo.gif?v=1632989458\" alt=\"\">\n            </div>\n            <div class=\"text-wrapper\">\n               <p><strong>Breathable & Quick-drying fabric</strong><br>\n                    Fresh & comfortable all day long.\n                  </p>\n            </div>\n          </div>\n        </div>\n    \n  <div class=\"column1\">\n          <div class=\"content-block\">\n            <div class=\"icon-wrapper\">\n              <img src=\"https://cdn.shopify.com/s/files/1/2707/0176/files/ICONOantibacterianoMOVIMIENTO.gif?v=1632989458\" alt=\"\">\n            </div>\n            <div class=\"text-wrapper\">\n               <p><strong>Odor-free</strong><br>\n                    Neutralizes the bacteria that cause body odor when we sweat.\n                  </p>\n            </div>\n          </div>\n        </div>\n    \n</div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_GpiEVH"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "text_columns_zrQrWM": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_JYJbmm": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 70,
+            "title": "Expresslevering wereldwijd",
+            "text": "<p>We leveren wereldwijd met een veilige, getraceerde verzendmethode, voor de snelste en meest betrouwbare service. Gratis verzending voor bestellingen van meer dan €100 in Nederland, België en Duitsland | €150 voor de rest van de wereld.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_ViKUfr": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 70,
+            "title": "Koop nu, betaal later",
+            "text": "<p>Klarna Pay Later geeft je extra flexibiliteit bij het betalen van je bestelling omdat je binnen 30 dagen kunt betalen. Probeer je broek eerst uit en beslis dan of je hem wilt houden. </p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_hpc7VW": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 70,
+            "title": "14 dagen retour",
+            "text": "<p>Past niet? - Geen probleem! Je kunt altijd retourneren of ruilen. We bieden een retour- of omruilbeleid van 14 dagen als je om wat voor reden dan ook niet tevreden bent met je bestelling.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_JYJbmm",
+        "text_block_ViKUfr",
+        "text_block_hpc7VW"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "faq_CVYnEB": {
+      "type": "faq",
+      "blocks": {
+        "question_8NfbQX": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer free shipping?",
+            "text": "<p>Yes, we offer Free Premium Shipping, along with Track & Trace, because we value you as a customer and want to provide you with the best service.</p>"
+          }
+        },
+        "question_N4EmpG": {
+          "type": "question",
+          "settings": {
+            "title": "Can I return the item(s) if I don’t like them?",
+            "text": "<p>Yes, you can return your order within 30 days of receiving it.</p>"
+          }
+        },
+        "question_Ph47ka": {
+          "type": "question",
+          "settings": {
+            "title": "How can I track my order?",
+            "text": "<p>You can track your order by entering the tracking number you received from us on the \"TRACK YOUR ORDER\" page. Once you’ve entered the number and clicked \"TRACK,\" you will see the status of your order.</p>"
+          }
+        },
+        "question_wmAkCL": {
+          "type": "question",
+          "settings": {
+            "title": "What payment methods do you accept?",
+            "text": "<p>You can pay safely and securely with the following payment methods: Credit Card, Visa, Mastercard, American Express, Apple Pay, Google Pay, Maestro, and Shop Pay.</p>"
+          }
+        },
+        "question_H4qrgn": {
+          "type": "question",
+          "settings": {
+            "title": "Will I receive a confirmation email after placing an order?",
+            "text": "<p>Yes, once you've placed your order, a confirmation will be sent to your email inbox. If you don’t see it, feel free to reach out to our customer service team, we’re happy to help you right away.<br/><br/>Email:  info@ellarosedallas.com</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_8NfbQX",
+        "question_N4EmpG",
+        "question_Ph47ka",
+        "question_wmAkCL",
+        "question_H4qrgn"
+      ],
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "title": "Frequently Asked Questions"
+      }
+    },
+    "text_and_image_JCGFRF": {
+      "type": "text-and-image",
+      "name": "t:sections.text-and-image.presets.image_with_text.name",
+      "settings": {
+        "image": "shopify://shop_images/Ontwerp_zonder_titel_4.webp",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "30-DAY MONEY-BACK GUARANTEE",
+        "text": "<p>If your order isn’t quite right, simply return it within <strong>30 days</strong> for a full refund. No fuss, no worry — shopping with Ella & Rose is always stress-free.</p><p>Because we know what matters most: feeling good, looking lovely, and trusting the brands we choose.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "ss_testimonial_12_kfT8hA": {
+      "type": "ss-testimonial-12",
+      "blocks": {
+        "slide_qnYhLM": {
+          "type": "slide",
+          "settings": {
+            "media_style": "image",
+            "video_url": "",
+            "controls": false,
+            "stars_count": 5,
+            "text": "<p>Wore this dress to a party and got so many compliments! It fits perfectly and feels super comfortable. I’m really happy with it — definitely one of my new favorites!</p>",
+            "author": "<p>KATY M.</p>"
+          }
+        },
+        "slide_R8y7nM": {
+          "type": "slide",
+          "settings": {
+            "media_style": "image",
+            "video_url": "",
+            "controls": false,
+            "stars_count": 5,
+            "text": "<p>First received the wrong size, and I sent them an email and they immediately sent a new one. Good customer support.</p>",
+            "author": "<p>KAREN H.</p>"
+          }
+        },
+        "slide_G7JjkA": {
+          "type": "slide",
+          "settings": {
+            "media_style": "image",
+            "video_url": "",
+            "controls": false,
+            "stars_count": 5,
+            "text": "<p>I took advantage of the clearance sale. My order came quickly and quality is good. I will order here more often if the sale is still here!</p>",
+            "author": "<p>MICHELLE L.</p>"
+          }
+        },
+        "slide_t7WcFq": {
+          "type": "slide",
+          "settings": {
+            "media_style": "image",
+            "video_url": "",
+            "controls": false,
+            "stars_count": 4,
+            "text": "<p>Great fit of the clothes and the quality is good! Use it daily for already 6 months and still super good. Highly recommended.</p>",
+            "author": "<p>WENDY Q.</p>"
+          }
+        },
+        "slide_qNtb4b": {
+          "type": "slide",
+          "settings": {
+            "media_style": "image",
+            "video_url": "",
+            "controls": false,
+            "stars_count": 5,
+            "text": "<p>Absolutely love this jacket! The fit is super flattering and it feels really high quality. Wore it to dinner last weekend and got so many compliments — I’ll definitely be wearing it a lot more!</p>",
+            "author": "<p>SUSAN D.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_qnYhLM",
+        "slide_R8y7nM",
+        "slide_G7JjkA",
+        "slide_t7WcFq",
+        "slide_qNtb4b"
+      ],
+      "disabled": true,
+      "name": "SS - Testimonials #12",
+      "settings": {
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 8,
+        "heading_size_mobile": 8,
+        "heading_height": 130,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "sub_heading": "",
+        "sub_heading_custom": false,
+        "sub_heading_font": "josefin_sans_n4",
+        "sub_heading_size": 30,
+        "sub_heading_size_mobile": 22,
+        "sub_heading_height": 150,
+        "sub_heading_mt": 12,
+        "sub_heading_align": "center",
+        "sub_heading_align_mobile": "center",
+        "slider_view": 5,
+        "slider_view_mobile": 1.2,
+        "slider_gap": 28,
+        "slider_gap_mobile": 20,
+        "slider_mt": 20,
+        "autoplay": false,
+        "autoplay_delay": 5,
+        "card_padding_vertical": 20,
+        "card_padding_vertical_mobile": 16,
+        "card_padding_horizontal": 20,
+        "card_padding_horizontal_mobile": 16,
+        "card_radius": 20,
+        "card_border_thickness": 1,
+        "card_shadow": false,
+        "media_radius": 20,
+        "media_border_thickness": 0,
+        "media_ratio": "square",
+        "media_ratio_mobile": "square",
+        "content_padding_vertical": 0,
+        "content_padding_vertical_mobile": 0,
+        "content_padding_horizontal": 0,
+        "content_padding_horizontal_mobile": 0,
+        "hide_content": false,
+        "stars_size": 16,
+        "stars_mt": 12,
+        "stars_align": "center",
+        "stars_align_mobile": "center",
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 16,
+        "text_size_mobile": 16,
+        "text_height": 130,
+        "text_mt": 12,
+        "text_align": "center",
+        "text_align_mobile": "center",
+        "author_custom": false,
+        "author_font": "josefin_sans_n4",
+        "author_size": 14,
+        "author_size_mobile": 14,
+        "author_height": 130,
+        "author_mt": 12,
+        "author_align": "center",
+        "author_align_mobile": "center",
+        "navigation_mt": 40,
+        "navigation_gap": 20,
+        "navigation_align": "center",
+        "navigation_align_mobile": "center",
+        "arrow_size": 50,
+        "arrow_size_mobile": 50,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "dots_size": 10,
+        "dots_size_mobile": 10,
+        "dots_show_desktop": false,
+        "dots_show_mobile": true,
+        "btn_icon_size": 50,
+        "btn_icon_size_mobile": 40,
+        "card_bg_color": "#ffffff",
+        "card_bg_gradient": "",
+        "card_border_color": "#000000",
+        "media_border_color": "#121212",
+        "stars_color": "#323232",
+        "text_color": "#323232",
+        "author_color": "#323232",
+        "video_icon_bg_color": "#ffffff",
+        "video_icon_color": "#121212",
+        "arrow_color": "#ffffff",
+        "arrow_hover_color": "#ffffff",
+        "dots_color": "#ffffff",
+        "heading_color": "#ffffff",
+        "sub_heading_color": "#ffffff",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "faq_X8iKqM": {
+      "type": "faq",
+      "blocks": {
+        "question_haktrV": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+          }
+        },
+        "question_CtDeMr": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_haktrV",
+        "question_CtDeMr"
+      ],
+      "disabled": true,
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "title": "FAQs"
+      }
+    },
+    "text_with_icons_eHc3Ad": {
+      "type": "text-with-icons",
+      "blocks": {
+        "text_block_Db7iqw": {
+          "type": "text_block",
+          "settings": {
+            "icon": "truck",
+            "title": "Free shipping on all orders",
+            "text": "<p>At <strong>Ella & Rose Dallas,</strong> we aim to provide maximum convenience for our customers and offer free shipping across the United States on all orders.</p>"
+          }
+        },
+        "text_block_LQL4NG": {
+          "type": "text_block",
+          "settings": {
+            "icon": "wallet",
+            "title": "30-DAY MONEY-BACK GUARANTEE",
+            "text": "<p>At <strong>Ella & Rose Dallas,</strong> we offer a 30-day return period. This gives you plenty of time to return your item if you're not completely satisfied.</p>"
+          }
+        },
+        "text_block_d4NHeA": {
+          "type": "text_block",
+          "settings": {
+            "icon": "ribbon",
+            "title": "Quality guarantee",
+            "text": "<p>At <strong>Ella & Rose Dallas,</strong> we always set the standards, ensuring the highest quality and service for our customers.</p>"
+          }
+        },
+        "text_block_FcNXKg": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "title": "24/7 support",
+            "text": "<p>At <strong>Ella & Rose Dallas,</strong> we're always here to help, providing support whenever you need it.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_Db7iqw",
+        "text_block_LQL4NG",
+        "text_block_d4NHeA",
+        "text_block_FcNXKg"
+      ],
+      "custom_css": [],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 4,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "divider": false
+      }
+    },
+    "s_reviews_1_Vxh9UQ": {
+      "type": "s-reviews-1",
+      "name": "s-stars-1 (Trustpilot)",
+      "settings": {
+        "custom_display": true,
+        "blcustom_width": false,
+        "block_max_width": 1400,
+        "desk_align": "left",
+        "mob_align": "left",
+        "block_radius": 0,
+        "block_radius_m": 0,
+        "block_background_color": "rgba(0,0,0,0)",
+        "trustpilot_color": "#00b67a",
+        "trustpilot_star_active_color": "#ffffff",
+        "trustpilot_disable_color": "#dddddd",
+        "text_color": "#000000",
+        "star_size": 20,
+        "star_size_mobile": 20,
+        "tp_rating": 4.5,
+        "tp_reviews": 389,
+        "text": "[rating] | Based on [reviews]+ reviews",
+        "font_size_desktop": 14,
+        "line_hight_desktop": 18,
+        "font_size_mobile": 12,
+        "line_hight_mobile": 16,
+        "padding_x": 0,
+        "padding_y": 0,
+        "padding_x_m": 0,
+        "padding_y_m": 0,
+        "margin_left": 0,
+        "margin_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_left_m": 0,
+        "margin_top_m": 0,
+        "margin_bottom_m": 0
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "recent_count": 5
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {}
+    },
+    "17429414560c895074": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "1761770295cc0ec19f": {
+      "type": "apps",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "fss_017_customer_reviews_4Qrrc3": {
+      "type": "fss-017-customer-reviews",
+      "blocks": {
+        "review_zyee4T": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_title": "Worth It",
+            "review_text": "\"Love how effortless these outfits feel — soft fabrics, great cuts, and they make me feel confident again. My daughter even complimented my new look!\"",
+            "reviewer_name": "Laura M.",
+            "review_time": "2 hours ago"
+          }
+        },
+        "review_t3M46E": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_title": "Flattering Fit",
+            "review_text": "“I’ve stopped buying trendy stuff that lasts one season. These clothes feel classic, well-made, and honestly worth every penny. I’ve already gone back for a second order.”",
+            "reviewer_name": "Michelle C.",
+            "review_time": "1 day ago"
+          }
+        },
+        "review_d6zcFg": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_title": "So Comfortable",
+            "review_text": "“I love how these clothes feel — polished but not overdone. They’re perfect for everyday life, whether I’m at work or meeting friends. It’s that effortless kind of style I’ve been missing.”",
+            "reviewer_name": "Angela M.",
+            "review_time": "2 days ago"
+          }
+        }
+      },
+      "block_order": [
+        "review_zyee4T",
+        "review_t3M46E",
+        "review_d6zcFg"
+      ],
+      "disabled": true,
+      "name": "FSS-017: Customer Reviews",
+      "settings": {
+        "auto_attach_to_product_info": false,
+        "auto_attach_position": "start",
+        "placeholder_code": "<div class=\"fss017-placeholder\"></div>",
+        "show_summary": true,
+        "overall_rating": "4.7",
+        "review_count": "7,820",
+        "filter_description": "",
+        "verified_label": "Verified",
+        "section_bg": "#ffffff",
+        "padding_vertical": 32,
+        "padding_horizontal": 0,
+        "padding_vertical_mobile": 24,
+        "padding_horizontal_mobile": 16,
+        "review_gap": 24,
+        "review_gap_mobile": 16,
+        "summary_margin": 8,
+        "review_padding_mobile": 15
+      }
+    },
+    "17646817116d07d5c7": {
+      "type": "apps",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "text_and_image_b8FFRV",
+    "1742643651b9090556",
+    "testimonials_AQFFHT",
+    "featured_collection_gAGYpT",
+    "product-recommendations",
+    "ss_slider_2_tJPYMa",
+    "testimonials_WdbeLr",
+    "text_and_image_8FC9CY",
+    "sub",
+    "rich_text_fBPQ6b",
+    "advanced_content_8xgThm",
+    "text_columns_zrQrWM",
+    "faq_CVYnEB",
+    "text_and_image_JCGFRF",
+    "ss_testimonial_12_kfT8hA",
+    "faq_X8iKqM",
+    "text_with_icons_eHc3Ad",
+    "s_reviews_1_Vxh9UQ",
+    "recently-viewed",
+    "collection-return",
+    "17429414560c895074",
+    "1761770295cc0ec19f",
+    "fss_017_customer_reviews_4Qrrc3",
+    "17646817116d07d5c7"
+  ]
+}
