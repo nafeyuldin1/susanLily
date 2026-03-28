@@ -374,6 +374,9 @@
         "testimonial_LXbrX8",
         "testimonial_VrGpB8"
       ],
+      "custom_css": [
+        ".testimonial-stars {color: #ffc403; /* goud */}"
+      ],
       "name": "t:sections.testimonials.presets.testimonials.name",
       "settings": {
         "title": "Here's what our customers say",
