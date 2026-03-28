@@ -14,6 +14,7 @@
       "blocks": {
         "review_block_mT6CyT": {
           "type": "review_block",
+          "disabled": true,
           "settings": {
             "custom_display": false,
             "blcustom_width": true,
