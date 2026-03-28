@@ -109,7 +109,8 @@
               {%- if settings.show_breadcrumbs and isModal != true -%}
                 {%- render 'breadcrumbs' -%}
               {%- endif -%}
-
+                    {% render 'kopstorm-snippet-2' %}
+                    
               {%- if settings.vendor_enable -%}
                 <div class="product-single__vendor">
                   {%- assign vendor_handle = product.vendor | handleize -%}
