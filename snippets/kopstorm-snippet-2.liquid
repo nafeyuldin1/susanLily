@@ -1,0 +1,65 @@
+<div class="product-block">
+                      <div class="social-proof">
+  <!-- Volledig gevulde sterren -->
+  <span class="star">★</span>
+  <span class="star">★</span>
+  <span class="star">★</span>
+  <span class="star">★</span>
+  
+  <!-- Gedeeltelijk gevulde ster -->
+  <span class="half-star"></span>
+
+  <!-- Tekst na de sterren -->
+  <span class="review-text">4.7 / 5 Rated (3728+ reviews)</span>
+</div>
+<style>
+ .social-proof {
+      display: flex;
+      align-items: center;
+         margin-bottom: -20px;
+margin-top: -15px;
+    }
+
+    /* Styling voor de sterren */
+    .star {
+         color: #ffc403;
+    font-size: 17px;
+    }
+
+    /* Styling voor de gedeeltelijk gevulde ster */
+    .half-star {
+      position: relative;
+      display: inline-block;
+      font-size: 17px;
+    }
+    .half-star::before {
+      content: "★";
+      color: #ffc403; /* Gouden kleur voor het gevulde deel */
+      position: absolute;
+      width: 65%; /* De helft van de ster gevuld */
+      overflow: hidden;
+    }
+    .half-star::after {
+      content: "★";
+      color: #ccc; /* Lichte kleur voor de ongevulde helft */
+    }
+
+    /* Styling voor de tekst naast de sterren */
+    .review-text {
+      margin-left: 10px;
+        color: #000000;
+    font-size: 15px;
+    }
+
+
+.socialprooftesti{    justify-content: center;}
+.testimonials-section .section-header { margin-bottom: 0; }
+.socialprooftesti .review-text { margin-left: 0;  margin-right: 14px;    font-size: 22px; }
+.socialprooftesti .star {  font-size: 23px; }
+.socialprooftesti .half-star{  font-size: 23px; }
+.ratingtest{font-size: 24px;
+    font-weight: bold;}
+
+
+</style>
+                    </div>
