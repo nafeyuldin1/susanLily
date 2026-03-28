@@ -394,71 +394,6 @@
         "space_around": true
       }
     },
-    "testimonials_AQFFHT": {
-      "type": "testimonials",
-      "blocks": {
-        "testimonial_khi3xh": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "testimonial": "<p>Mój ulubiony sklep w Warszawie od ponad 10 lat! Zawsze znajdę coś wyjątkowego w Maria Warszawa.</p>",
-            "author": "Agnieszka K.",
-            "author_info": "Wrocław"
-          }
-        },
-        "testimonial_9gk94M": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "testimonial": "<p>Uwielbiam zakupy w Maria Warszawa! Zawsze znajdę coś, co pasuje do mojego stylu. Niezawodna jakość i elegancja.</p>",
-            "author": "Katarzyna W.",
-            "author_info": "Gdańsk"
-          }
-        },
-        "testimonial_4nRpic": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "testimonial": "<p>To mój numer jeden w Warszawie! Kolekcje są zawsze świeże i stylowe, a obsługa klienta na najwyższym poziomie.</p>",
-            "author": "Monika P.",
-            "author_info": "Poznań"
-          }
-        },
-        "testimonial_zBftPq": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "testimonial": "<p>Zakupy w Maria Warszawa to czysta przyjemność. Niezwykłe ubrania i świetna atmosfera, z pewnością wrócę po więcej!</p>",
-            "author": "Natalia Z.",
-            "author_info": "Zakopane"
-          }
-        },
-        "testimonial_NkHAMW": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "testimonial": "<p>Zawsze wracam do Maria Warszawa, bo wiem, że znajdę coś eleganckiego, co wyróżnia się z tłumu. Kocham ten sklep!</p>",
-            "author": "Paulina M.",
-            "author_info": "Warszawa"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_khi3xh",
-        "testimonial_9gk94M",
-        "testimonial_4nRpic",
-        "testimonial_zBftPq",
-        "testimonial_NkHAMW"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Co mówią nasi klienci",
-        "align_text": "center",
-        "round_images": true,
-        "color_background": "#f9f9f9",
-        "color_text": "#1c1d1d"
-      }
-    },
     "featured_collection_gAGYpT": {
       "type": "featured-collection",
       "disabled": true,
@@ -510,7 +445,6 @@
       "blocks": {
         "liquid_GpiEVH": {
           "type": "liquid",
-          "disabled": true,
           "settings": {
             "code": "<style>\n\n\n\n.content-block{\n  display:flex;\nalign-items:center;\n\n\n}\n\n\n.icon-wrapper>img{\n  position:relative;\n  top:10px;\n  max-width:68px;\n}\n.column1{\nwidth:100%;\n  max-width:25%;\n\n}\n@media only screen and (max-width: 800px) {\n.custom-container {\n      flex-direction: column; \n\n    }\n.column1 {\nmax-width:100% !important;\n}\n}\n</style>\n\n<div style=\"display:flex; align-items:center; justify-content:center; gap:20px !important;\" class=\"custom-container\">\n  \n  <div  class=\"column1\">\n          <div  class=\"content-block\">\n            <div class=\"icon-wrapper\">\n              <img src=\"https://cdn.shopify.com/s/files/1/2707/0176/files/ICONOmarcassudorMOVIMIENTO.gif?v=1632989458\" alt=\"\">\n            </div>\n            <div class=\"text-wrapper\">\n               <p><strong>Maximum flexibility</strong><br>\n                    Comfortable fit and made from high-quality fabrics, with durability as a priority.\n                  </p>\n            </div>\n          </div>\n        </div>\n    \n  <div class=\"column1\">\n          <div class=\"content-block\">\n            <div class=\"icon-wrapper\">\n              <img src=\"https://cdn.shopify.com/s/files/1/2707/0176/files/ICONOplanchaMOVIMIENTO.gif?v=1632989458\" alt=\"\">\n            </div>\n            <div class=\"text-wrapper\">\n               <p><strong>Wrinkle-free</strong><br>\n                   No more ironing: machine washable, hang it up, and you're done.\n                  </p>\n            </div>\n          </div>\n        </div>\n    \n  <div class=\"column1\">\n          <div class=\"content-block\">\n            <div class=\"icon-wrapper\">\n              <img src=\"https://cdn.shopify.com/s/files/1/2707/0176/files/ICONOtranspirableMOVIMIENTo.gif?v=1632989458\" alt=\"\">\n            </div>\n            <div class=\"text-wrapper\">\n               <p><strong>Breathable & Quick-drying fabric</strong><br>\n                    Fresh & comfortable all day long.\n                  </p>\n            </div>\n          </div>\n        </div>\n    \n  <div class=\"column1\">\n          <div class=\"content-block\">\n            <div class=\"icon-wrapper\">\n              <img src=\"https://cdn.shopify.com/s/files/1/2707/0176/files/ICONOantibacterianoMOVIMIENTO.gif?v=1632989458\" alt=\"\">\n            </div>\n            <div class=\"text-wrapper\">\n               <p><strong>Odor-free</strong><br>\n                    Neutralizes the bacteria that cause body odor when we sweat.\n                  </p>\n            </div>\n          </div>\n        </div>\n    \n</div>",
             "width": "100%",
@@ -533,7 +467,6 @@
       "blocks": {
         "text_block_JYJbmm": {
           "type": "text_block",
-          "disabled": true,
           "settings": {
             "enable_image": true,
             "image_mask": "none",
@@ -546,7 +479,6 @@
         },
         "text_block_ViKUfr": {
           "type": "text_block",
-          "disabled": true,
           "settings": {
             "enable_image": true,
             "image_mask": "none",
@@ -559,7 +491,6 @@
         },
         "text_block_hpc7VW": {
           "type": "text_block",
-          "disabled": true,
           "settings": {
             "enable_image": true,
             "image_mask": "none",
@@ -665,15 +596,37 @@
     "ss_testimonial_12_kfT8hA": {
       "type": "ss-testimonial-12",
       "blocks": {
+        "slide_7FU84X": {
+          "type": "slide",
+          "settings": {
+            "media_style": "image",
+            "video_url": "",
+            "controls": false,
+            "stars_count": 5,
+            "text": "<p>This dress is perfect for warmer days. The fabric is light and breathable, and it feels very comfortable to wear. It also looks quite elegant, which I love. I’m very happy with it.</p>",
+            "author": "<p>Author</p>"
+          }
+        },
+        "slide_NXYQHj": {
+          "type": "slide",
+          "settings": {
+            "media_style": "image",
+            "video_url": "",
+            "controls": false,
+            "stars_count": 5,
+            "text": "<p>I often struggle to find dresses that fit well, but this one surprised me. The shape is very flattering and it sits beautifully. It feels comfortable and looks stylish at the same time. Very pleased with this purchase.</p>",
+            "author": "<p>Author</p>"
+          }
+        },
         "slide_qnYhLM": {
           "type": "slide",
           "settings": {
             "media_style": "image",
-            "image": "shopify://shop_images/Ontwerp_zonder_titel_37_2bddc8ce-db89-411e-8420-cf8522ac1c84.jpg",
+            "image": "shopify://shop_images/Ontwerp_zonder_titel_38.jpg",
             "video_url": "",
             "controls": false,
             "stars_count": 5,
-            "text": "<p>Wore this dress to a party and got so many compliments! It fits perfectly and feels super comfortable. I’m really happy with it — definitely one of my new favorites!</p>",
+            "text": "<p>I’m really happy with this dress. The fabric feels soft and lightweight and it sits very nicely on the body. It’s comfortable enough to wear all day but still looks elegant. Definitely a great purchase.</p>",
             "author": "<p>KATY M.</p>"
           }
         },
@@ -684,7 +637,7 @@
             "video_url": "",
             "controls": false,
             "stars_count": 5,
-            "text": "<p>First received the wrong size, and I sent them an email and they immediately sent a new one. Good customer support.</p>",
+            "text": "<p>I wasn’t sure at first, but once I tried it on I loved how it looked. The cut is very flattering and the material feels lovely. It’s the kind of dress you can wear anywhere. I’m very pleased with it.</p>",
             "author": "<p>KAREN H.</p>"
           }
         },
@@ -695,7 +648,7 @@
             "video_url": "",
             "controls": false,
             "stars_count": 5,
-            "text": "<p>I took advantage of the clearance sale. My order came quickly and quality is good. I will order here more often if the sale is still here!</p>",
+            "text": "<p>This dress is exactly what I was looking for. It’s light, comfortable and moves beautifully when walking. The fit is very nice without feeling tight. I’ll definitely be wearing it a lot this summer.</p>",
             "author": "<p>MICHELLE L.</p>"
           }
         },
@@ -706,7 +659,7 @@
             "video_url": "",
             "controls": false,
             "stars_count": 4,
-            "text": "<p>Great fit of the clothes and the quality is good! Use it daily for already 6 months and still super good. Highly recommended.</p>",
+            "text": "<p>I wore this dress the same evening and already received a few compliments. The fit is very nice and it moves beautifully when walking. It feels elegant but still very comfortable. Definitely a good purchase.</p>",
             "author": "<p>WENDY Q.</p>"
           }
         },
@@ -717,12 +670,14 @@
             "video_url": "",
             "controls": false,
             "stars_count": 5,
-            "text": "<p>Absolutely love this jacket! The fit is super flattering and it feels really high quality. Wore it to dinner last weekend and got so many compliments — I’ll definitely be wearing it a lot more!</p>",
+            "text": "<p>I wasn’t planning to buy a dress that day, but I’m glad I did. The fit is lovely and the material feels really nice. It’s comfortable and looks very flattering. I’m very happy with it.</p>",
             "author": "<p>SUSAN D.</p>"
           }
         }
       },
       "block_order": [
+        "slide_7FU84X",
+        "slide_NXYQHj",
         "slide_qnYhLM",
         "slide_R8y7nM",
         "slide_G7JjkA",
@@ -810,7 +765,7 @@
         "card_bg_gradient": "",
         "card_border_color": "#000000",
         "media_border_color": "#121212",
-        "stars_color": "#323232",
+        "stars_color": "#ffc403",
         "text_color": "#323232",
         "author_color": "#323232",
         "video_icon_bg_color": "#ffffff",
@@ -1032,7 +987,6 @@
     "testimonials_fzM76U",
     "text_and_image_b8FFRV",
     "1742643651b9090556",
-    "testimonials_AQFFHT",
     "featured_collection_gAGYpT",
     "sub",
     "rich_text_fBPQ6b",
