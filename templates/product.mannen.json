@@ -104,7 +104,7 @@
         "tab_fhF3Px"
       ],
       "custom_css": [
-        ".product__price--compare {display: inline-block; padding-right: 5px; -webkit-text-decoration: line-through; text-decoration: line-through; color: black;}",
+        ".product__price--compare {display: inline-block; padding-right: 5px; -webkit-text-decoration: line-through; text-decoration: line-through; color: #c20704;}",
         ".on-sale {color: #c00;}",
         ".product__price-savings {background-color: #eaf8e4; color: #1a7f38; font-weight: bold; font-size: 16px; padding: 4px 8px; border-radius: 4px;}",
         ".variant-input-wrap label {height: 50px; width: 50px;}",
