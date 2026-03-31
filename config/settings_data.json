@@ -128,6 +128,11 @@
           "custom_liquid_css": "",
           "custom_liquid_js": ""
         }
+      },
+      "12007544985113008798": {
+        "type": "shopify://apps/trueroas/blocks/trueroas_embed/019bb66d-cf11-7699-b405-0095159ab71a",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
