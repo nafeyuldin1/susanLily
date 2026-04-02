@@ -114,10 +114,10 @@
         "collection_Fe9c3F": {
           "type": "collection",
           "settings": {
-            "collection": "skirt",
+            "collection": "skirts-sets",
             "custom_title": "",
             "view_all_text": "View All",
-            "view_all_url": "shopify://collections/skirt"
+            "view_all_url": "shopify://collections/skirts-sets"
           }
         }
       },
