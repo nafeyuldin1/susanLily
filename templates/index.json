@@ -168,10 +168,10 @@
         "collection_pFWbwe": {
           "type": "collection",
           "settings": {
-            "collection": "pants-1",
+            "collection": "pants",
             "custom_title": "",
             "view_all_text": "View All",
-            "view_all_url": "shopify://collections/pants-1"
+            "view_all_url": "shopify://collections/pants"
           }
         }
       },
