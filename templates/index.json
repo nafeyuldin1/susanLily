@@ -191,10 +191,10 @@
         "collection_dJXatw": {
           "type": "collection",
           "settings": {
-            "collection": "sweaters",
+            "collection": "blouses-shirts",
             "custom_title": "",
             "view_all_text": "View All",
-            "view_all_url": "shopify://collections/sweaters"
+            "view_all_url": "shopify://collections/blouses-shirts"
           }
         },
         "collection_wxiGp3": {
