@@ -105,10 +105,10 @@
         "collection_jybW7G": {
           "type": "collection",
           "settings": {
-            "collection": "pants",
+            "collection": "pants-sets",
             "custom_title": "",
             "view_all_text": "View All",
-            "view_all_url": "shopify://collections/pants"
+            "view_all_url": "shopify://collections/pants-sets"
           }
         },
         "collection_Fe9c3F": {
