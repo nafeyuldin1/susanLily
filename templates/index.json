@@ -255,10 +255,10 @@
         "collection_www6zq": {
           "type": "collection",
           "settings": {
-            "collection": "sandals",
+            "collection": "boots",
             "custom_title": "",
             "view_all_text": "View All",
-            "view_all_url": "shopify://collections/sandals"
+            "view_all_url": "shopify://collections/boots"
           }
         },
         "collection_ABAp4Y": {
