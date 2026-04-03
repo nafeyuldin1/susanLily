@@ -272,7 +272,7 @@ theme.recentlyViewed = {
    */
   
   theme.Currency = (function() {
-    var moneyFormat = '${{amount}}';
+    var moneyFormat = '${{amount}} CAD';
     var superScript = theme && theme.settings && theme.settings.superScriptPrice;
   
     function formatMoney(cents, format) {
