@@ -162,19 +162,19 @@
             "code": "<div class=\"product-block\">\n                      <div style=\"border: 1px solid #ddd; padding: 16px; border-radius: 0px; text-align: center; width: 100%; max-width: px; margin: 20px auto; font-family: font-family: inherit;\">\n  <h4 style=\"font-size: 14px; font-weight: bold; margin-bottom: 15px; text-transform: uppercase;\">HOW DOES IT FIT?</h4>\n  <div style=\"display: flex; align-items: center; justify-content: space-between; margin: 10px 0;\">\n    <span style=\"font-size: 14px; color: #555;\">Small</span>\n    <div style=\"position: relative; flex-grow: 1; height: 4px; background-color: #ddd; margin: 0 10px; border-radius: 2px;\">\n      <div style=\"position: absolute; top: -6px; left: 50%; width: 14px; height: 14px; background-color: black; border-radius: 50%; cursor: pointer;\"></div>\n    </div>\n    <span style=\"font-size: 14px; color: #555;\">Large</span>\n  </div>\n  <p style=\"margin-top: 10px; font-size: 14px; color: #555;\">Fits true to size</p>\n</div>\n                    </div>"
           }
         },
-        "tab_8fT6r7": {
-          "type": "tab",
-          "settings": {
-            "title": "30-day money-back guarantee",
-            "content": "<p>Not sure if it’s right for you? We get it. While we can tell you all about it, the best way to know is by trying it for yourself. That’s why we offer a risk-free, 30-day money-back guarantee on every order. If you’re not completely satisfied, just return the product, and we’ll issue a full refund!</p>",
-            "page": ""
-          }
-        },
         "tab_YFJFMm": {
           "type": "tab",
           "settings": {
             "title": "FREE PREMIUM SHIPPING",
             "content": "<p>We ship all orders with a tracking code, allowing you to track your parcel at any time. You will receive the tracking code via email within 24 hours of placing your order. Shipping within Canada is free of charge.</p>",
+            "page": ""
+          }
+        },
+        "tab_8fT6r7": {
+          "type": "tab",
+          "settings": {
+            "title": "30-day money-back guarantee",
+            "content": "<p>Not sure if it’s right for you? We get it. While we can tell you all about it, the best way to know is by trying it for yourself. That’s why we offer a risk-free, 30-day money-back guarantee on every order. If you’re not completely satisfied, just return the product, and we’ll issue a full refund!</p>",
             "page": ""
           }
         },
@@ -226,8 +226,8 @@
         "description",
         "custom_96mLeP",
         "custom_bRqHPE",
-        "tab_8fT6r7",
         "tab_YFJFMm",
+        "tab_8fT6r7",
         "tab_fhF3Px",
         "custom_AHDKYB",
         "custom_kNBiF9",
