@@ -381,7 +381,7 @@
                       <span data-product-price
                         class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}">
                         {%- unless product.empty? -%}
-                          {{ current_variant.price | money }} CAD
+                          {{ current_variant.price | money }} CAD 
                         {%- else -%}
                           {{ 1999 | money }}
                         {%- endunless -%}
