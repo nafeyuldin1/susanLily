@@ -158,6 +158,7 @@
         },
         "custom_bRqHPE": {
           "type": "custom",
+          "disabled": true,
           "settings": {
             "code": "<div class=\"product-block\">\n                      <div style=\"border: 1px solid #ddd; padding: 16px; border-radius: 0px; text-align: center; width: 100%; max-width: px; margin: 20px auto; font-family: font-family: inherit;\">\n  <h4 style=\"font-size: 14px; font-weight: bold; margin-bottom: 15px; text-transform: uppercase;\">HOW DOES IT FIT?</h4>\n  <div style=\"display: flex; align-items: center; justify-content: space-between; margin: 10px 0;\">\n    <span style=\"font-size: 14px; color: #555;\">Small</span>\n    <div style=\"position: relative; flex-grow: 1; height: 4px; background-color: #ddd; margin: 0 10px; border-radius: 2px;\">\n      <div style=\"position: absolute; top: -6px; left: 50%; width: 14px; height: 14px; background-color: black; border-radius: 50%; cursor: pointer;\"></div>\n    </div>\n    <span style=\"font-size: 14px; color: #555;\">Large</span>\n  </div>\n  <p style=\"margin-top: 10px; font-size: 14px; color: #555;\">Fits true to size</p>\n</div>\n                    </div>"
           }
