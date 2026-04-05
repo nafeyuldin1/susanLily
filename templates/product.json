@@ -296,7 +296,7 @@
         "layout": "right",
         "divider": true,
         "top_padding": false,
-        "bottom_padding": false,
+        "bottom_padding": true,
         "lazyload_images": true
       }
     },
@@ -307,7 +307,7 @@
           "type": "slide",
           "settings": {
             "media_style": "image",
-            "image": "shopify://shop_images/1080.jpg",
+            "image": "shopify://shop_images/generated-image_32.webp",
             "video_url": "",
             "controls": false,
             "stars_count": 5,
@@ -433,8 +433,8 @@
         "card_shadow": false,
         "media_radius": 20,
         "media_border_thickness": 0,
-        "media_ratio": "square",
-        "media_ratio_mobile": "square",
+        "media_ratio": "portrait",
+        "media_ratio_mobile": "portrait",
         "content_padding_vertical": 0,
         "content_padding_vertical_mobile": 0,
         "content_padding_horizontal": 0,
