@@ -563,6 +563,7 @@
         "testimonial_T9YNKb",
         "testimonial_eaEkQF"
       ],
+      "disabled": true,
       "custom_css": [
         ".testimonial-stars {color: #ffc403; /* goud */}"
       ],
