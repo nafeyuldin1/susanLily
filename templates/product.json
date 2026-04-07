@@ -466,7 +466,7 @@
         "arrow_size": 50,
         "arrow_size_mobile": 50,
         "arrow_show_desktop": true,
-        "arrow_show_mobile": true,
+        "arrow_show_mobile": false,
         "dots_size": 10,
         "dots_size_mobile": 10,
         "dots_show_desktop": false,
