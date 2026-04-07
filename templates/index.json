@@ -313,6 +313,208 @@
         "products_limit": 4
       }
     },
+    "ss_testimonial_12_c3AJpK": {
+      "type": "ss-testimonial-12",
+      "blocks": {
+        "slide_EGtbCN": {
+          "type": "slide",
+          "settings": {
+            "media_style": "image",
+            "image": "shopify://shop_images/generated-image_32.webp",
+            "video_url": "",
+            "controls": false,
+            "stars_count": 5,
+            "text": "<p>This dress is perfect for warmer days. The fabric is light and breathable, and it feels very comfortable to wear. It also looks quite elegant, which I love. I’m very happy with it.</p>",
+            "author": "<p><strong>Linda A.</strong><br/>2 hours ago</p>"
+          }
+        },
+        "slide_hEDUJR": {
+          "type": "slide",
+          "settings": {
+            "media_style": "image",
+            "image": "shopify://shop_images/1080_1.jpg",
+            "video_url": "",
+            "controls": false,
+            "stars_count": 5,
+            "text": "<p>I often struggle to find dresses that fit well, but this one surprised me. The shape is very flattering and it sits beautifully. It feels comfortable and looks stylish at the same time. Very pleased with this purchase.</p>",
+            "author": "<p><strong>Carol M.</strong><br/>6 hours ago</p>"
+          }
+        },
+        "slide_XU6KbH": {
+          "type": "slide",
+          "settings": {
+            "media_style": "image",
+            "image": "shopify://shop_images/Ontwerp_zonder_titel_38.jpg",
+            "video_url": "",
+            "controls": false,
+            "stars_count": 5,
+            "text": "<p>I’m really happy with this dress. The fabric feels soft and lightweight and it sits very nicely on the body. It’s comfortable enough to wear all day but still looks elegant. Definitely a great purchase.</p>",
+            "author": "<p><strong>Deborah T.</strong><br/>1 day ago</p>"
+          }
+        },
+        "slide_VcVAQk": {
+          "type": "slide",
+          "settings": {
+            "media_style": "image",
+            "image": "shopify://shop_images/1080_2.jpg",
+            "video_url": "",
+            "controls": false,
+            "stars_count": 5,
+            "text": "<p>I wasn’t sure at first, but once I tried it on I loved how it looked. The cut is very flattering and the material feels lovely. It’s the kind of dress you can wear anywhere. I’m very pleased with it.</p>",
+            "author": "<p><strong>Barbara W.</strong><br/>3 days ago</p>"
+          }
+        },
+        "slide_igpwxk": {
+          "type": "slide",
+          "settings": {
+            "media_style": "image",
+            "image": "shopify://shop_images/hf_20260301_210916_ea29aff7-1aa2-4aac-aa13-2b26255fb673.webp",
+            "video_url": "",
+            "controls": false,
+            "stars_count": 5,
+            "text": "<p>This dress is exactly what I was looking for. It’s light, comfortable and moves beautifully when walking. The fit is very nice without feeling tight. I’ll definitely be wearing it a lot this summer.</p>",
+            "author": "<p><strong>Margaret C.</strong><br/>7 days  ago</p>"
+          }
+        },
+        "slide_G4DAYB": {
+          "type": "slide",
+          "settings": {
+            "media_style": "image",
+            "image": "shopify://shop_images/8_d623f20b-c4de-45c6-a17d-50b2fca865b5.webp",
+            "video_url": "",
+            "controls": false,
+            "stars_count": 4,
+            "text": "<p>I wore this dress the same evening and already received a few compliments. The fit is very nice and it moves beautifully when walking. It feels elegant but still very comfortable. Definitely a good purchase.</p>",
+            "author": "<p><strong>Anna B.</strong><br/>2 months ago</p>"
+          }
+        },
+        "slide_nbed4c": {
+          "type": "slide",
+          "settings": {
+            "media_style": "image",
+            "image": "shopify://shop_images/1080_3.jpg",
+            "video_url": "",
+            "controls": false,
+            "stars_count": 5,
+            "text": "<p>I wasn’t planning to buy a dress that day, but I’m glad I did. The fit is lovely and the material feels really nice. It’s comfortable and looks very flattering. I’m very happy with it.</p>",
+            "author": "<p><strong>Susan D.<br/></strong>1 year ago</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_EGtbCN",
+        "slide_hEDUJR",
+        "slide_XU6KbH",
+        "slide_VcVAQk",
+        "slide_igpwxk",
+        "slide_G4DAYB",
+        "slide_nbed4c"
+      ],
+      "name": "SS - Testimonials #12",
+      "settings": {
+        "heading": "<p><strong>HERE’S WHAT OUR CUSTOMERS SAY</strong></p>",
+        "heading_custom": false,
+        "heading_font": "system_ui_n4",
+        "heading_size": 22,
+        "heading_size_mobile": 18,
+        "heading_height": 130,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "sub_heading": "",
+        "sub_heading_custom": false,
+        "sub_heading_font": "josefin_sans_n4",
+        "sub_heading_size": 27,
+        "sub_heading_size_mobile": 23,
+        "sub_heading_height": 150,
+        "sub_heading_mt": 12,
+        "sub_heading_align": "center",
+        "sub_heading_align_mobile": "center",
+        "slider_view": 5,
+        "slider_view_mobile": 1.2,
+        "slider_gap": 28,
+        "slider_gap_mobile": 20,
+        "slider_mt": 20,
+        "autoplay": false,
+        "autoplay_delay": 5,
+        "card_padding_vertical": 20,
+        "card_padding_vertical_mobile": 16,
+        "card_padding_horizontal": 20,
+        "card_padding_horizontal_mobile": 16,
+        "card_radius": 20,
+        "card_border_thickness": 1,
+        "card_shadow": false,
+        "media_radius": 20,
+        "media_border_thickness": 0,
+        "media_ratio": "square",
+        "media_ratio_mobile": "square",
+        "content_padding_vertical": 0,
+        "content_padding_vertical_mobile": 0,
+        "content_padding_horizontal": 0,
+        "content_padding_horizontal_mobile": 0,
+        "hide_content": false,
+        "stars_size": 16,
+        "stars_mt": 12,
+        "stars_align": "center",
+        "stars_align_mobile": "center",
+        "text_custom": true,
+        "text_font": "system_ui_n4",
+        "text_size": 16,
+        "text_size_mobile": 14,
+        "text_height": 130,
+        "text_mt": 12,
+        "text_align": "center",
+        "text_align_mobile": "center",
+        "author_custom": false,
+        "author_font": "josefin_sans_n4",
+        "author_size": 14,
+        "author_size_mobile": 14,
+        "author_height": 130,
+        "author_mt": 12,
+        "author_align": "center",
+        "author_align_mobile": "center",
+        "navigation_mt": 40,
+        "navigation_gap": 20,
+        "navigation_align": "center",
+        "navigation_align_mobile": "center",
+        "arrow_size": 50,
+        "arrow_size_mobile": 50,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "dots_size": 10,
+        "dots_size_mobile": 10,
+        "dots_show_desktop": true,
+        "dots_show_mobile": true,
+        "btn_icon_size": 50,
+        "btn_icon_size_mobile": 40,
+        "card_bg_color": "#ffffff",
+        "card_bg_gradient": "",
+        "card_border_color": "#000000",
+        "media_border_color": "#121212",
+        "stars_color": "#ffc403",
+        "text_color": "#323232",
+        "author_color": "#323232",
+        "video_icon_bg_color": "#ffffff",
+        "video_icon_color": "#121212",
+        "arrow_color": "#000000",
+        "arrow_hover_color": "#000000",
+        "dots_color": "#000000",
+        "heading_color": "#000000",
+        "sub_heading_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
     "testimonials_pwJjb6": {
       "type": "testimonials",
       "blocks": {
@@ -374,6 +576,7 @@
         "testimonial_LXbrX8",
         "testimonial_VrGpB8"
       ],
+      "disabled": true,
       "custom_css": [
         ".testimonial-stars {color: #ffc403; /* goud */}"
       ],
@@ -502,6 +705,7 @@
     "featured_collections_hDetmh",
     "collectiontabs_XrL67k",
     "collectiontabs_cj68Rx",
+    "ss_testimonial_12_c3AJpK",
     "testimonials_pwJjb6",
     "faq_HnwG39",
     "text_with_icons_qNphgd"
