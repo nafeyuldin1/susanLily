@@ -300,10 +300,10 @@
         "lazyload_images": true
       }
     },
-    "ss_testimonial_12_kfT8hA": {
+    "ss_testimonial_12_fz7qFi": {
       "type": "ss-testimonial-12",
       "blocks": {
-        "slide_7FU84X": {
+        "slide_g9XyAW": {
           "type": "slide",
           "settings": {
             "media_style": "image",
@@ -315,7 +315,7 @@
             "author": "<p><strong>Linda A.</strong><br/>2 hours ago</p>"
           }
         },
-        "slide_NXYQHj": {
+        "slide_b8BQVz": {
           "type": "slide",
           "settings": {
             "media_style": "image",
@@ -327,7 +327,7 @@
             "author": "<p><strong>Carol M.</strong><br/>6 hours ago</p>"
           }
         },
-        "slide_qnYhLM": {
+        "slide_nwzrKw": {
           "type": "slide",
           "settings": {
             "media_style": "image",
@@ -339,7 +339,7 @@
             "author": "<p><strong>Deborah T.</strong><br/>1 day ago</p>"
           }
         },
-        "slide_R8y7nM": {
+        "slide_MpfDFr": {
           "type": "slide",
           "settings": {
             "media_style": "image",
@@ -351,7 +351,7 @@
             "author": "<p><strong>Barbara W.</strong><br/>3 days ago</p>"
           }
         },
-        "slide_G7JjkA": {
+        "slide_Ax7JUz": {
           "type": "slide",
           "settings": {
             "media_style": "image",
@@ -363,7 +363,7 @@
             "author": "<p><strong>Margaret C.</strong><br/>7 days  ago</p>"
           }
         },
-        "slide_t7WcFq": {
+        "slide_VgfemE": {
           "type": "slide",
           "settings": {
             "media_style": "image",
@@ -375,7 +375,7 @@
             "author": "<p><strong>Anna B.</strong><br/>2 months ago</p>"
           }
         },
-        "slide_qNtb4b": {
+        "slide_w3pnRk": {
           "type": "slide",
           "settings": {
             "media_style": "image",
@@ -389,13 +389,13 @@
         }
       },
       "block_order": [
-        "slide_7FU84X",
-        "slide_NXYQHj",
-        "slide_qnYhLM",
-        "slide_R8y7nM",
-        "slide_G7JjkA",
-        "slide_t7WcFq",
-        "slide_qNtb4b"
+        "slide_g9XyAW",
+        "slide_b8BQVz",
+        "slide_nwzrKw",
+        "slide_MpfDFr",
+        "slide_Ax7JUz",
+        "slide_VgfemE",
+        "slide_w3pnRk"
       ],
       "name": "SS - Testimonials #12",
       "settings": {
@@ -428,8 +428,8 @@
         "card_padding_horizontal": 20,
         "card_padding_horizontal_mobile": 16,
         "card_radius": 20,
-        "card_border_thickness": 1,
-        "card_shadow": false,
+        "card_border_thickness": 0,
+        "card_shadow": true,
         "media_radius": 20,
         "media_border_thickness": 0,
         "media_ratio": "square",
@@ -443,7 +443,7 @@
         "stars_mt": 12,
         "stars_align": "center",
         "stars_align_mobile": "center",
-        "text_custom": true,
+        "text_custom": false,
         "text_font": "system_ui_n4",
         "text_size": 16,
         "text_size_mobile": 14,
@@ -466,11 +466,11 @@
         "arrow_size": 50,
         "arrow_size_mobile": 50,
         "arrow_show_desktop": true,
-        "arrow_show_mobile": false,
+        "arrow_show_mobile": true,
         "dots_size": 10,
         "dots_size_mobile": 10,
-        "dots_show_desktop": true,
-        "dots_show_mobile": true,
+        "dots_show_desktop": false,
+        "dots_show_mobile": false,
         "btn_icon_size": 50,
         "btn_icon_size_mobile": 40,
         "card_bg_color": "#ffffff",
@@ -997,7 +997,7 @@
     "product-recommendations",
     "text_and_image_8FC9CY",
     "text_and_image_4raDML",
-    "ss_testimonial_12_kfT8hA",
+    "ss_testimonial_12_fz7qFi",
     "testimonials_fzM76U",
     "text_and_image_b8FFRV",
     "1742643651b9090556",
