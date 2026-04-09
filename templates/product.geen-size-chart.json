@@ -387,7 +387,7 @@
             "controls": false,
             "stars_count": 5,
             "text": "<p>This dress is perfect for warmer days. The fabric is light and breathable, and it feels very comfortable to wear. It also looks quite elegant, which I love. I’m very happy with it.</p>",
-            "author": "<p><strong>Linda A.</strong><br/>2 hours ago</p>"
+            "author": "<p><strong>Linda A.</strong></p>"
           }
         },
         "slide_NAjrTA": {
@@ -399,7 +399,7 @@
             "controls": false,
             "stars_count": 5,
             "text": "<p>I often struggle to find dresses that fit well, but this one surprised me. The shape is very flattering and it sits beautifully. It feels comfortable and looks stylish at the same time. Very pleased with this purchase.</p>",
-            "author": "<p><strong>Carol M.</strong><br/>6 hours ago</p>"
+            "author": "<p><strong>Carol M.</strong></p>"
           }
         },
         "slide_DMVreJ": {
@@ -411,7 +411,7 @@
             "controls": false,
             "stars_count": 5,
             "text": "<p>I’m really happy with this dress. The fabric feels soft and lightweight and it sits very nicely on the body. It’s comfortable enough to wear all day but still looks elegant. Definitely a great purchase.</p>",
-            "author": "<p><strong>Deborah T.</strong><br/>1 day ago</p>"
+            "author": "<p><strong>Deborah T.</strong></p>"
           }
         },
         "slide_Q7N9hr": {
@@ -423,7 +423,7 @@
             "controls": false,
             "stars_count": 5,
             "text": "<p>I wasn’t sure at first, but once I tried it on I loved how it looked. The cut is very flattering and the material feels lovely. It’s the kind of dress you can wear anywhere. I’m very pleased with it.</p>",
-            "author": "<p><strong>Barbara W.</strong><br/>3 days ago</p>"
+            "author": "<p><strong>Barbara W.</strong></p>"
           }
         },
         "slide_CF4nRL": {
@@ -435,7 +435,7 @@
             "controls": false,
             "stars_count": 5,
             "text": "<p>This dress is exactly what I was looking for. It’s light, comfortable and moves beautifully when walking. The fit is very nice without feeling tight. I’ll definitely be wearing it a lot this summer.</p>",
-            "author": "<p><strong>Margaret C.</strong><br/>7 days  ago</p>"
+            "author": "<p><strong>Margaret C.</strong></p>"
           }
         },
         "slide_hCCDgP": {
@@ -447,7 +447,7 @@
             "controls": false,
             "stars_count": 4,
             "text": "<p>I wore this dress the same evening and already received a few compliments. The fit is very nice and it moves beautifully when walking. It feels elegant but still very comfortable. Definitely a good purchase.</p>",
-            "author": "<p><strong>Anna B.</strong><br/>2 months ago</p>"
+            "author": "<p><strong>Anna B.</strong></p>"
           }
         },
         "slide_xQC6E6": {
@@ -459,7 +459,7 @@
             "controls": false,
             "stars_count": 5,
             "text": "<p>I wasn’t planning to buy a dress that day, but I’m glad I did. The fit is lovely and the material feels really nice. It’s comfortable and looks very flattering. I’m very happy with it.</p>",
-            "author": "<p><strong>Susan D.<br/></strong>1 year ago</p>"
+            "author": "<p><strong>Susan D.</strong></p>"
           }
         }
       },
@@ -562,13 +562,13 @@
         "dots_color": "#000000",
         "heading_color": "#000000",
         "sub_heading_color": "#000000",
-        "background_color": "#ffffff",
+        "background_color": "#f7f7f7",
         "background_gradient": "",
         "border_color": "#121212",
         "margin_top": 0,
         "margin_bottom": 0,
         "padding_top": 36,
-        "padding_bottom": 0,
+        "padding_bottom": 36,
         "padding_horizontal": 5,
         "padding_horizontal_mobile": 1.5,
         "full_width": true,
