@@ -410,6 +410,7 @@
         "slide_G4DAYB",
         "slide_nbed4c"
       ],
+      "disabled": true,
       "name": "SS - Testimonials #12",
       "settings": {
         "heading": "<p><strong>HERE’S WHAT OUR CUSTOMERS SAY</strong></p>",
@@ -576,7 +577,6 @@
         "testimonial_LXbrX8",
         "testimonial_VrGpB8"
       ],
-      "disabled": true,
       "custom_css": [
         ".testimonial-stars {color: #ffc403; /* goud */}"
       ],
