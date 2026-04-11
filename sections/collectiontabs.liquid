@@ -151,9 +151,9 @@
                   <div class="grid-product__title grid-product__title--heading">{{ product.title }}</div>
                   <div class="grid-product__price">
                     {% if product.compare_at_price > product.price %}
-                      <span class="grid-product__price--original">{{ product.compare_at_price | money }}</span> CAD
+                      <span class="grid-product__price--original">{{ product.compare_at_price | money }}</span>
                     {% endif %}
-                    {{ product.price | money }} CAD
+                    {{ product.price | money }}
                   </div>
                 </div>
               </a>
