@@ -251,7 +251,7 @@
       "type": "product-recommendations",
       "settings": {
         "product_recommendations_heading": "COMBINE AND GET UP TO 25% EXTRA DISCOUNT",
-        "related_count": 5,
+        "related_count": 10,
         "products_per_row": 5
       }
     },
