@@ -109,53 +109,52 @@
         "title": "Frequently Asked Questions"
       }
     },
-    "text_with_icons_njCm6K": {
+    "text_with_icons_R7NDJB": {
       "type": "text-with-icons",
       "blocks": {
-        "text_block_FCdTTg": {
+        "text_block_Rh8w4X": {
           "type": "text_block",
           "settings": {
             "icon": "truck",
             "title": "Free fast shipping",
-            "text": "<p>At Clara & Mae Dublin, we aim to provide maximum convenience for our customers and offer complimentary shipping across the United States!</p>"
+            "text": "<p>At Susan & Lily, we aim to provide maximum convenience for our customers and offer complimentary shipping across Canada!</p>"
           }
         },
-        "text_block_8HXzXM": {
+        "text_block_84cG7p": {
           "type": "text_block",
           "settings": {
             "icon": "wallet",
             "title": "30-DAY MONEY-BACK GUARANTEE",
-            "text": "<p>At Clara & Mae Dublin, we offer a 30-day return period. This gives you plenty of time to return your item if you're not completely satisfied.</p>"
+            "text": "<p>At Susan & Lily, we offer a 30-day return period. This gives you plenty of time to return your item if you're not completely satisfied.</p>"
           }
         },
-        "text_block_7qdTXP": {
+        "text_block_zPwhcM": {
           "type": "text_block",
           "settings": {
-            "icon": "chat",
+            "icon": "ribbon",
             "title": "Quality guarantee",
-            "text": "<p>At Clara & Mae Dublin, we always set the standards, ensuring the highest quality and service for our customers.</p>"
+            "text": "<p>At Susan & Lily, we always set the standards, ensuring the highest quality and service for our customers.</p>"
           }
         },
-        "text_block_BinrBc": {
+        "text_block_GDJjfd": {
           "type": "text_block",
           "settings": {
             "icon": "chat",
             "title": "24/7 support",
-            "text": "<p>At Clara & Mae Dublin, we're always here to help, providing support whenever you need it.</p>"
+            "text": "<p>At Susan & Lily, we're always here to help, providing support whenever you need it.</p>"
           }
         }
       },
       "block_order": [
-        "text_block_FCdTTg",
-        "text_block_8HXzXM",
-        "text_block_7qdTXP",
-        "text_block_BinrBc"
+        "text_block_Rh8w4X",
+        "text_block_84cG7p",
+        "text_block_zPwhcM",
+        "text_block_GDJjfd"
       ],
-      "name": "t:common.text_with_icons.presets.text_with_icons.name",
       "settings": {
         "title": "",
         "align_text": "center",
-        "desktop_columns_per_row": 3,
+        "desktop_columns_per_row": 4,
         "icon_color": "#000000",
         "button_label": "",
         "button_link": "",
@@ -168,6 +167,6 @@
     "rich-text",
     "form",
     "faq_jxYbF9",
-    "text_with_icons_njCm6K"
+    "text_with_icons_R7NDJB"
   ]
 }
