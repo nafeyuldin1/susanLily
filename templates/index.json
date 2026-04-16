@@ -179,15 +179,6 @@
     "collectiontabs_RMz7py": {
       "type": "collectiontabs",
       "blocks": {
-        "collection_Wn4gx4": {
-          "type": "collection",
-          "settings": {
-            "collection": "skirts",
-            "custom_title": "",
-            "view_all_text": "View All",
-            "view_all_url": "shopify://collections/skirts"
-          }
-        },
         "collection_pFWbwe": {
           "type": "collection",
           "settings": {
@@ -196,11 +187,20 @@
             "view_all_text": "View All",
             "view_all_url": "shopify://collections/pants"
           }
+        },
+        "collection_Wn4gx4": {
+          "type": "collection",
+          "settings": {
+            "collection": "skirts",
+            "custom_title": "",
+            "view_all_text": "View All",
+            "view_all_url": "shopify://collections/skirts"
+          }
         }
       },
       "block_order": [
-        "collection_Wn4gx4",
-        "collection_pFWbwe"
+        "collection_pFWbwe",
+        "collection_Wn4gx4"
       ],
       "name": "Collection Tabs – Full Width Uniform Images with Custom Titles",
       "settings": {
@@ -215,7 +215,7 @@
           "type": "collection",
           "settings": {
             "collection": "blouses-shirts",
-            "custom_title": "",
+            "custom_title": "Blouses",
             "view_all_text": "View All",
             "view_all_url": "shopify://collections/blouses-shirts"
           }
@@ -243,26 +243,26 @@
     "featured_collections_hDetmh": {
       "type": "featured-collections",
       "blocks": {
-        "collection_8DE9zi": {
+        "collection_tDp6Ch": {
           "type": "collection",
           "settings": {
-            "collection": "vests",
+            "collection": "breeze-sets",
             "title": "",
             "focal_point": "center center"
           }
         },
-        "collection_tDp6Ch": {
+        "collection_8DE9zi": {
           "type": "collection",
           "settings": {
-            "collection": "coats",
-            "title": "",
+            "collection": "bags",
+            "title": "Casual Bags",
             "focal_point": "center center"
           }
         }
       },
       "block_order": [
-        "collection_8DE9zi",
-        "collection_tDp6Ch"
+        "collection_tDp6Ch",
+        "collection_8DE9zi"
       ],
       "name": "t:sections.featured-collections.presets.collection_list.name",
       "settings": {
@@ -278,19 +278,19 @@
         "collection_www6zq": {
           "type": "collection",
           "settings": {
-            "collection": "boots",
-            "custom_title": "",
+            "collection": "leather-shoes",
+            "custom_title": "Heels",
             "view_all_text": "View All",
-            "view_all_url": "shopify://collections/boots"
+            "view_all_url": "shopify://collections/leather-shoes"
           }
         },
         "collection_ABAp4Y": {
           "type": "collection",
           "settings": {
-            "collection": "bags",
-            "custom_title": "",
+            "collection": "leather-bags",
+            "custom_title": "Bags",
             "view_all_text": "View All",
-            "view_all_url": "shopify://collections/bags"
+            "view_all_url": "shopify://collections/leather-bags"
           }
         }
       },
@@ -319,7 +319,7 @@
         "collection_V6VCry": {
           "type": "collection",
           "settings": {
-            "collection": "bracelets",
+            "collection": "rings",
             "custom_title": "",
             "view_all_text": "View All",
             "view_all_url": "shopify://collections/bracelets"
