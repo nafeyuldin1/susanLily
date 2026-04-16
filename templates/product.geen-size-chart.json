@@ -258,10 +258,9 @@
     },
     "text_and_image_8FC9CY": {
       "type": "text-and-image",
-      "disabled": true,
       "name": "t:sections.text-and-image.presets.image_with_text.name",
       "settings": {
-        "image": "shopify://shop_images/Een_ultra_realistische_8K_lifestyle-foto_van_twee_vrouwen_met_een_Canadees_uiterlijk_die_samen_staan_in_een_stijlvolle_gezellige_kledingboetiek_genaamd_Susan_Lily._De_moeder_ongeveer_b4158af4-7214-4352-8c43-9d26ceb10ea4.png",
+        "image": "shopify://shop_images/Ontwerp_zonder_titel_36.png",
         "image_mask": "none",
         "image2_mask": "none",
         "subtitle": "",
@@ -281,9 +280,10 @@
     },
     "text_and_image_4raDML": {
       "type": "text-and-image",
+      "disabled": true,
       "name": "t:sections.text-and-image.presets.image_with_text.name",
       "settings": {
-        "image": "shopify://shop_images/Zonder_titel_1324_x_1204_px.png",
+        "image": "shopify://shop_images/Ontwerp_zonder_titel_36.png",
         "image_mask": "square",
         "image2_mask": "none",
         "subtitle": "",
@@ -733,7 +733,7 @@
       "type": "text-and-image",
       "name": "t:sections.text-and-image.presets.image_with_text.name",
       "settings": {
-        "image": "shopify://shop_images/Ontwerp_zonder_titel_29_d41010c9-ebaa-42e2-b795-2d4a2bd03014.png",
+        "image": "shopify://shop_images/Ontwerp_zonder_titel_35.png",
         "image_mask": "square",
         "image2_mask": "square",
         "subtitle": "",

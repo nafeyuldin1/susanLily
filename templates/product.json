@@ -255,34 +255,12 @@
         "products_per_row": 5
       }
     },
-    "text_and_image_8FC9CY": {
+    "text_and_image_4raDML": {
       "type": "text-and-image",
       "disabled": true,
       "name": "t:sections.text-and-image.presets.image_with_text.name",
       "settings": {
-        "image": "shopify://shop_images/Een_ultra_realistische_8K_lifestyle-foto_van_twee_vrouwen_met_een_Canadees_uiterlijk_die_samen_staan_in_een_stijlvolle_gezellige_kledingboetiek_genaamd_Susan_Lily._De_moeder_ongeveer_b4158af4-7214-4352-8c43-9d26ceb10ea4.png",
-        "image_mask": "none",
-        "image2_mask": "none",
-        "subtitle": "",
-        "title": "NICE TO MEET YOU, WE ARE SUSAN & LILY",
-        "text": "<p>✦ We are a small Canadese family brand founded by Susan, inspired by her daughter Lily.</p><p>✦ Since 2016 we’ve been creating timeless pieces with care and personal attention.</p><p>✦ Every order is handled thoughtfully and every customer means the world to us.<br/><br/>✦ This past year has been challenging, which is why we’re opening our Revival Sale a moment to reset, refresh our collections, and move forward with renewed strength. </p><p><em>Thank you for supporting us through every chapter of our journey.</em></p>",
-        "button_label": "About Us",
-        "button_link": "shopify://pages/about-us",
-        "button_style": "secondary",
-        "align_text": "left",
-        "image_width": "50",
-        "layout": "right",
-        "divider": false,
-        "top_padding": true,
-        "bottom_padding": true,
-        "lazyload_images": true
-      }
-    },
-    "text_and_image_4raDML": {
-      "type": "text-and-image",
-      "name": "t:sections.text-and-image.presets.image_with_text.name",
-      "settings": {
-        "image": "shopify://shop_images/Zonder_titel_1324_x_1204_px.png",
+        "image": "shopify://shop_images/Ontwerp_zonder_titel_36.png",
         "image_mask": "square",
         "image2_mask": "none",
         "subtitle": "",
@@ -297,6 +275,28 @@
         "divider": true,
         "top_padding": false,
         "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "text_and_image_kdYTBW": {
+      "type": "text-and-image",
+      "name": "t:sections.text-and-image.presets.image_with_text.name",
+      "settings": {
+        "image": "shopify://shop_images/Ontwerp_zonder_titel_36.png",
+        "image_mask": "square",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "NICE TO MEET YOU, WE ARE SUSAN & LILY",
+        "text": "<p>✦ We are a small Canadese family brand founded by Susan, inspired by her daughter Lily.</p><p>✦ Since 2016 we’ve been creating timeless pieces with care and personal attention.</p><p>✦ Every order is handled thoughtfully and every customer means the world to us.<br/><br/>✦ This past year has been challenging, which is why we’re opening our Revival Sale a moment to reset, refresh our collections, and move forward with renewed strength. </p><p><em>Thank you for supporting us through every chapter of our journey.</em></p>",
+        "button_label": "",
+        "button_link": "shopify://pages/about-us",
+        "button_style": "secondary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "right",
+        "divider": true,
+        "top_padding": false,
+        "bottom_padding": false,
         "lazyload_images": true
       }
     },
@@ -732,7 +732,7 @@
       "type": "text-and-image",
       "name": "t:sections.text-and-image.presets.image_with_text.name",
       "settings": {
-        "image": "shopify://shop_images/Ontwerp_zonder_titel_29_d41010c9-ebaa-42e2-b795-2d4a2bd03014.png",
+        "image": "shopify://shop_images/Ontwerp_zonder_titel_35.png",
         "image_mask": "square",
         "image2_mask": "square",
         "subtitle": "",
@@ -994,8 +994,8 @@
   "order": [
     "main",
     "product-recommendations",
-    "text_and_image_8FC9CY",
     "text_and_image_4raDML",
+    "text_and_image_kdYTBW",
     "ss_testimonial_12_fz7qFi",
     "testimonials_fzM76U",
     "text_and_image_b8FFRV",

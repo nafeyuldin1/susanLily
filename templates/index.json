@@ -25,8 +25,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-bottom horizontal-center",
-            "image": "shopify://shop_images/Een_ultra_realistische_8K_lifestyle-foto_van_twee_vrouwen_met_een_Canadees_uiterlijk_die_samen_staan_in_een_stijlvolle_gezellige_kledingboetiek_genaamd_Susan_Lily._De_moeder_ongeveer_b4158af4-7214-4352-8c43-9d26ceb10ea4.png",
-            "image_mobile": "shopify://shop_images/Zonder_titel_1324_x_1204_px.png",
+            "image": "shopify://shop_images/Ontwerp_zonder_titel_38.png",
+            "image_mobile": "shopify://shop_images/Ontwerp_zonder_titel_36.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -73,10 +73,10 @@
         "collection_aGCXHk": {
           "type": "collection",
           "settings": {
-            "collection": "dresses",
-            "custom_title": "",
+            "collection": "bestseller-dresses",
+            "custom_title": "Dresses",
             "view_all_text": "View All",
-            "view_all_url": "shopify://collections/dresses"
+            "view_all_url": "shopify://collections/bestseller-dresses"
           }
         },
         "collection_kMEXBA": {
@@ -133,15 +133,16 @@
     },
     "text_and_image_6iyYKh": {
       "type": "text-and-image",
+      "disabled": true,
       "name": "t:sections.text-and-image.presets.image_with_text.name",
       "settings": {
-        "image": "shopify://shop_images/Zonder_titel_1324_x_1204_px.png",
+        "image": "shopify://shop_images/Ontwerp_zonder_titel_36.png",
         "image_mask": "square",
         "image2_mask": "none",
         "subtitle": "",
         "title": "NICE TO MEET YOU, WE ARE SUSAN & LILY",
         "text": "<p>✦ We are a small Canadese family brand founded by Susan, inspired by her daughter Lily.</p><p>✦ Since 2016 we’ve been creating timeless pieces with care and personal attention.</p><p>✦ Every order is handled thoughtfully and every customer means the world to us.<br/><br/>✦ This past year has been challenging, which is why we’re opening our Revival Sale a moment to reset, refresh our collections, and move forward with renewed strength. </p><p><em>Thank you for supporting us through every chapter of our journey.</em></p>",
-        "button_label": "About Us",
+        "button_label": "",
         "button_link": "shopify://pages/about-us",
         "button_style": "secondary",
         "align_text": "center",
@@ -150,6 +151,28 @@
         "divider": true,
         "top_padding": false,
         "bottom_padding": false,
+        "lazyload_images": true
+      }
+    },
+    "text_and_image_UWQRNw": {
+      "type": "text-and-image",
+      "name": "t:sections.text-and-image.presets.image_with_text.name",
+      "settings": {
+        "image": "shopify://shop_images/Ontwerp_zonder_titel_36.png",
+        "image_mask": "square",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Save our Dream",
+        "text": "<p>This little boutique began as a dream my daughter Lily and I built together in Toronto.<br/><br/>Late nights, early mornings, and a shared love for creating something meaningful.</p><p>For many years, this shop has been our world.<br/><br/>But lately, we’ve felt the need to breathe new life into it, to refresh, refocus, and bring a little extra joy to the pieces we share.</p><p>That’s why we’re hosting our Revival Sale.<br/><br/>It’s not about giving up, it’s about celebrating what we’ve built and stepping into a vibrant next chapter together.</p><p>By supporting us today, you’re helping a mother and her daughter revive our dream and create space for what comes next.<br/><br/>Every order truly matters.</p><p>Thank you for being part of our story.<br/><br/>Susan & Lily ❤️</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "divider": true,
+        "top_padding": false,
+        "bottom_padding": true,
         "lazyload_images": true
       }
     },
@@ -700,6 +723,7 @@
     "collectiontabs_RMDjmN",
     "collectiontabs_zNYLk4",
     "text_and_image_6iyYKh",
+    "text_and_image_UWQRNw",
     "collectiontabs_RMz7py",
     "collectiontabs_gpnatK",
     "featured_collections_hDetmh",
